@@ -28,8 +28,11 @@
     NSArray *conditions = block();
     VGValidator *validator = [[[self class] alloc] initWithConditions:conditions];
     validator.conditions = conditions;
-    *error = [validator checkConditionsFirstErrorWithValue:value];
-    return *error == nil;
+    NSError *resultError = [validator checkConditionsFirstErrorWithValue:value];
+    if(*error) {
+        *error = resultError;
+    }
+    return resultError == nil;
 }
 
 - (NSError *)checkConditionsFirstErrorWithValue:(id)value {
