@@ -11,6 +11,7 @@
 @implementation VGStringRangeCondition
 
 @synthesize isStrict = _isStrict;
+@synthesize formatter = _formatter;
 
 #pragma mark - VGStringRangeCondition
 

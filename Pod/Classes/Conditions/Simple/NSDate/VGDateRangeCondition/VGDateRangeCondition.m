@@ -13,6 +13,7 @@
 @synthesize isStrict = _isStrict;
 @synthesize min = _min;
 @synthesize max = _max;
+@synthesize formatter = _formatter;
 
 #pragma mark - VGDateRangeCondition lifecycle
 

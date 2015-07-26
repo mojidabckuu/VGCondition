@@ -12,4 +12,6 @@
 
 @interface VGDateRangeCondition : VGDateCondition <VGRangeConditionProtocol>
 
+@property (nonatomic, strong) NSDateFormatter *formatter;
+
 @end
