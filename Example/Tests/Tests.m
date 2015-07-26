@@ -44,7 +44,7 @@
     NSError *error = nil;
     BOOL isValid = [VGValidator validateValue:@11 conditions:^NSArray *{
         return @[[VGConditonRange conditionWithMin:@3 max:@10 strict:NO formatter:formatter description:NSLocalizedString(@"Enter maximum %2$@ amount and min %1$@", nil)]];
-    } error:&error];
+    } error:nil];
     if(!isValid) {
         NSLog(@"Error: %@", [error localizedDescription]);
     }

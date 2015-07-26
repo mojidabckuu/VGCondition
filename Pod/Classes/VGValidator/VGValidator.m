@@ -29,7 +29,7 @@
     VGValidator *validator = [[[self class] alloc] initWithConditions:conditions];
     validator.conditions = conditions;
     NSError *resultError = [validator checkConditionsFirstErrorWithValue:value];
-    if(*error) {
+    if(error) {
         *error = resultError;
     }
     return resultError == nil;
