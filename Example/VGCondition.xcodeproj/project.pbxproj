@@ -23,6 +23,7 @@
 		6CCF9E7F76F915559DA1E803 /* Pods_VGCondition_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FEF97F1F08C129B5B9A6D8 /* Pods_VGCondition_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6EA206AE0DC1DF81D0334AD6 /* Pods_VGCondition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0059D563AF11856A21C59F /* Pods_VGCondition_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		F589FE281B64D13800FF7AAB /* VGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* VGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		1F18C9304D543AD0DDC98F3A /* VGCondition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VGCondition.podspec; path = ../VGCondition.podspec; sourceTree = "<group>"; };
 		462FCFF097AFE75A7A697312 /* Pods-VGCondition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGCondition_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VGCondition_Example/Pods-VGCondition_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		57E8D86C035492CC73D1FBD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* VGCondition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = VGCondition.app; path = VGCondition_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* VGCondition_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGCondition_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,7 +54,7 @@
 		6003F5A5195388D20070C39A /* VGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VGViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* VGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VGViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = VGCondition_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* VGCondition_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGCondition_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,8 +109,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* VGCondition.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* VGCondition_Example.app */,
+				6003F5AE195388D20070C39A /* VGCondition_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,7 +214,7 @@
 			);
 			name = VGCondition_Example;
 			productName = VGCondition;
-			productReference = 6003F58A195388D20070C39A /* VGCondition.app */;
+			productReference = 6003F58A195388D20070C39A /* VGCondition_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* VGCondition_Tests */ = {
@@ -234,7 +235,7 @@
 			);
 			name = VGCondition_Tests;
 			productName = VGConditionTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* VGCondition_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -401,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				F589FE281B64D13800FF7AAB /* VGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

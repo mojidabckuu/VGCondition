@@ -8,6 +8,8 @@
 
 @import UIKit;
 
+#import <VGCondition/VGValidation.h>
+
 @interface VGViewController : UIViewController
 
 @end

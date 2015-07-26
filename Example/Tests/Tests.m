@@ -8,27 +8,46 @@
 
 @import XCTest;
 
+#import "VGViewController.h"
+
 @interface Tests : XCTestCase
 
 @end
 
 @implementation Tests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)tearDown
-{
+- (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testMaxError {
+    // prints: foo bar foo bar
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US"]];
+    [formatter setDecimalSeparator:@"."];
+    [formatter setGroupingSeparator:@","];
+    
+    [formatter setMinimumFractionDigits:2];
+    [formatter setMaximumFractionDigits:2];
+    [formatter setGroupingSize:3];
+    
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    
+    NSLog(@"%@", [formatter stringFromNumber:nil]);
+    
+    NSError *error = nil;
+    BOOL isValid = [VGValidator validateValue:@11 conditions:^NSArray *{
+        return @[[VGConditonRange conditionWithMin:@3 max:@10 strict:NO formatter:formatter description:NSLocalizedString(@"Enter maximum %2$@ amount and min %1$@", nil)]];
+    } error:&error];
+    if(!isValid) {
+        NSLog(@"Error: %@", [error localizedDescription]);
+    }
 }
 
 @end

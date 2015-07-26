@@ -1,0 +1,1540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F1698AE1E6409D71306C17 /* VGStringCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FFD016B6DCC30B6E14C00B /* VGStringCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0448E0C26944AD97487F82C8 /* VGObjectPresentCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD7C6A6ADFEAEB1F0A251F5 /* VGObjectPresentCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		063D607EEFCE5078E25FD22C /* VGDateCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86A1AF81953C2484623C3A /* VGDateCondition.m */; };
+		09813AC151C87356EB729D5E /* VGNumberCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3D98243B59484D9372859 /* VGNumberCondition.m */; };
+		09B4C58AA82A3304C967B461 /* VGNumberCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = BE343AEB0DE1D73B305F8DF6 /* VGNumberCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1425CB5430AA631FA09F1556 /* VGConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2924A397A70E2C63861DBD9A /* VGConditionPresent.m */; };
+		172FCC385CDE78A90043BC2D /* VGConditionEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7DCED0F13E0B14781A4608 /* VGConditionEqual.m */; };
+		17C137557F44CFACD471AECB /* VGDatePresentCondtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B8FE7357E66C4B1AEAE2C /* VGDatePresentCondtion.m */; };
+		184F7B6A99C6DBD7386880A7 /* VGNumberEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3737DE88A48B7185927D8E1B /* VGNumberEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1879E681B1A6138E3AA1DDEC /* VGDateRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A494248340ABF89868A8430F /* VGDateRangeCondition.m */; };
+		1C5DA45CDDB2FE550F116EDC /* VGConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = D141530091169DB1032B200E /* VGConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7C37649D904150B996EE0E /* VGStringCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 594239E9BC06C2CC58F26765 /* VGStringCondition.m */; };
+		1CC62224BC00895F46F08A39 /* VGComplexCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B699959E132DC460A0E24B /* VGComplexCondition.m */; };
+		1D1FCFAAC5175021F996D627 /* Pods-VGCondition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B37047AF0A70C70E14B417 /* Pods-VGCondition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E2BE17E9A0B2C2CE588F5EB /* VGComplexCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 124204AC8E417D6C2E446E0F /* VGComplexCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F216A9DA030BDA2027ABA67 /* VGObjectPresentCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD7C6A6ADFEAEB1F0A251F5 /* VGObjectPresentCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F4EE40666525335ABD115AB /* VGEmailCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1DF5CFA06D4F5F47484FA /* VGEmailCondition.m */; };
+		2190DBBBEE77E5DD6B5E8369 /* VGCondition.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C1A20C340DCF5869CB996CA /* VGCondition.bundle */; };
+		228ACD24302F46AB81479EBE /* VGStringRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A267923B3B455FDC35D2231 /* VGStringRangeCondition.m */; };
+		2403660EF617DEC7D277BC4E /* VGValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7966AE54C205624A6267FF54 /* VGValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2713D761D6A44053B43A70D7 /* Pods-VGCondition_Example-VGCondition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1C7D4D4E7A7FBA967E4485 /* Pods-VGCondition_Example-VGCondition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28B2CAFA72BF396855D6B63C /* VGAlphabeticCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = DE38872206DF4BB4A25AA10F /* VGAlphabeticCondition.m */; };
+		316250AB8BF40297E171DA27 /* VGStringConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCFCF85BA48690D4059D656 /* VGStringConditionPresent.m */; };
+		333C44FFB39ABFE4513C7918 /* VGObjectPresentCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B042E0C5393F32BCC04B04F /* VGObjectPresentCondition.m */; };
+		361C32913A4D3CBDDC506828 /* VGDateCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB86A1AF81953C2484623C3A /* VGDateCondition.m */; };
+		371848A3EEF0B83C2631B658 /* VGEmailCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 16170711774BDFF96D9A960D /* VGEmailCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39035D3BF8E6CA70BE37ADED /* VGStringEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E27B6ACF1F2A54E9C360539 /* VGStringEqualCondition.m */; };
+		3FD8546B0465F1C18797C7C4 /* VGConditonRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA6897762590A049BA49BA5 /* VGConditonRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F31DFC441605B53924B9A3 /* VGCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A09BCCCF6C5E244BE4534D /* VGCondition.m */; };
+		46086EB7C20887A51363F605 /* VGNumberRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4479FE1D7BC8B0C71A3D3E21 /* VGNumberRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4922AC7E3F22B3CDE319235B /* VGDateRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 18EB778F7347AE4CD1F7E1E7 /* VGDateRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49CE84FCFE12ECFAFB6DB5BD /* Pods-VGCondition_Example-VGCondition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B03B9B10ADE59888904AD7 /* Pods-VGCondition_Example-VGCondition-dummy.m */; };
+		4F1B96B7628B53C0A14187C5 /* VGConditionTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 7036D2AFFA0AB0001E4FD3AD /* VGConditionTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51CA3E2EDE9ED819778E1798 /* VGConditionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CAD8E5E84F0FB5D3030D67 /* VGConditionTime.m */; };
+		5C27997F9FFFB09F7678A646 /* VGCondition.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3827A65C40B3A58DBE878947 /* VGCondition.bundle */; };
+		5D9127B0C7F5E3E2062818A9 /* VGPasswordStrengthCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = B93477E3B6C524DA07B88B3A /* VGPasswordStrengthCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E939A337E60296F7B975F44 /* VGDateEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 40745878998211FD5E0658CA /* VGDateEqualCondition.m */; };
+		5EA2BF949BB5A20C50596F73 /* Pods-VGCondition_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9058EEDF97CEB707AE6688BC /* Pods-VGCondition_Example-dummy.m */; };
+		6012CFDEB226E67773257691 /* VGComplexCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B699959E132DC460A0E24B /* VGComplexCondition.m */; };
+		633A0A2707CBF7016E608F01 /* VGNumberRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4479FE1D7BC8B0C71A3D3E21 /* VGNumberRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65DED046A1C6F0AC8F8C52DE /* VGNumberEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3737DE88A48B7185927D8E1B /* VGNumberEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65FE72CAC30841666D9E154D /* VGAlphabeticCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 192F56CCE4B88D30832207C0 /* VGAlphabeticCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		665E15784A39499FAA8367E5 /* VGDateEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5811451896F716363EBFB640 /* VGDateEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		681D9BAB3ADEA10248272B73 /* VGCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 107377E7062FB8AAFE845165 /* VGCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B1C9BFD636C2F8145489C95 /* VGStringConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCFCF85BA48690D4059D656 /* VGStringConditionPresent.m */; };
+		6E2356DF71A01C836D2AD376 /* VGPasswordStrengthCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A45577EA832D1924C613C75F /* VGPasswordStrengthCondition.m */; };
+		6F1DC0E655B4156AAED76FD1 /* VGComplexCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 124204AC8E417D6C2E446E0F /* VGComplexCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73432735788D6FCB2E44E0B3 /* VGValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 961C1B15AD619BA713D0C864 /* VGValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75BF399EB3F9F79781CA7651 /* VGRangeConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E54453C19ED2C5BCE4300C /* VGRangeConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75FB0EB87020CC4E0CCDF167 /* VGStringCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 594239E9BC06C2CC58F26765 /* VGStringCondition.m */; };
+		78D3EFEA101A9116B61B5D58 /* VGAlphabeticCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 192F56CCE4B88D30832207C0 /* VGAlphabeticCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B82AEFBE292C93615E9B010 /* VGDateRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 18EB778F7347AE4CD1F7E1E7 /* VGDateRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C7B9E8F5C19B4DA43058FF0 /* Pods-VGCondition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BDD8BF6646A1243BB94665 /* Pods-VGCondition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82C270D8D9034A04D340A86B /* VGNumberEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F74C7C9EA2ED5DD8E64DA53 /* VGNumberEqualCondition.m */; };
+		8428BA9329E154376B294269 /* VGEmailCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1DF5CFA06D4F5F47484FA /* VGEmailCondition.m */; };
+		84466D455B3C6208548775B7 /* VGNumberRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 132A62CA784C882B590ADF12 /* VGNumberRangeCondition.m */; };
+		86E40DFE6DCAC324F6E5414F /* VGStringConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2D63C47B043D5BAF0AA0A2 /* VGStringConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A843F53734B6D4DC39EBBF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A189FE3E4F80A9A35FF434D8 /* Foundation.framework */; };
+		8DAE58BAA81A53FC2E465207 /* VGStringRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A267923B3B455FDC35D2231 /* VGStringRangeCondition.m */; };
+		8EFD8C31739D3E0312DF9F95 /* VGValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 961C1B15AD619BA713D0C864 /* VGValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C9AF8F946E6DF3E83E1DFD /* VGEqualConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDA0174D8F6A0734DD299B1 /* VGEqualConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C65E70C72A3A90D268A7576 /* VGStringEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 978879701A7178C33AF6E007 /* VGStringEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D1297320A4789159B8494BC /* VGConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = D141530091169DB1032B200E /* VGConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E4E3CEE8C73855D555996CF /* VGNumberConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 97302612F39A351E948D1E91 /* VGNumberConditionPresent.m */; };
+		A12676377F43AF2DF8813A32 /* VGConditionTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 7036D2AFFA0AB0001E4FD3AD /* VGConditionTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2A4D685A38068292ACF4D7A /* VGConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2924A397A70E2C63861DBD9A /* VGConditionPresent.m */; };
+		A54ECAE911B8F73E4598CF36 /* Pods-VGCondition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 891AE3FB43809C69B1AF97EA /* Pods-VGCondition_Tests-dummy.m */; };
+		AAE42F3A1139ACF3663AC8AA /* VGStringEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 978879701A7178C33AF6E007 /* VGStringEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE105E1F1CC1E438482CFD37 /* VGConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF8C69B0E6726A08F4216E4 /* VGConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0EED20248AD68E89D4449C3 /* VGDateRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A494248340ABF89868A8430F /* VGDateRangeCondition.m */; };
+		B15A21A9F8505CDA5E2D950A /* VGNumberCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = BE343AEB0DE1D73B305F8DF6 /* VGNumberCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B18CB0BAC7989CAE34763B3B /* VGNumberConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 97302612F39A351E948D1E91 /* VGNumberConditionPresent.m */; };
+		B772F5FEC14A19B981150E7E /* VGEqualConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDA0174D8F6A0734DD299B1 /* VGEqualConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B938EBF8911F6AFB59E7E414 /* VGPasswordStrengthCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A45577EA832D1924C613C75F /* VGPasswordStrengthCondition.m */; };
+		BA077F0A9A7D7E39FAD2A573 /* VGConditionEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 53153B65335CDA46FE532E68 /* VGConditionEqual.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC638F91CF45F1FEBC00FB97 /* VGAlphabeticCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = DE38872206DF4BB4A25AA10F /* VGAlphabeticCondition.m */; };
+		BCF251F7CB6B6F99A0DF7F28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A189FE3E4F80A9A35FF434D8 /* Foundation.framework */; };
+		C145EA225259001EE918305F /* VGNumberConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA3DE869BB2AE7E9726D311 /* VGNumberConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C7F02DBDA3D691C1E8DBA6 /* VGNumberConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA3DE869BB2AE7E9726D311 /* VGNumberConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C629D1638453D2F37F05C0ED /* VGDateCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3E88759060D8E8B47EF749 /* VGDateCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C79035B5D4468EDEF9EF42E0 /* VGConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF8C69B0E6726A08F4216E4 /* VGConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C82182D74793409BCBDD99D6 /* VGStringConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2D63C47B043D5BAF0AA0A2 /* VGStringConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC9F04BB3D796A7107EC363D /* VGCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A09BCCCF6C5E244BE4534D /* VGCondition.m */; };
+		CCCCBAA44625B1B0175E24CA /* VGConditonRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA6897762590A049BA49BA5 /* VGConditonRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD30239E86F7BABC2F1D5234 /* VGRangeConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E54453C19ED2C5BCE4300C /* VGRangeConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE5505CA6798BDA2D80CE67B /* VGDatePresentCondtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 706B8FE7357E66C4B1AEAE2C /* VGDatePresentCondtion.m */; };
+		D14EEC957C8CE92B06AD2F24 /* VGStringEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E27B6ACF1F2A54E9C360539 /* VGStringEqualCondition.m */; };
+		D18168D869BE454E5FAE13A6 /* VGValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7966AE54C205624A6267FF54 /* VGValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1A213F2E0DE263C8472BBE8 /* VGNumberEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F74C7C9EA2ED5DD8E64DA53 /* VGNumberEqualCondition.m */; };
+		D699EE8C3205CEBAC7253122 /* VGValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 291247994408853399E2EB9A /* VGValidator.m */; };
+		D6DF3E00D08975858857B9B6 /* VGConditionEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7DCED0F13E0B14781A4608 /* VGConditionEqual.m */; };
+		D809306D5A56F7F4977D1D07 /* VGValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 291247994408853399E2EB9A /* VGValidator.m */; };
+		D8B02B8BC85BE5C945620159 /* VGNumberRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 132A62CA784C882B590ADF12 /* VGNumberRangeCondition.m */; };
+		DA006F04A5C69F9F5CA21FFF /* VGConditionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CAD8E5E84F0FB5D3030D67 /* VGConditionTime.m */; };
+		DA2702801B8EAB46FA1E5DBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A189FE3E4F80A9A35FF434D8 /* Foundation.framework */; };
+		DAF24171B878418AB4342111 /* VGDateEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 40745878998211FD5E0658CA /* VGDateEqualCondition.m */; };
+		DD21C833EEC05C1706B5B9FB /* VGEmailCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 16170711774BDFF96D9A960D /* VGEmailCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF8596B3F02AC7EFC749190C /* VGConditonRange.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9389CA950E76F1B9822A6 /* VGConditonRange.m */; };
+		E04C54E62EF0097223D4814D /* VGStringRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5170654A427EC2390CDFD66C /* VGStringRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0AE72C9B4C27A2ED7EC15ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A189FE3E4F80A9A35FF434D8 /* Foundation.framework */; };
+		E2DC2C5D49F37EF14D0E0D48 /* VGDateEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5811451896F716363EBFB640 /* VGDateEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7DBB7E4F0CDAB305E0BB2E3 /* VGConditonRange.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA9389CA950E76F1B9822A6 /* VGConditonRange.m */; };
+		EAE41957D99A682DBDE2F249 /* VGCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 107377E7062FB8AAFE845165 /* VGCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE6856A400C6278E0DD9693 /* VGStringCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FFD016B6DCC30B6E14C00B /* VGStringCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F074CD618563A0BFB0C4515E /* VGStringRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5170654A427EC2390CDFD66C /* VGStringRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B15E86E499C956AF817D01 /* VGObjectPresentCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B042E0C5393F32BCC04B04F /* VGObjectPresentCondition.m */; };
+		F38A9A4D8AD9E5DFC3571593 /* VGDateCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3E88759060D8E8B47EF749 /* VGDateCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0E460F945E08039DA22E15 /* Pods-VGCondition_Tests-VGCondition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 582E242D14821335B074F120 /* Pods-VGCondition_Tests-VGCondition-dummy.m */; };
+		FA9BD3D21912421235FD3586 /* VGDatePresentCondtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A33E8F258FA8D22F5F874D0 /* VGDatePresentCondtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBA9B468A739744DC7F41E03 /* VGConditionEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 53153B65335CDA46FE532E68 /* VGConditionEqual.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCED3CAA64D632BE2B067B4D /* Pods-VGCondition_Tests-VGCondition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0302FC6D61F8ABD7C39381B /* Pods-VGCondition_Tests-VGCondition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD2C9A0F82EE00471121CB6D /* VGDatePresentCondtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A33E8F258FA8D22F5F874D0 /* VGDatePresentCondtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD86FE80182251536E1BF400 /* VGNumberCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E3D98243B59484D9372859 /* VGNumberCondition.m */; };
+		FF6E07AD9B4B7AE75BD4A0AF /* VGPasswordStrengthCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = B93477E3B6C524DA07B88B3A /* VGPasswordStrengthCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C4998F04AE4FD160783A860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDED53BC41ADA758072256E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF74FB0B70299DADB2162036;
+			remoteInfo = "Pods-VGCondition_Tests-VGCondition";
+		};
+		963EFA4E9868FE85BE9104FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDED53BC41ADA758072256E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2BEAC39057CF0E1DDDF47C4;
+			remoteInfo = "Pods-VGCondition_Tests-VGCondition-VGCondition";
+		};
+		AC567E16A67CC750642C2AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDED53BC41ADA758072256E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764D804650C14BD2451F8AE0;
+			remoteInfo = "Pods-VGCondition_Example-VGCondition";
+		};
+		C93EC625F14EF40C8132E8C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDED53BC41ADA758072256E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 146F5D977DB1D48FE3CBF441;
+			remoteInfo = "Pods-VGCondition_Example-VGCondition-VGCondition";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CE351AAAD3BE97B2DE488E /* Pods-VGCondition_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGCondition_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D90ED29086065FA5CF01DEC /* VGCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F11D146036419F14CB45188 /* Pods-VGCondition_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGCondition_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		107377E7062FB8AAFE845165 /* VGCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCondition.h; sourceTree = "<group>"; };
+		124204AC8E417D6C2E446E0F /* VGComplexCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGComplexCondition.h; sourceTree = "<group>"; };
+		130313D5D3EABC6C3C9230C9 /* Pods-VGCondition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		132A62CA784C882B590ADF12 /* VGNumberRangeCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberRangeCondition.m; sourceTree = "<group>"; };
+		14BD11399A07E05FD57E5D72 /* Pods-VGCondition_Tests-VGCondition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-VGCondition_Tests-VGCondition-prefix.pch"; path = "../Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition-prefix.pch"; sourceTree = "<group>"; };
+		16170711774BDFF96D9A960D /* VGEmailCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGEmailCondition.h; sourceTree = "<group>"; };
+		18EB778F7347AE4CD1F7E1E7 /* VGDateRangeCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDateRangeCondition.h; sourceTree = "<group>"; };
+		192F56CCE4B88D30832207C0 /* VGAlphabeticCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGAlphabeticCondition.h; sourceTree = "<group>"; };
+		1E27B6ACF1F2A54E9C360539 /* VGStringEqualCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringEqualCondition.m; sourceTree = "<group>"; };
+		27B699959E132DC460A0E24B /* VGComplexCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGComplexCondition.m; sourceTree = "<group>"; };
+		291247994408853399E2EB9A /* VGValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGValidator.m; sourceTree = "<group>"; };
+		2924A397A70E2C63861DBD9A /* VGConditionPresent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditionPresent.m; sourceTree = "<group>"; };
+		2C88B7AD62BBAA51364407A1 /* Pods-VGCondition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		31E54453C19ED2C5BCE4300C /* VGRangeConditionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGRangeConditionProtocol.h; sourceTree = "<group>"; };
+		34FFD016B6DCC30B6E14C00B /* VGStringCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringCondition.h; sourceTree = "<group>"; };
+		3737DE88A48B7185927D8E1B /* VGNumberEqualCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberEqualCondition.h; sourceTree = "<group>"; };
+		3827A65C40B3A58DBE878947 /* VGCondition.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGCondition.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		392E086946183D28776359E9 /* Pods-VGCondition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Example.release.xcconfig"; sourceTree = "<group>"; };
+		39A49C3253F10E35C125F111 /* Pods-VGCondition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGCondition_Tests.modulemap"; sourceTree = "<group>"; };
+		3AF1DF5CFA06D4F5F47484FA /* VGEmailCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGEmailCondition.m; sourceTree = "<group>"; };
+		3F74C7C9EA2ED5DD8E64DA53 /* VGNumberEqualCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberEqualCondition.m; sourceTree = "<group>"; };
+		3FB4746608C98C324D7FB83C /* Pods-VGCondition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		40745878998211FD5E0658CA /* VGDateEqualCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDateEqualCondition.m; sourceTree = "<group>"; };
+		43997B46A9E3779C0F99F3C7 /* Pods-VGCondition_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGCondition_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4479FE1D7BC8B0C71A3D3E21 /* VGNumberRangeCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberRangeCondition.h; sourceTree = "<group>"; };
+		4BA6897762590A049BA49BA5 /* VGConditonRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditonRange.h; sourceTree = "<group>"; };
+		50EF563B22B46AE8DB4E5561 /* Pods-VGCondition_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGCondition_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5170654A427EC2390CDFD66C /* VGStringRangeCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringRangeCondition.h; sourceTree = "<group>"; };
+		53153B65335CDA46FE532E68 /* VGConditionEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionEqual.h; sourceTree = "<group>"; };
+		55739E44040A3C10A7AD1AB1 /* Pods-VGCondition_Example-VGCondition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Example-VGCondition.xcconfig"; sourceTree = "<group>"; };
+		5811451896F716363EBFB640 /* VGDateEqualCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDateEqualCondition.h; sourceTree = "<group>"; };
+		582E242D14821335B074F120 /* Pods-VGCondition_Tests-VGCondition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-VGCondition_Tests-VGCondition-dummy.m"; path = "../Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition-dummy.m"; sourceTree = "<group>"; };
+		594239E9BC06C2CC58F26765 /* VGStringCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringCondition.m; sourceTree = "<group>"; };
+		60B37047AF0A70C70E14B417 /* Pods-VGCondition_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Tests-umbrella.h"; sourceTree = "<group>"; };
+		66B4B8A34AF20D9BB650D44D /* Pods-VGCondition_Example-VGCondition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Example-VGCondition-prefix.pch"; sourceTree = "<group>"; };
+		7036D2AFFA0AB0001E4FD3AD /* VGConditionTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionTime.h; sourceTree = "<group>"; };
+		706B8FE7357E66C4B1AEAE2C /* VGDatePresentCondtion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDatePresentCondtion.m; sourceTree = "<group>"; };
+		7966AE54C205624A6267FF54 /* VGValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGValidator.h; sourceTree = "<group>"; };
+		7A267923B3B455FDC35D2231 /* VGStringRangeCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringRangeCondition.m; sourceTree = "<group>"; };
+		7A33E8F258FA8D22F5F874D0 /* VGDatePresentCondtion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDatePresentCondtion.h; sourceTree = "<group>"; };
+		7C1A20C340DCF5869CB996CA /* VGCondition.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGCondition.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		820E07ADCD952FCD81AE630E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891AE3FB43809C69B1AF97EA /* Pods-VGCondition_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGCondition_Tests-dummy.m"; sourceTree = "<group>"; };
+		8B042E0C5393F32BCC04B04F /* VGObjectPresentCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGObjectPresentCondition.m; sourceTree = "<group>"; };
+		8C7DCED0F13E0B14781A4608 /* VGConditionEqual.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditionEqual.m; sourceTree = "<group>"; };
+		8D1C9C598E544DDD28183005 /* Pods_VGCondition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGCondition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9058EEDF97CEB707AE6688BC /* Pods-VGCondition_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGCondition_Example-dummy.m"; sourceTree = "<group>"; };
+		93E3D98243B59484D9372859 /* VGNumberCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberCondition.m; sourceTree = "<group>"; };
+		961C1B15AD619BA713D0C864 /* VGValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGValidation.h; sourceTree = "<group>"; };
+		97302612F39A351E948D1E91 /* VGNumberConditionPresent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberConditionPresent.m; sourceTree = "<group>"; };
+		978879701A7178C33AF6E007 /* VGStringEqualCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringEqualCondition.h; sourceTree = "<group>"; };
+		A189FE3E4F80A9A35FF434D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A45577EA832D1924C613C75F /* VGPasswordStrengthCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGPasswordStrengthCondition.m; sourceTree = "<group>"; };
+		A494248340ABF89868A8430F /* VGDateRangeCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDateRangeCondition.m; sourceTree = "<group>"; };
+		A9ABFA24A5EF61CC7E12705F /* Pods-VGCondition_Example-VGCondition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGCondition_Example-VGCondition.modulemap"; sourceTree = "<group>"; };
+		AB86A1AF81953C2484623C3A /* VGDateCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDateCondition.m; sourceTree = "<group>"; };
+		ADD7C6A6ADFEAEB1F0A251F5 /* VGObjectPresentCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGObjectPresentCondition.h; sourceTree = "<group>"; };
+		AE1C7D4D4E7A7FBA967E4485 /* Pods-VGCondition_Example-VGCondition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Example-VGCondition-umbrella.h"; sourceTree = "<group>"; };
+		AF77513E9EED4083E8DA94C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B049B52AF9641FCB24D6D13F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A09BCCCF6C5E244BE4534D /* VGCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCondition.m; sourceTree = "<group>"; };
+		B2CAD8E5E84F0FB5D3030D67 /* VGConditionTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditionTime.m; sourceTree = "<group>"; };
+		B5CCDCDE2380D6DE1E22D1E8 /* Pods-VGCondition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGCondition_Example.modulemap"; sourceTree = "<group>"; };
+		B93477E3B6C524DA07B88B3A /* VGPasswordStrengthCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGPasswordStrengthCondition.h; sourceTree = "<group>"; };
+		B9BB397892DA2411387DD735 /* Pods-VGCondition_Tests-VGCondition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGCondition_Tests-VGCondition.xcconfig"; path = "../Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition.xcconfig"; sourceTree = "<group>"; };
+		BB2D63C47B043D5BAF0AA0A2 /* VGStringConditionPresent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringConditionPresent.h; sourceTree = "<group>"; };
+		BCA9389CA950E76F1B9822A6 /* VGConditonRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditonRange.m; sourceTree = "<group>"; };
+		BD7B2C81CA9463608045CAAD /* Pods-VGCondition_Tests-VGCondition-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGCondition_Tests-VGCondition-Private.xcconfig"; path = "../Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition-Private.xcconfig"; sourceTree = "<group>"; };
+		BE343AEB0DE1D73B305F8DF6 /* VGNumberCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberCondition.h; sourceTree = "<group>"; };
+		C05FCBDDB920958260206B7B /* Pods-VGCondition_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Example-environment.h"; sourceTree = "<group>"; };
+		C0E0A52E132AE04B1F2B0CBE /* Pods-VGCondition_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Tests-environment.h"; sourceTree = "<group>"; };
+		C1414964E3A70FF7DE36467B /* VGCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D20CC3B5EE5421DFE1F864 /* Pods-VGCondition_Tests-VGCondition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-VGCondition_Tests-VGCondition.modulemap"; path = "../Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition.modulemap"; sourceTree = "<group>"; };
+		C307FE69D0593F238853D00A /* Pods-VGCondition_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C38FFDACD2D5F0AA6E2676F5 /* Pods-VGCondition_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Tests-resources.sh"; sourceTree = "<group>"; };
+		CEA3DE869BB2AE7E9726D311 /* VGNumberConditionPresent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberConditionPresent.h; sourceTree = "<group>"; };
+		D141530091169DB1032B200E /* VGConditionPresent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionPresent.h; sourceTree = "<group>"; };
+		D7E241C78928C814A9F54EAF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DAF8C69B0E6726A08F4216E4 /* VGConditionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionProtocol.h; sourceTree = "<group>"; };
+		DDDA0174D8F6A0734DD299B1 /* VGEqualConditionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGEqualConditionProtocol.h; sourceTree = "<group>"; };
+		DE38872206DF4BB4A25AA10F /* VGAlphabeticCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGAlphabeticCondition.m; sourceTree = "<group>"; };
+		DEAB39E76704B3EF9651089B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-VGCondition_Tests-VGCondition/Info.plist"; sourceTree = "<group>"; };
+		E0302FC6D61F8ABD7C39381B /* Pods-VGCondition_Tests-VGCondition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-VGCondition_Tests-VGCondition-umbrella.h"; path = "../Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition-umbrella.h"; sourceTree = "<group>"; };
+		EF3E88759060D8E8B47EF749 /* VGDateCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDateCondition.h; sourceTree = "<group>"; };
+		F084F059D78BAFBB0273824D /* Pods-VGCondition_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Example-resources.sh"; sourceTree = "<group>"; };
+		F2B03B9B10ADE59888904AD7 /* Pods-VGCondition_Example-VGCondition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGCondition_Example-VGCondition-dummy.m"; sourceTree = "<group>"; };
+		F4BDD8BF6646A1243BB94665 /* Pods-VGCondition_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Example-umbrella.h"; sourceTree = "<group>"; };
+		FBA2F1DE947F87DA14A96DB5 /* Pods-VGCondition_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		FD25D755F1FDC0244D05477C /* Pods-VGCondition_Example-VGCondition-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Example-VGCondition-Private.xcconfig"; sourceTree = "<group>"; };
+		FDCFCF85BA48690D4059D656 /* VGStringConditionPresent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringConditionPresent.m; sourceTree = "<group>"; };
+		FF551849EBD5DA3F4627520E /* Pods_VGCondition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGCondition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300E0B454B3A811DE5EA2E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AE72C9B4C27A2ED7EC15ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65EC96CF0D95F78CAD530279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F9DB756FF2BDF5F3C16EE83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF251F7CB6B6F99A0DF7F28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8DD452C945048D132963C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A843F53734B6D4DC39EBBF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0803E463099954771327FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2702801B8EAB46FA1E5DBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F73CDEDFCFFC28226730D19D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		064396571172E0682D6C3682 = {
+			isa = PBXGroup;
+			children = (
+				D7E241C78928C814A9F54EAF /* Podfile */,
+				1D303E0409C28643612637FF /* Development Pods */,
+				6AD02CACCC49F77EBA6E8461 /* Frameworks */,
+				F921EBD1A74EAD4850294E95 /* Products */,
+				FFF9FCDDC2357CEA6CDB313F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		198A557CB4DB99A9E7E6DBDA /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C71E57E4923AD8AB8C73D /* VGConditionTime */,
+				408342E8113ED5F3A8F612C1 /* VGDateCondition */,
+				29A1E2440EC8CF1D6D442C0E /* VGDateEqualCondition */,
+				978AE910CE4EC2F618098950 /* VGDatePresentCondtion */,
+				79F3BA0E504D685BDF39F5B7 /* VGDateRangeCondition */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		1D303E0409C28643612637FF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3E8DC826CFAAB3FC168B474 /* VGCondition */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1D97C9ACBD60579596DF19B2 /* VGStringEqualCondition */ = {
+			isa = PBXGroup;
+			children = (
+				978879701A7178C33AF6E007 /* VGStringEqualCondition.h */,
+				1E27B6ACF1F2A54E9C360539 /* VGStringEqualCondition.m */,
+			);
+			path = VGStringEqualCondition;
+			sourceTree = "<group>";
+		};
+		29A1E2440EC8CF1D6D442C0E /* VGDateEqualCondition */ = {
+			isa = PBXGroup;
+			children = (
+				5811451896F716363EBFB640 /* VGDateEqualCondition.h */,
+				40745878998211FD5E0658CA /* VGDateEqualCondition.m */,
+			);
+			path = VGDateEqualCondition;
+			sourceTree = "<group>";
+		};
+		2AACFCCCACEA28749FBF9296 /* VGConditonRange */ = {
+			isa = PBXGroup;
+			children = (
+				4BA6897762590A049BA49BA5 /* VGConditonRange.h */,
+				BCA9389CA950E76F1B9822A6 /* VGConditonRange.m */,
+				31E54453C19ED2C5BCE4300C /* VGRangeConditionProtocol.h */,
+			);
+			path = VGConditonRange;
+			sourceTree = "<group>";
+		};
+		3AB2AE087FA4BDF9E096EFA0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B875925CA2F6566025CB9A7B /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		3C64BD6E9F6AB3801FEF195E /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				6E0EE9A87198C698F10A3D11 /* VGObjectPresentCondition */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		3CC50D4E2E47F7C5C91AD943 /* VGAlphabeticCondition */ = {
+			isa = PBXGroup;
+			children = (
+				192F56CCE4B88D30832207C0 /* VGAlphabeticCondition.h */,
+				DE38872206DF4BB4A25AA10F /* VGAlphabeticCondition.m */,
+			);
+			path = VGAlphabeticCondition;
+			sourceTree = "<group>";
+		};
+		408342E8113ED5F3A8F612C1 /* VGDateCondition */ = {
+			isa = PBXGroup;
+			children = (
+				EF3E88759060D8E8B47EF749 /* VGDateCondition.h */,
+				AB86A1AF81953C2484623C3A /* VGDateCondition.m */,
+			);
+			path = VGDateCondition;
+			sourceTree = "<group>";
+		};
+		4A1310E96C641D0739EB353C /* Pods-VGCondition_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B049B52AF9641FCB24D6D13F /* Info.plist */,
+				B5CCDCDE2380D6DE1E22D1E8 /* Pods-VGCondition_Example.modulemap */,
+				50EF563B22B46AE8DB4E5561 /* Pods-VGCondition_Example-acknowledgements.markdown */,
+				0F11D146036419F14CB45188 /* Pods-VGCondition_Example-acknowledgements.plist */,
+				9058EEDF97CEB707AE6688BC /* Pods-VGCondition_Example-dummy.m */,
+				C05FCBDDB920958260206B7B /* Pods-VGCondition_Example-environment.h */,
+				C307FE69D0593F238853D00A /* Pods-VGCondition_Example-frameworks.sh */,
+				F084F059D78BAFBB0273824D /* Pods-VGCondition_Example-resources.sh */,
+				F4BDD8BF6646A1243BB94665 /* Pods-VGCondition_Example-umbrella.h */,
+				130313D5D3EABC6C3C9230C9 /* Pods-VGCondition_Example.debug.xcconfig */,
+				392E086946183D28776359E9 /* Pods-VGCondition_Example.release.xcconfig */,
+			);
+			name = "Pods-VGCondition_Example";
+			path = "Target Support Files/Pods-VGCondition_Example";
+			sourceTree = "<group>";
+		};
+		4E1D15BC45749CCBDE450408 /* VGConditionPresent */ = {
+			isa = PBXGroup;
+			children = (
+				D141530091169DB1032B200E /* VGConditionPresent.h */,
+				2924A397A70E2C63861DBD9A /* VGConditionPresent.m */,
+			);
+			path = VGConditionPresent;
+			sourceTree = "<group>";
+		};
+		678D4F3FB481D44812860196 /* VGConditionEqual */ = {
+			isa = PBXGroup;
+			children = (
+				53153B65335CDA46FE532E68 /* VGConditionEqual.h */,
+				8C7DCED0F13E0B14781A4608 /* VGConditionEqual.m */,
+				DDDA0174D8F6A0734DD299B1 /* VGEqualConditionProtocol.h */,
+			);
+			path = VGConditionEqual;
+			sourceTree = "<group>";
+		};
+		6AD02CACCC49F77EBA6E8461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A04B706AA90066E4EE924A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0EE9A87198C698F10A3D11 /* VGObjectPresentCondition */ = {
+			isa = PBXGroup;
+			children = (
+				ADD7C6A6ADFEAEB1F0A251F5 /* VGObjectPresentCondition.h */,
+				8B042E0C5393F32BCC04B04F /* VGObjectPresentCondition.m */,
+			);
+			path = VGObjectPresentCondition;
+			sourceTree = "<group>";
+		};
+		7064472EE67114F329E56F0E /* VGCondition */ = {
+			isa = PBXGroup;
+			children = (
+				107377E7062FB8AAFE845165 /* VGCondition.h */,
+				B1A09BCCCF6C5E244BE4534D /* VGCondition.m */,
+				DAF8C69B0E6726A08F4216E4 /* VGConditionProtocol.h */,
+			);
+			path = VGCondition;
+			sourceTree = "<group>";
+		};
+		72444BA4B5FFBB7AB2811AE7 /* VGPasswordStrengthCondition */ = {
+			isa = PBXGroup;
+			children = (
+				B93477E3B6C524DA07B88B3A /* VGPasswordStrengthCondition.h */,
+				A45577EA832D1924C613C75F /* VGPasswordStrengthCondition.m */,
+			);
+			path = VGPasswordStrengthCondition;
+			sourceTree = "<group>";
+		};
+		79F3BA0E504D685BDF39F5B7 /* VGDateRangeCondition */ = {
+			isa = PBXGroup;
+			children = (
+				18EB778F7347AE4CD1F7E1E7 /* VGDateRangeCondition.h */,
+				A494248340ABF89868A8430F /* VGDateRangeCondition.m */,
+			);
+			path = VGDateRangeCondition;
+			sourceTree = "<group>";
+		};
+		7A76213865ED5A1871E7E4EC /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				F05CF5B1D5899EC7AE1A786B /* Complex */,
+				E9583363A1FB3570DFE3C77A /* Simple */,
+				7064472EE67114F329E56F0E /* VGCondition */,
+			);
+			path = Conditions;
+			sourceTree = "<group>";
+		};
+		7AED21BBBBF661C1E3D3A2B0 /* Pods-VGCondition_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				820E07ADCD952FCD81AE630E /* Info.plist */,
+				39A49C3253F10E35C125F111 /* Pods-VGCondition_Tests.modulemap */,
+				06CE351AAAD3BE97B2DE488E /* Pods-VGCondition_Tests-acknowledgements.markdown */,
+				43997B46A9E3779C0F99F3C7 /* Pods-VGCondition_Tests-acknowledgements.plist */,
+				891AE3FB43809C69B1AF97EA /* Pods-VGCondition_Tests-dummy.m */,
+				C0E0A52E132AE04B1F2B0CBE /* Pods-VGCondition_Tests-environment.h */,
+				FBA2F1DE947F87DA14A96DB5 /* Pods-VGCondition_Tests-frameworks.sh */,
+				C38FFDACD2D5F0AA6E2676F5 /* Pods-VGCondition_Tests-resources.sh */,
+				60B37047AF0A70C70E14B417 /* Pods-VGCondition_Tests-umbrella.h */,
+				3FB4746608C98C324D7FB83C /* Pods-VGCondition_Tests.debug.xcconfig */,
+				2C88B7AD62BBAA51364407A1 /* Pods-VGCondition_Tests.release.xcconfig */,
+			);
+			name = "Pods-VGCondition_Tests";
+			path = "Target Support Files/Pods-VGCondition_Tests";
+			sourceTree = "<group>";
+		};
+		7D9E4F8E865A08D01DCAA854 /* VGValidator */ = {
+			isa = PBXGroup;
+			children = (
+				7966AE54C205624A6267FF54 /* VGValidator.h */,
+				291247994408853399E2EB9A /* VGValidator.m */,
+			);
+			path = VGValidator;
+			sourceTree = "<group>";
+		};
+		808204A5D5ED4E188F01B21B /* VGNumberEqualCondition */ = {
+			isa = PBXGroup;
+			children = (
+				3737DE88A48B7185927D8E1B /* VGNumberEqualCondition.h */,
+				3F74C7C9EA2ED5DD8E64DA53 /* VGNumberEqualCondition.m */,
+			);
+			path = VGNumberEqualCondition;
+			sourceTree = "<group>";
+		};
+		85C154753DBF9827D3A8A5AA /* VGEmailCondition */ = {
+			isa = PBXGroup;
+			children = (
+				16170711774BDFF96D9A960D /* VGEmailCondition.h */,
+				3AF1DF5CFA06D4F5F47484FA /* VGEmailCondition.m */,
+			);
+			path = VGEmailCondition;
+			sourceTree = "<group>";
+		};
+		87A04B706AA90066E4EE924A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A189FE3E4F80A9A35FF434D8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		89B6C7B6FDCB69B31F06BEFF /* VGNumberRangeCondition */ = {
+			isa = PBXGroup;
+			children = (
+				4479FE1D7BC8B0C71A3D3E21 /* VGNumberRangeCondition.h */,
+				132A62CA784C882B590ADF12 /* VGNumberRangeCondition.m */,
+			);
+			path = VGNumberRangeCondition;
+			sourceTree = "<group>";
+		};
+		8F5C673B391CEE9CEC38C57D /* VGStringCondition */ = {
+			isa = PBXGroup;
+			children = (
+				34FFD016B6DCC30B6E14C00B /* VGStringCondition.h */,
+				594239E9BC06C2CC58F26765 /* VGStringCondition.m */,
+			);
+			path = VGStringCondition;
+			sourceTree = "<group>";
+		};
+		91AAE85F093640BA6A7D20FC /* VGStringConditionPresent */ = {
+			isa = PBXGroup;
+			children = (
+				BB2D63C47B043D5BAF0AA0A2 /* VGStringConditionPresent.h */,
+				FDCFCF85BA48690D4059D656 /* VGStringConditionPresent.m */,
+			);
+			path = VGStringConditionPresent;
+			sourceTree = "<group>";
+		};
+		978AE910CE4EC2F618098950 /* VGDatePresentCondtion */ = {
+			isa = PBXGroup;
+			children = (
+				7A33E8F258FA8D22F5F874D0 /* VGDatePresentCondtion.h */,
+				706B8FE7357E66C4B1AEAE2C /* VGDatePresentCondtion.m */,
+			);
+			path = VGDatePresentCondtion;
+			sourceTree = "<group>";
+		};
+		97C0DB96B77959B75D2513E2 /* VGComplexCondition */ = {
+			isa = PBXGroup;
+			children = (
+				124204AC8E417D6C2E446E0F /* VGComplexCondition.h */,
+				27B699959E132DC460A0E24B /* VGComplexCondition.m */,
+			);
+			path = VGComplexCondition;
+			sourceTree = "<group>";
+		};
+		9862EF77778267007F149877 /* VGStringRangeCondition */ = {
+			isa = PBXGroup;
+			children = (
+				5170654A427EC2390CDFD66C /* VGStringRangeCondition.h */,
+				7A267923B3B455FDC35D2231 /* VGStringRangeCondition.m */,
+			);
+			path = VGStringRangeCondition;
+			sourceTree = "<group>";
+		};
+		9C0C71E57E4923AD8AB8C73D /* VGConditionTime */ = {
+			isa = PBXGroup;
+			children = (
+				7036D2AFFA0AB0001E4FD3AD /* VGConditionTime.h */,
+				B2CAD8E5E84F0FB5D3030D67 /* VGConditionTime.m */,
+			);
+			path = VGConditionTime;
+			sourceTree = "<group>";
+		};
+		B875925CA2F6566025CB9A7B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				961C1B15AD619BA713D0C864 /* VGValidation.h */,
+				7A76213865ED5A1871E7E4EC /* Conditions */,
+				7D9E4F8E865A08D01DCAA854 /* VGValidator */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C3E8DC826CFAAB3FC168B474 /* VGCondition */ = {
+			isa = PBXGroup;
+			children = (
+				3AB2AE087FA4BDF9E096EFA0 /* Pod */,
+				E64D31D41A4096F1779EF50E /* Support Files */,
+			);
+			name = VGCondition;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CA8699F4EDBA486471242896 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				3CC50D4E2E47F7C5C91AD943 /* VGAlphabeticCondition */,
+				85C154753DBF9827D3A8A5AA /* VGEmailCondition */,
+				72444BA4B5FFBB7AB2811AE7 /* VGPasswordStrengthCondition */,
+				8F5C673B391CEE9CEC38C57D /* VGStringCondition */,
+				91AAE85F093640BA6A7D20FC /* VGStringConditionPresent */,
+				1D97C9ACBD60579596DF19B2 /* VGStringEqualCondition */,
+				9862EF77778267007F149877 /* VGStringRangeCondition */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		D0D7BB4ABE9D66CEE35F0E05 /* VGNumberConditionPresent */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3DE869BB2AE7E9726D311 /* VGNumberConditionPresent.h */,
+				97302612F39A351E948D1E91 /* VGNumberConditionPresent.m */,
+			);
+			path = VGNumberConditionPresent;
+			sourceTree = "<group>";
+		};
+		E62247F04627F822D6B3F8A7 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				F0887E297660F889B1F43850 /* VGNumberCondition */,
+				D0D7BB4ABE9D66CEE35F0E05 /* VGNumberConditionPresent */,
+				808204A5D5ED4E188F01B21B /* VGNumberEqualCondition */,
+				89B6C7B6FDCB69B31F06BEFF /* VGNumberRangeCondition */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		E64D31D41A4096F1779EF50E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF77513E9EED4083E8DA94C8 /* Info.plist */,
+				DEAB39E76704B3EF9651089B /* Info.plist */,
+				A9ABFA24A5EF61CC7E12705F /* Pods-VGCondition_Example-VGCondition.modulemap */,
+				55739E44040A3C10A7AD1AB1 /* Pods-VGCondition_Example-VGCondition.xcconfig */,
+				FD25D755F1FDC0244D05477C /* Pods-VGCondition_Example-VGCondition-Private.xcconfig */,
+				F2B03B9B10ADE59888904AD7 /* Pods-VGCondition_Example-VGCondition-dummy.m */,
+				66B4B8A34AF20D9BB650D44D /* Pods-VGCondition_Example-VGCondition-prefix.pch */,
+				AE1C7D4D4E7A7FBA967E4485 /* Pods-VGCondition_Example-VGCondition-umbrella.h */,
+				C1D20CC3B5EE5421DFE1F864 /* Pods-VGCondition_Tests-VGCondition.modulemap */,
+				B9BB397892DA2411387DD735 /* Pods-VGCondition_Tests-VGCondition.xcconfig */,
+				BD7B2C81CA9463608045CAAD /* Pods-VGCondition_Tests-VGCondition-Private.xcconfig */,
+				582E242D14821335B074F120 /* Pods-VGCondition_Tests-VGCondition-dummy.m */,
+				14BD11399A07E05FD57E5D72 /* Pods-VGCondition_Tests-VGCondition-prefix.pch */,
+				E0302FC6D61F8ABD7C39381B /* Pods-VGCondition_Tests-VGCondition-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-VGCondition_Example-VGCondition";
+			sourceTree = "<group>";
+		};
+		E9583363A1FB3570DFE3C77A /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				198A557CB4DB99A9E7E6DBDA /* NSDate */,
+				E62247F04627F822D6B3F8A7 /* NSNumber */,
+				3C64BD6E9F6AB3801FEF195E /* NSObject */,
+				CA8699F4EDBA486471242896 /* NSString */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		F05CF5B1D5899EC7AE1A786B /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				97C0DB96B77959B75D2513E2 /* VGComplexCondition */,
+				678D4F3FB481D44812860196 /* VGConditionEqual */,
+				4E1D15BC45749CCBDE450408 /* VGConditionPresent */,
+				2AACFCCCACEA28749FBF9296 /* VGConditonRange */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
+		F0887E297660F889B1F43850 /* VGNumberCondition */ = {
+			isa = PBXGroup;
+			children = (
+				BE343AEB0DE1D73B305F8DF6 /* VGNumberCondition.h */,
+				93E3D98243B59484D9372859 /* VGNumberCondition.m */,
+			);
+			path = VGNumberCondition;
+			sourceTree = "<group>";
+		};
+		F921EBD1A74EAD4850294E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1C9C598E544DDD28183005 /* Pods_VGCondition_Example.framework */,
+				FF551849EBD5DA3F4627520E /* Pods_VGCondition_Tests.framework */,
+				7C1A20C340DCF5869CB996CA /* VGCondition.bundle */,
+				3827A65C40B3A58DBE878947 /* VGCondition.bundle */,
+				C1414964E3A70FF7DE36467B /* VGCondition.framework */,
+				0D90ED29086065FA5CF01DEC /* VGCondition.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFF9FCDDC2357CEA6CDB313F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A1310E96C641D0739EB353C /* Pods-VGCondition_Example */,
+				7AED21BBBBF661C1E3D3A2B0 /* Pods-VGCondition_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00400E15A6878D24C1724030 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2713D761D6A44053B43A70D7 /* Pods-VGCondition_Example-VGCondition-umbrella.h in Headers */,
+				78D3EFEA101A9116B61B5D58 /* VGAlphabeticCondition.h in Headers */,
+				1E2BE17E9A0B2C2CE588F5EB /* VGComplexCondition.h in Headers */,
+				EAE41957D99A682DBDE2F249 /* VGCondition.h in Headers */,
+				FBA9B468A739744DC7F41E03 /* VGConditionEqual.h in Headers */,
+				1C5DA45CDDB2FE550F116EDC /* VGConditionPresent.h in Headers */,
+				C79035B5D4468EDEF9EF42E0 /* VGConditionProtocol.h in Headers */,
+				A12676377F43AF2DF8813A32 /* VGConditionTime.h in Headers */,
+				CCCCBAA44625B1B0175E24CA /* VGConditonRange.h in Headers */,
+				C629D1638453D2F37F05C0ED /* VGDateCondition.h in Headers */,
+				665E15784A39499FAA8367E5 /* VGDateEqualCondition.h in Headers */,
+				FD2C9A0F82EE00471121CB6D /* VGDatePresentCondtion.h in Headers */,
+				4922AC7E3F22B3CDE319235B /* VGDateRangeCondition.h in Headers */,
+				DD21C833EEC05C1706B5B9FB /* VGEmailCondition.h in Headers */,
+				B772F5FEC14A19B981150E7E /* VGEqualConditionProtocol.h in Headers */,
+				09B4C58AA82A3304C967B461 /* VGNumberCondition.h in Headers */,
+				C145EA225259001EE918305F /* VGNumberConditionPresent.h in Headers */,
+				65DED046A1C6F0AC8F8C52DE /* VGNumberEqualCondition.h in Headers */,
+				633A0A2707CBF7016E608F01 /* VGNumberRangeCondition.h in Headers */,
+				1F216A9DA030BDA2027ABA67 /* VGObjectPresentCondition.h in Headers */,
+				5D9127B0C7F5E3E2062818A9 /* VGPasswordStrengthCondition.h in Headers */,
+				CD30239E86F7BABC2F1D5234 /* VGRangeConditionProtocol.h in Headers */,
+				EBE6856A400C6278E0DD9693 /* VGStringCondition.h in Headers */,
+				86E40DFE6DCAC324F6E5414F /* VGStringConditionPresent.h in Headers */,
+				AAE42F3A1139ACF3663AC8AA /* VGStringEqualCondition.h in Headers */,
+				E04C54E62EF0097223D4814D /* VGStringRangeCondition.h in Headers */,
+				73432735788D6FCB2E44E0B3 /* VGValidation.h in Headers */,
+				D18168D869BE454E5FAE13A6 /* VGValidator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E1DBE648F62A108DE8BB1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCED3CAA64D632BE2B067B4D /* Pods-VGCondition_Tests-VGCondition-umbrella.h in Headers */,
+				65FE72CAC30841666D9E154D /* VGAlphabeticCondition.h in Headers */,
+				6F1DC0E655B4156AAED76FD1 /* VGComplexCondition.h in Headers */,
+				681D9BAB3ADEA10248272B73 /* VGCondition.h in Headers */,
+				BA077F0A9A7D7E39FAD2A573 /* VGConditionEqual.h in Headers */,
+				9D1297320A4789159B8494BC /* VGConditionPresent.h in Headers */,
+				AE105E1F1CC1E438482CFD37 /* VGConditionProtocol.h in Headers */,
+				4F1B96B7628B53C0A14187C5 /* VGConditionTime.h in Headers */,
+				3FD8546B0465F1C18797C7C4 /* VGConditonRange.h in Headers */,
+				F38A9A4D8AD9E5DFC3571593 /* VGDateCondition.h in Headers */,
+				E2DC2C5D49F37EF14D0E0D48 /* VGDateEqualCondition.h in Headers */,
+				FA9BD3D21912421235FD3586 /* VGDatePresentCondtion.h in Headers */,
+				7B82AEFBE292C93615E9B010 /* VGDateRangeCondition.h in Headers */,
+				371848A3EEF0B83C2631B658 /* VGEmailCondition.h in Headers */,
+				92C9AF8F946E6DF3E83E1DFD /* VGEqualConditionProtocol.h in Headers */,
+				B15A21A9F8505CDA5E2D950A /* VGNumberCondition.h in Headers */,
+				C3C7F02DBDA3D691C1E8DBA6 /* VGNumberConditionPresent.h in Headers */,
+				184F7B6A99C6DBD7386880A7 /* VGNumberEqualCondition.h in Headers */,
+				46086EB7C20887A51363F605 /* VGNumberRangeCondition.h in Headers */,
+				0448E0C26944AD97487F82C8 /* VGObjectPresentCondition.h in Headers */,
+				FF6E07AD9B4B7AE75BD4A0AF /* VGPasswordStrengthCondition.h in Headers */,
+				75BF399EB3F9F79781CA7651 /* VGRangeConditionProtocol.h in Headers */,
+				02F1698AE1E6409D71306C17 /* VGStringCondition.h in Headers */,
+				C82182D74793409BCBDD99D6 /* VGStringConditionPresent.h in Headers */,
+				9C65E70C72A3A90D268A7576 /* VGStringEqualCondition.h in Headers */,
+				F074CD618563A0BFB0C4515E /* VGStringRangeCondition.h in Headers */,
+				8EFD8C31739D3E0312DF9F95 /* VGValidation.h in Headers */,
+				2403660EF617DEC7D277BC4E /* VGValidator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5612D89DDF83DCBE858CF315 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7B9E8F5C19B4DA43058FF0 /* Pods-VGCondition_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FE16954B3F61EDDE24BE40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D1FCFAAC5175021F996D627 /* Pods-VGCondition_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		146F5D977DB1D48FE3CBF441 /* Pods-VGCondition_Example-VGCondition-VGCondition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1974817533BFAA8AE26550EF /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example-VGCondition-VGCondition" */;
+			buildPhases = (
+				A91FED0BBE6B870C0043D0D4 /* Sources */,
+				F73CDEDFCFFC28226730D19D /* Frameworks */,
+				C2AD37EC6DD2A48F1059ABB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VGCondition_Example-VGCondition-VGCondition";
+			productName = "Pods-VGCondition_Example-VGCondition-VGCondition";
+			productReference = 7C1A20C340DCF5869CB996CA /* VGCondition.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		764D804650C14BD2451F8AE0 /* Pods-VGCondition_Example-VGCondition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A279A846C215CE703967658 /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example-VGCondition" */;
+			buildPhases = (
+				BFE58CFB78BEE46A79282B03 /* Sources */,
+				D0803E463099954771327FA6 /* Frameworks */,
+				8B40DCC7BBF2D18B4444855A /* Resources */,
+				00400E15A6878D24C1724030 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA8812EE304FA0643A28163 /* PBXTargetDependency */,
+			);
+			name = "Pods-VGCondition_Example-VGCondition";
+			productName = "Pods-VGCondition_Example-VGCondition";
+			productReference = 0D90ED29086065FA5CF01DEC /* VGCondition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5AF59D1ACD5EE0FA9EC816C /* Pods-VGCondition_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E193DEF17D656E774AED9D /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example" */;
+			buildPhases = (
+				32E5D703FAAAC8AEBAF7FF35 /* Sources */,
+				300E0B454B3A811DE5EA2E7C /* Frameworks */,
+				5612D89DDF83DCBE858CF315 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48D8A0383475AD2DA9DDFFC2 /* PBXTargetDependency */,
+			);
+			name = "Pods-VGCondition_Example";
+			productName = "Pods-VGCondition_Example";
+			productReference = 8D1C9C598E544DDD28183005 /* Pods_VGCondition_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2BEAC39057CF0E1DDDF47C4 /* Pods-VGCondition_Tests-VGCondition-VGCondition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3126A2DAE5DF0B38712491D /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests-VGCondition-VGCondition" */;
+			buildPhases = (
+				C9CE9C79DD994B280A200CCB /* Sources */,
+				65EC96CF0D95F78CAD530279 /* Frameworks */,
+				96D100EAD7DD2C60D40BA028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VGCondition_Tests-VGCondition-VGCondition";
+			productName = "Pods-VGCondition_Tests-VGCondition-VGCondition";
+			productReference = 3827A65C40B3A58DBE878947 /* VGCondition.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D82F555FFA602D9D48182188 /* Pods-VGCondition_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86230A1521590A8DF34A3DFF /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests" */;
+			buildPhases = (
+				C75C6D85CCBBBF16E960F0EB /* Sources */,
+				C8DD452C945048D132963C86 /* Frameworks */,
+				88FE16954B3F61EDDE24BE40 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B11BC72CF25A71EACF286E /* PBXTargetDependency */,
+			);
+			name = "Pods-VGCondition_Tests";
+			productName = "Pods-VGCondition_Tests";
+			productReference = FF551849EBD5DA3F4627520E /* Pods_VGCondition_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF74FB0B70299DADB2162036 /* Pods-VGCondition_Tests-VGCondition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5909E808D02A2F4B39C05ABC /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests-VGCondition" */;
+			buildPhases = (
+				7E4053865E7C0B72F2F24CF1 /* Sources */,
+				6F9DB756FF2BDF5F3C16EE83 /* Frameworks */,
+				EA74BBC145865EA607BE49A9 /* Resources */,
+				28E1DBE648F62A108DE8BB1E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9693A3832D69AB7762ACDC15 /* PBXTargetDependency */,
+			);
+			name = "Pods-VGCondition_Tests-VGCondition";
+			productName = "Pods-VGCondition_Tests-VGCondition";
+			productReference = C1414964E3A70FF7DE36467B /* VGCondition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDED53BC41ADA758072256E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 2D5063FE8657580B8D4E1619 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 064396571172E0682D6C3682;
+			productRefGroup = F921EBD1A74EAD4850294E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5AF59D1ACD5EE0FA9EC816C /* Pods-VGCondition_Example */,
+				764D804650C14BD2451F8AE0 /* Pods-VGCondition_Example-VGCondition */,
+				146F5D977DB1D48FE3CBF441 /* Pods-VGCondition_Example-VGCondition-VGCondition */,
+				D82F555FFA602D9D48182188 /* Pods-VGCondition_Tests */,
+				EF74FB0B70299DADB2162036 /* Pods-VGCondition_Tests-VGCondition */,
+				D2BEAC39057CF0E1DDDF47C4 /* Pods-VGCondition_Tests-VGCondition-VGCondition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B40DCC7BBF2D18B4444855A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2190DBBBEE77E5DD6B5E8369 /* VGCondition.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D100EAD7DD2C60D40BA028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2AD37EC6DD2A48F1059ABB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA74BBC145865EA607BE49A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C27997F9FFFB09F7678A646 /* VGCondition.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32E5D703FAAAC8AEBAF7FF35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA2BF949BB5A20C50596F73 /* Pods-VGCondition_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4053865E7C0B72F2F24CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0E460F945E08039DA22E15 /* Pods-VGCondition_Tests-VGCondition-dummy.m in Sources */,
+				28B2CAFA72BF396855D6B63C /* VGAlphabeticCondition.m in Sources */,
+				1CC62224BC00895F46F08A39 /* VGComplexCondition.m in Sources */,
+				CC9F04BB3D796A7107EC363D /* VGCondition.m in Sources */,
+				D6DF3E00D08975858857B9B6 /* VGConditionEqual.m in Sources */,
+				A2A4D685A38068292ACF4D7A /* VGConditionPresent.m in Sources */,
+				51CA3E2EDE9ED819778E1798 /* VGConditionTime.m in Sources */,
+				DF8596B3F02AC7EFC749190C /* VGConditonRange.m in Sources */,
+				361C32913A4D3CBDDC506828 /* VGDateCondition.m in Sources */,
+				5E939A337E60296F7B975F44 /* VGDateEqualCondition.m in Sources */,
+				17C137557F44CFACD471AECB /* VGDatePresentCondtion.m in Sources */,
+				1879E681B1A6138E3AA1DDEC /* VGDateRangeCondition.m in Sources */,
+				8428BA9329E154376B294269 /* VGEmailCondition.m in Sources */,
+				09813AC151C87356EB729D5E /* VGNumberCondition.m in Sources */,
+				B18CB0BAC7989CAE34763B3B /* VGNumberConditionPresent.m in Sources */,
+				82C270D8D9034A04D340A86B /* VGNumberEqualCondition.m in Sources */,
+				84466D455B3C6208548775B7 /* VGNumberRangeCondition.m in Sources */,
+				333C44FFB39ABFE4513C7918 /* VGObjectPresentCondition.m in Sources */,
+				6E2356DF71A01C836D2AD376 /* VGPasswordStrengthCondition.m in Sources */,
+				75FB0EB87020CC4E0CCDF167 /* VGStringCondition.m in Sources */,
+				6B1C9BFD636C2F8145489C95 /* VGStringConditionPresent.m in Sources */,
+				D14EEC957C8CE92B06AD2F24 /* VGStringEqualCondition.m in Sources */,
+				8DAE58BAA81A53FC2E465207 /* VGStringRangeCondition.m in Sources */,
+				D809306D5A56F7F4977D1D07 /* VGValidator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91FED0BBE6B870C0043D0D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE58CFB78BEE46A79282B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CE84FCFE12ECFAFB6DB5BD /* Pods-VGCondition_Example-VGCondition-dummy.m in Sources */,
+				BC638F91CF45F1FEBC00FB97 /* VGAlphabeticCondition.m in Sources */,
+				6012CFDEB226E67773257691 /* VGComplexCondition.m in Sources */,
+				45F31DFC441605B53924B9A3 /* VGCondition.m in Sources */,
+				172FCC385CDE78A90043BC2D /* VGConditionEqual.m in Sources */,
+				1425CB5430AA631FA09F1556 /* VGConditionPresent.m in Sources */,
+				DA006F04A5C69F9F5CA21FFF /* VGConditionTime.m in Sources */,
+				E7DBB7E4F0CDAB305E0BB2E3 /* VGConditonRange.m in Sources */,
+				063D607EEFCE5078E25FD22C /* VGDateCondition.m in Sources */,
+				DAF24171B878418AB4342111 /* VGDateEqualCondition.m in Sources */,
+				CE5505CA6798BDA2D80CE67B /* VGDatePresentCondtion.m in Sources */,
+				B0EED20248AD68E89D4449C3 /* VGDateRangeCondition.m in Sources */,
+				1F4EE40666525335ABD115AB /* VGEmailCondition.m in Sources */,
+				FD86FE80182251536E1BF400 /* VGNumberCondition.m in Sources */,
+				9E4E3CEE8C73855D555996CF /* VGNumberConditionPresent.m in Sources */,
+				D1A213F2E0DE263C8472BBE8 /* VGNumberEqualCondition.m in Sources */,
+				D8B02B8BC85BE5C945620159 /* VGNumberRangeCondition.m in Sources */,
+				F2B15E86E499C956AF817D01 /* VGObjectPresentCondition.m in Sources */,
+				B938EBF8911F6AFB59E7E414 /* VGPasswordStrengthCondition.m in Sources */,
+				1C7C37649D904150B996EE0E /* VGStringCondition.m in Sources */,
+				316250AB8BF40297E171DA27 /* VGStringConditionPresent.m in Sources */,
+				39035D3BF8E6CA70BE37ADED /* VGStringEqualCondition.m in Sources */,
+				228ACD24302F46AB81479EBE /* VGStringRangeCondition.m in Sources */,
+				D699EE8C3205CEBAC7253122 /* VGValidator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75C6D85CCBBBF16E960F0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54ECAE911B8F73E4598CF36 /* Pods-VGCondition_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CE9C79DD994B280A200CCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48D8A0383475AD2DA9DDFFC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VGCondition_Example-VGCondition";
+			target = 764D804650C14BD2451F8AE0 /* Pods-VGCondition_Example-VGCondition */;
+			targetProxy = AC567E16A67CC750642C2AAF /* PBXContainerItemProxy */;
+		};
+		6DA8812EE304FA0643A28163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VGCondition_Example-VGCondition-VGCondition";
+			target = 146F5D977DB1D48FE3CBF441 /* Pods-VGCondition_Example-VGCondition-VGCondition */;
+			targetProxy = C93EC625F14EF40C8132E8C7 /* PBXContainerItemProxy */;
+		};
+		9693A3832D69AB7762ACDC15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VGCondition_Tests-VGCondition-VGCondition";
+			target = D2BEAC39057CF0E1DDDF47C4 /* Pods-VGCondition_Tests-VGCondition-VGCondition */;
+			targetProxy = 963EFA4E9868FE85BE9104FC /* PBXContainerItemProxy */;
+		};
+		B7B11BC72CF25A71EACF286E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VGCondition_Tests-VGCondition";
+			target = EF74FB0B70299DADB2162036 /* Pods-VGCondition_Tests-VGCondition */;
+			targetProxy = 2C4998F04AE4FD160783A860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C450803E488A4D9CE101220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21B64961DB68A8C324A773A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7B2C81CA9463608045CAAD /* Pods-VGCondition_Tests-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Tests-VGCondition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		352C2743C5855D9490B563AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C88B7AD62BBAA51364407A1 /* Pods-VGCondition_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Tests/Pods-VGCondition_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_VGCondition_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C10190B482600FD716B7D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD25D755F1FDC0244D05477C /* Pods-VGCondition_Example-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGCondition_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5712D37A56D064FE3A2E65EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB4746608C98C324D7FB83C /* Pods-VGCondition_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Tests/Pods-VGCondition_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_VGCondition_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DCE1A5997C87058E4156255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD25D755F1FDC0244D05477C /* Pods-VGCondition_Example-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGCondition_Example-VGCondition/Pods-VGCondition_Example-VGCondition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Example-VGCondition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Example-VGCondition/Pods-VGCondition_Example-VGCondition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60D6966B63A571EFFA04229F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392E086946183D28776359E9 /* Pods-VGCondition_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Example/Pods-VGCondition_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_VGCondition_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6610EAFF46E6A9E2FE9EB706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 130313D5D3EABC6C3C9230C9 /* Pods-VGCondition_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Example/Pods-VGCondition_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_VGCondition_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		767C42AE1EADD9A4F0F3656A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD25D755F1FDC0244D05477C /* Pods-VGCondition_Example-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGCondition_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		903ED998F37284151F849D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7B2C81CA9463608045CAAD /* Pods-VGCondition_Tests-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGCondition_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9F3A584DCB47BE69E57B5B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7B2C81CA9463608045CAAD /* Pods-VGCondition_Tests-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Tests-VGCondition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Tests-VGCondition/Pods-VGCondition_Tests-VGCondition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A687084AB6D9FFCE71106040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E9C68877FC65B25757063FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7B2C81CA9463608045CAAD /* Pods-VGCondition_Tests-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-VGCondition_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FD3BE415B9568B4703F96293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD25D755F1FDC0244D05477C /* Pods-VGCondition_Example-VGCondition-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-VGCondition_Example-VGCondition/Pods-VGCondition_Example-VGCondition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Example-VGCondition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Example-VGCondition/Pods-VGCondition_Example-VGCondition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = VGCondition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1974817533BFAA8AE26550EF /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example-VGCondition-VGCondition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767C42AE1EADD9A4F0F3656A /* Debug */,
+				4C10190B482600FD716B7D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5063FE8657580B8D4E1619 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A687084AB6D9FFCE71106040 /* Debug */,
+				0C450803E488A4D9CE101220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5909E808D02A2F4B39C05ABC /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests-VGCondition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3A584DCB47BE69E57B5B67 /* Debug */,
+				21B64961DB68A8C324A773A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86230A1521590A8DF34A3DFF /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5712D37A56D064FE3A2E65EF /* Debug */,
+				352C2743C5855D9490B563AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A279A846C215CE703967658 /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example-VGCondition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCE1A5997C87058E4156255 /* Debug */,
+				FD3BE415B9568B4703F96293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3126A2DAE5DF0B38712491D /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests-VGCondition-VGCondition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C68877FC65B25757063FDE /* Debug */,
+				903ED998F37284151F849D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E193DEF17D656E774AED9D /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6610EAFF46E6A9E2FE9EB706 /* Debug */,
+				60D6966B63A571EFFA04229F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDED53BC41ADA758072256E7 /* Project object */;
+}
