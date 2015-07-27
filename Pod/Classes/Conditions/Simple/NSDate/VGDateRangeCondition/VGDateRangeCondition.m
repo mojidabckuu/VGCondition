@@ -47,8 +47,8 @@
 - (NSError *)error {
     NSString *description = nil;
     
-    NSString *formattedMin = self.formatter ? [self.formatter stringFromDate:self.min] : self.min;
-    NSString *formattedMax = self.formatter ? [self.formatter stringFromDate:self.max] : self.max;
+    NSString *formattedMin = self.formatter ? [self.formatter stringFromDate:self.min] : [NSString stringWithFormat:@"%@", self.min];
+    NSString *formattedMax = self.formatter ? [self.formatter stringFromDate:self.max] : [NSString stringWithFormat:@"%@", self.max];
     if(self.localizedDescription) {
         description = [NSString stringWithFormat:self.localizedDescription, formattedMin, formattedMax];
         const char *positionFormat = [[self.localizedDescription stringByReplacingOccurrencesOfString:@"@" withString:@"s"] UTF8String];
