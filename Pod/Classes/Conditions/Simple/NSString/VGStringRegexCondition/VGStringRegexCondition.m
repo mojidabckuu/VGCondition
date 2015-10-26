@@ -35,7 +35,7 @@
 //            NSRange matchRange = [regex rangeOfFirstMatchInString:value options:0 range:NSMakeRange(0, value.length)];
 //            return (matchRange.location == 0) && (matchRange.length == value.length);
 //        }
-        return numberOfMatches == value.length;
+        return numberOfMatches;
     }
     return NO;
 }
