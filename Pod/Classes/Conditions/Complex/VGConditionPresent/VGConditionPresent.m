@@ -12,6 +12,7 @@
 #import "VGStringConditionPresent.h"
 #import "VGNumberConditionPresent.h"
 #import "VGDatePresentCondtion.h"
+#import "VGEnumerableConditionPresent.h"
 
 @implementation VGConditionPresent
 
@@ -20,6 +21,10 @@
     [self registerConditionClass:[VGStringConditionPresent class] objectClass:[NSString class]];
     [self registerConditionClass:[VGNumberCondition class] objectClass:[NSNumber class]];
     [self registerConditionClass:[VGDatePresentCondtion class] objectClass:[NSDate class]];
+    
+    [self registerConditionClass:[VGEnumerableConditionPresent class] objectClass:[NSArray class]];
+    [self registerConditionClass:[VGEnumerableConditionPresent class] objectClass:[NSDictionary class]];
+    [self registerConditionClass:[VGEnumerableConditionPresent class] objectClass:[NSSet class]];
 }
 
 #pragma mark - Accessors

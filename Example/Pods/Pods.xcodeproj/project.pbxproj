@@ -71,6 +71,8 @@
 		F508412E1BDE217A0034198E /* VGEnumerableCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F508412A1BDE20D60034198E /* VGEnumerableCondition.m */; settings = {ASSET_TAGS = (); }; };
 		F508412F1BDE217A0034198E /* VGConditionCount.h in Headers */ = {isa = PBXBuildFile; fileRef = F50841241BDE1E890034198E /* VGConditionCount.h */; settings = {ASSET_TAGS = (); }; };
 		F50841301BDE217A0034198E /* VGConditionCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F50841251BDE1E890034198E /* VGConditionCount.m */; settings = {ASSET_TAGS = (); }; };
+		F50841341BDE22420034198E /* VGEnumerableConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = F50841321BDE22420034198E /* VGEnumerableConditionPresent.h */; settings = {ASSET_TAGS = (); }; };
+		F50841351BDE22420034198E /* VGEnumerableConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = F50841331BDE22420034198E /* VGEnumerableConditionPresent.m */; settings = {ASSET_TAGS = (); }; };
 		F8E1418CA10851EB9D094788F29FF37D /* VGNumberRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = EA638144E7739336499B3DD92550A7F8 /* VGNumberRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9180D8D789C6181B40C8B1E652D949B /* VGDateEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A20D0BFE18C55F72F9BC3F2B58C26A /* VGDateEqualCondition.m */; };
 /* End PBXBuildFile section */
@@ -183,6 +185,8 @@
 		F50841251BDE1E890034198E /* VGConditionCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGConditionCount.m; sourceTree = "<group>"; };
 		F50841291BDE20D60034198E /* VGEnumerableCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGEnumerableCondition.h; sourceTree = "<group>"; };
 		F508412A1BDE20D60034198E /* VGEnumerableCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGEnumerableCondition.m; sourceTree = "<group>"; };
+		F50841321BDE22420034198E /* VGEnumerableConditionPresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGEnumerableConditionPresent.h; sourceTree = "<group>"; };
+		F50841331BDE22420034198E /* VGEnumerableConditionPresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGEnumerableConditionPresent.m; sourceTree = "<group>"; };
 		F6EE3E28468C3A155ECE3E5350328AA2 /* Pods-VGCondition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0A2FA0CC3A256664874C347DEE3736 /* VGNumberEqualCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberEqualCondition.h; sourceTree = "<group>"; };
 		FB7C044246C202102816DE86675A1F85 /* VGDatePresentCondtion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDatePresentCondtion.m; sourceTree = "<group>"; };
@@ -627,6 +631,7 @@
 		F50841221BDE1E630034198E /* Enumerable */ = {
 			isa = PBXGroup;
 			children = (
+				F50841311BDE22390034198E /* VGEnumerableConditionPresent */,
 				F50841281BDE20CE0034198E /* VGEnumerableCondition */,
 				F50841231BDE1E7E0034198E /* VGConditionCount */,
 			);
@@ -649,6 +654,15 @@
 				F508412A1BDE20D60034198E /* VGEnumerableCondition.m */,
 			);
 			path = VGEnumerableCondition;
+			sourceTree = "<group>";
+		};
+		F50841311BDE22390034198E /* VGEnumerableConditionPresent */ = {
+			isa = PBXGroup;
+			children = (
+				F50841321BDE22420034198E /* VGEnumerableConditionPresent.h */,
+				F50841331BDE22420034198E /* VGEnumerableConditionPresent.m */,
+			);
+			path = VGEnumerableConditionPresent;
 			sourceTree = "<group>";
 		};
 		F7DAF3959FB7A036B50DCEC3EC60E3EB /* Simple */ = {
@@ -729,6 +743,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9425E4F915BD88A1A7178D24E197C86D /* Pods-VGCondition_Example-umbrella.h in Headers */,
+				F50841341BDE22420034198E /* VGEnumerableConditionPresent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,6 +889,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50841351BDE22420034198E /* VGEnumerableConditionPresent.m in Sources */,
 				8028FE153C18C133013CFDF4583F6A5A /* Pods-VGCondition_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
