@@ -20,8 +20,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6CCF9E7F76F915559DA1E803 /* Pods_VGCondition_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FEF97F1F08C129B5B9A6D8 /* Pods_VGCondition_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6EA206AE0DC1DF81D0334AD6 /* Pods_VGCondition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0059D563AF11856A21C59F /* Pods_VGCondition_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6CCF9E7F76F915559DA1E803 /* Pods_VGCondition_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FEF97F1F08C129B5B9A6D8 /* Pods_VGCondition_Example.framework */; };
+		6EA206AE0DC1DF81D0334AD6 /* Pods_VGCondition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0059D563AF11856A21C59F /* Pods_VGCondition_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		F589FE281B64D13800FF7AAB /* VGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* VGViewController.m */; };
 /* End PBXBuildFile section */
