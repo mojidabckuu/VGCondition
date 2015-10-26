@@ -11,6 +11,5 @@
 @interface VGEmailCondition : VGStringRegexCondition
 
 + (instancetype)conditionWithRegex:(NSString *)regex description:(NSString *)description NS_UNAVAILABLE;
-+ (instancetype)conditionWithDescription:(NSString *)description NS_UNAVAILABLE;
 
 @end
