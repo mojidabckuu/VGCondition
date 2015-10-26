@@ -27,6 +27,22 @@
     return self;
 }
 
+- (instancetype)initWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSDateFormatter *)formatter {
+    self = [self initWithMin:min max:max strict:strict];
+    if(self) {
+        self.formatter = formatter;
+    }
+    return self;
+}
+
+- (instancetype)initWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSDateFormatter *)formatter description:(NSString *)description {
+    self = [self initWithMin:min max:max strict:strict formatter:formatter];
+    if(self) {
+        self.localizedDescription = description;
+    }
+    return self;
+}
+
 #pragma Validation
 
 - (BOOL)checkValue:(NSDate *)value {
