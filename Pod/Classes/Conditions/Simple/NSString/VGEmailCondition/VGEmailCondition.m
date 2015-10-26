@@ -8,32 +8,20 @@
 
 #import "VGEmailCondition.h"
 
+NSString *const VGEmailConditionRegex = @"^[+\\w\\.\\-']+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*(\\.[a-zA-Z]{2,})+$";
+
 @implementation VGEmailCondition
 
-#pragma mark - VGEmailCondition lifecylce
+#pragma mark - Accessors
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.regex = @"^[+\\w\\.\\-']+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*(\\.[a-zA-Z]{2,})+$";
-    }
-    return self;
+- (NSString *)regex {
+    return VGEmailConditionRegex;
 }
 
-#pragma mark - Validation
-
-- (BOOL)checkValue:(NSString *)value {
-    if ([super checkValue:value]) {
-        if(self.regex) {
-            NSError *error = NULL;
-            NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:self.regex options:NSRegularExpressionCaseInsensitive error:&error];
-            if(!error) {
-                NSRange matchRange = [regex rangeOfFirstMatchInString:value options:0 range:NSMakeRange(0, value.length)];
-                return (matchRange.location == 0) && (matchRange.length == value.length);
-            }
-        }
-    }
-    return NO;
+- (NSError *)error {
+    NSString *message = self.localizedDescription ?: NSLocalizedString(@"Email address is not valid", nil);
+    NSDictionary *userInfo = @{NSLocalizedDescriptionKey : message };
+    return [NSError errorWithDomain:@"com.vladgorbenko" code:0 userInfo:userInfo];
 }
 
 @end

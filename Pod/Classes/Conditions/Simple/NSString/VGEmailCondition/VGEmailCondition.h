@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 vladgorbenko. All rights reserved.
 //
 
-#import "VGStringCondition.h"
+#import "VGStringRegexCondition.h"
 
-@interface VGEmailCondition : VGStringCondition
+@interface VGEmailCondition : VGStringRegexCondition
 
 @end

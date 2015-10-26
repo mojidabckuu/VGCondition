@@ -10,8 +10,6 @@
 
 @interface VGStringCondition : VGCondition
 
-@property (nonatomic, strong) NSString *regex;
-
 - (BOOL)checkValue:(NSString *)value;
 
 @end

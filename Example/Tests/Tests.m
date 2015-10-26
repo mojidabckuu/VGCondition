@@ -50,5 +50,13 @@
     }
 }
 
+- (void)testRegexCondition {
+    NSString *regex = @"";
+    NSError *error = nil;
+    BOOL isValid = [VGValidator validateValue:@"12322s" conditions:^NSArray *{
+        return @[[]]
+    } error:<#(NSError *__autoreleasing *)#>]
+}
+
 @end
 

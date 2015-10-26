@@ -17,11 +17,11 @@
 
 #pragma mark - VGAlphabeticCondition lifecycle
 
-+ (instancetype)conditionWithNumbers:(BOOL)allowNumbers whitespace:(BOOL)allowWhiteSpace {
-    return [[self alloc] initWithNumbers:allowNumbers whitespace:allowWhiteSpace];
++ (instancetype)conditionWithNumbers:(BOOL)allowNumbers whitespace:(BOOL)allowWhiteSpace desription:(NSString *)description {
+    return [[self alloc] initWithNumbers:allowNumbers whitespace:allowWhiteSpace desription:description];
 }
 
-- (instancetype)initWithNumbers:(BOOL)allowNumbers whitespace:(BOOL)allowWhiteSpace {
+- (instancetype)initWithNumbers:(BOOL)allowNumbers whitespace:(BOOL)allowWhiteSpace desription:(NSString *)description {
     self = [super init];
     if(self) {
         self.allowWhitespace = allowWhiteSpace;
@@ -30,26 +30,19 @@
     return self;
 }
 
-#pragma mark - Validation
+#pragma mark - Accessors
 
-- (BOOL)checkValue:(NSString *)value {
-    if([super checkValue:value]) {
-        NSString *pattern = REGEX_PATTERN;
-        if(self.allowNumbers) {
-            pattern = REGEX_PATTER_NUMBERS;
-            if(self.allowWhitespace) {
-                pattern = REGEX_PATTER_NUMBERS_WHITESPACE;
-            }
-        } else if (self.allowWhitespace) {
-            pattern = REGEX_PATTERN_WHITESPACE;
+- (NSString *)regex {
+    NSString *pattern = REGEX_PATTERN;
+    if(self.allowNumbers) {
+        pattern = REGEX_PATTER_NUMBERS;
+        if(self.allowWhitespace) {
+            pattern = REGEX_PATTER_NUMBERS_WHITESPACE;
         }
-        
-        NSError *error = nil;
-        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern: pattern options:0 error:&error];
-        NSUInteger numberOfMatches = [regex numberOfMatchesInString:value options:0 range:NSMakeRange(0, value.length)];
-        return numberOfMatches == value.length;
+    } else if (self.allowWhitespace) {
+        pattern = REGEX_PATTERN_WHITESPACE;
     }
-    return NO;
+    return pattern;
 }
 
 @end
