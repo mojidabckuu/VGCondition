@@ -6,9 +6,9 @@
 //
 //
 
-#import <VGCondition/VGCondition.h>
+#import "VGEnumerableCondition.h"
 
-@interface VGConditionCount : VGCondition
+@interface VGConditionCount : VGEnumerableCondition
 
 @property (nonatomic, assign) NSInteger count;
 

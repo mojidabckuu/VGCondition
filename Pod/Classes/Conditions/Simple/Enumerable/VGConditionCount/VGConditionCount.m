@@ -51,4 +51,13 @@
     return error;
 }
 
+#pragma mark - Validation
+
+- (BOOL)checkValue:(id)value {
+    if([super checkValue:value]) {
+        
+    }
+    return NO;
+}
+
 @end
