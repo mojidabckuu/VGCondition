@@ -17,4 +17,7 @@
 
 - (instancetype)initWithNumbers:(BOOL)allowNumbers whitespace:(BOOL)allowWhiteSpace desription:(NSString *)description;
 
++ (instancetype)conditionWithDescription:(NSString *)description NS_UNAVAILABLE;
++ (instancetype)conditionWithRegex:(NSString *)regex description:(NSString *)description NS_UNAVAILABLE;
+
 @end
