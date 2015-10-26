@@ -51,11 +51,27 @@
 }
 
 - (void)testRegexCondition {
-    NSString *regex = @"";
+    NSString *regex = @"[0-9]{5}";
     NSError *error = nil;
-    BOOL isValid = [VGValidator validateValue:@"12322s" conditions:^NSArray *{
-        return @[[]]
-    } error:<#(NSError *__autoreleasing *)#>]
+    BOOL isValid = [VGValidator validateValue:@"12322" conditions:^NSArray *{
+        return @[[VGStringRegexCondition conditionWithRegex:regex description:@"Is not pass"]];
+    } error:&error];
+    if(!isValid) {
+        NSLog(@"Erorr: %@", [error localizedDescription]);
+    }
+}
+
+- (void)testEmailPass {
+    NSString *email = @"vlad@email.com";
+    NSError *error = nil;
+    BOOL isValid = [VGValidator validateValue:email conditions:^NSArray *{
+        return @[[VGEmailCondition conditionWithDescription:@"Email is not valid"]];
+    } error:&error];
+    if(!isValid) {
+        NSLog(@"ERORR : %@", [error localizedDescription]);
+    } else {
+        NSLog(@"Email is valid");
+    }
 }
 
 @end
