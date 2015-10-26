@@ -31,6 +31,10 @@
         NSError *error = nil;
         NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:self.regex options:0 error:&error];
         NSUInteger numberOfMatches = [regex numberOfMatchesInString:value options:0 range:NSMakeRange(0, value.length)];
+//        if(!error) {
+//            NSRange matchRange = [regex rangeOfFirstMatchInString:value options:0 range:NSMakeRange(0, value.length)];
+//            return (matchRange.location == 0) && (matchRange.length == value.length);
+//        }
         return numberOfMatches == value.length;
     }
     return NO;

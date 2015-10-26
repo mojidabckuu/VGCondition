@@ -10,7 +10,7 @@
 
 @interface VGStringRegexCondition : VGStringCondition
 
-@property (nonatomic, strong, readonly) NSString *regex;
+@property (nonatomic, strong) NSString *regex;
 
 + (instancetype)conditionWithRegex:(NSString *)regex description:(NSString *)description;
 
