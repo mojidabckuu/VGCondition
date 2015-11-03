@@ -30,7 +30,7 @@
 #pragma mark - Accessors
 
 - (NSError *)error {
-    NSDictionary *userInfo = @{NSLocalizedDescriptionKey : NSLocalizedString(@"Field can't be empty", nil)};
+    NSDictionary *userInfo = @{NSLocalizedDescriptionKey : self.localizedDescription ?: NSLocalizedString(@"Field can't be empty", nil)};
     return [NSError errorWithDomain:@"com.vladgorbenko.VGContent" code:0 userInfo:userInfo];
 }
 
