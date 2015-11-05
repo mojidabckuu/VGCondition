@@ -10,6 +10,9 @@
 
 @interface VGEmailCondition : VGStringRegexCondition
 
+@property (nonatomic, assign) BOOL allowEmpty;
+
++ (instancetype)conditionWithDescription:(NSString *)description allowEmpty:(BOOL)allowEmpty;
 + (instancetype)conditionWithRegex:(NSString *)regex description:(NSString *)description NS_UNAVAILABLE;
 
 @end
