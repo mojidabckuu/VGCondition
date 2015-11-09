@@ -40,7 +40,8 @@
 #pragma mark - Accessors
 
 - (NSError *)error {
-    return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:nil];
+    NSDictionary *userInfo = @{NSLocalizedDescriptionKey : self.localizedDescription ?: NSLocalizedString(@"Field is not valid", nil)};
+    return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
 }
 
 @end
