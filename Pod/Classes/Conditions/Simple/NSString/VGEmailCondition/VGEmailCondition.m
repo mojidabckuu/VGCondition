@@ -41,10 +41,10 @@ NSString *const VGEmailConditionRegex = @"^[+\\w\\.\\-']+@[a-zA-Z0-9-]+(\\.[a-zA
 #pragma mark - Validation
 
 - (BOOL)checkValue:(NSString *)value {
-    NSAssert([value isKindOfClass:[NSString class]], @"You passed value wich is not string");
     if(self.allowEmpty && value.length == 0) {
         return YES;
     }
+    NSAssert([value isKindOfClass:[NSString class]], @"You passed value wich is not string");
     return [super checkValue:value];
 }
 
