@@ -28,10 +28,23 @@
 #pragma mark - Accessors
 
 - (NSError *)error {
-    NSString *format = NSLocalizedString(@"Enter minimum %@, maximum %@ characters", nil);
-    NSString *description = [NSString stringWithFormat:format, self.min ?: @0, self.max ?: @0];
-    NSDictionary *userInfo = @{NSLocalizedDescriptionKey : description};
-    return [NSError errorWithDomain:@"com.vladgorbenko.VGContent" code:0 userInfo:userInfo];
+    if(self.min && self.max) {
+        NSString *format = NSLocalizedString(@"Enter minimum %@, maximum %@ characters", nil);
+        NSString *description = [NSString stringWithFormat:format, self.min, self.max];
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey : description};
+        return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
+    } else if (self.min) {
+        NSString *format = NSLocalizedString(@"Enter minimum %@ characters", nil);
+        NSString *description = [NSString stringWithFormat:format, self.min];
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey : description};
+        return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
+    } else if (self.max) {
+        NSString *format = NSLocalizedString(@"Enter maximum %@ characters", nil);
+        NSString *description = [NSString stringWithFormat:format, self.max];
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey : description};
+        return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
+    }
+    return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:@{}];
 }
 
 #pragma mark - Validation
