@@ -52,7 +52,7 @@
     NSString *formattedMax = self.formatter ? [self.formatter stringFromNumber:self.max] : self.max;
     if(self.localizedDescription) {
         description = [NSString stringWithFormat:self.localizedDescription, formattedMin, formattedMax];
-        const char *positionFormat = [[self.localizedDescription stringByReplacingOccurrencesOfString:@"%@" withString:@"%s"] UTF8String];
+        const char *positionFormat = [[self.localizedDescription stringByReplacingOccurrencesOfString:@"$@" withString:@"$s"] UTF8String];
         const char *positionMin = [formattedMin UTF8String];
         const char *positionMax = [formattedMax UTF8String];
         char *result;
