@@ -13,5 +13,6 @@
 @interface VGConditionEqual : VGComplexCondition <VGEqualConditionProtocol>
 
 + (instancetype)conditionWithValue:(id)value;
++ (instancetype)conditionWithValue:(id)value description:(NSString *)description;
 
 @end

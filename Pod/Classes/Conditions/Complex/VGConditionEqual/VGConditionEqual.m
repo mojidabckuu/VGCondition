@@ -22,8 +22,20 @@
     return [[self alloc] initWithValue:value];
 }
 
++ (instancetype)conditionWithValue:(id)value description:(NSString *)description {
+    return [[self alloc] initWithValue:value description:description];
+}
+
 - (instancetype)initWithValue:(id)value {
     self = [super init];
+    if(self) {
+        self.value = value;
+    }
+    return self;
+}
+
+- (instancetype)initWithValue:(id)value description:(NSString *)description {
+    self = [super initWithDescription:description];
     if(self) {
         self.value = value;
     }
