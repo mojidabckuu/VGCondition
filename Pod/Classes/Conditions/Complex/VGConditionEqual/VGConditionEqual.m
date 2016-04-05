@@ -44,7 +44,7 @@
 
 + (void)load {
     [self registerConditionClass:[VGStringEqualCondition class] objectClass:[NSString class]];
-    [self registerConditionClass:[VGNumberCondition class] objectClass:[NSNumber class]];
+    [self registerConditionClass:[VGNumberEqualCondition class] objectClass:[NSNumber class]];
     [self registerConditionClass:[VGDateEqualCondition class] objectClass:[NSDate class]];
 }
 
