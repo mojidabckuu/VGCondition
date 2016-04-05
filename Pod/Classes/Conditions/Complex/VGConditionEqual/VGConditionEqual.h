@@ -12,11 +12,9 @@
 
 @interface VGConditionEqual : VGComplexCondition <VGEqualConditionProtocol>
 
-#pragma mark - Objc-C convient methods
 + (nonnull instancetype)conditionWithValue:(nonnull id)value;
 + (nonnull instancetype)conditionWithValue:(nonnull id)value description:(nonnull NSString *)description;
 
-#pragma mark - Swift initializers
 - (nonnull instancetype)initWithValue:(nonnull id)value;
 - (nonnull instancetype)initWithValue:(nonnull id)value description:(nonnull NSString *)description;
 @end

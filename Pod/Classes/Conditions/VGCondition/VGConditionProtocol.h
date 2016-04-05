@@ -12,14 +12,14 @@
 
 @required
 
-@property (nonatomic, strong) NSError *error;
-@property (nonatomic, strong) NSString *localizedDescription;
+@property (nonnull, nonatomic, strong) NSError *error;
+@property (nonnull, nonatomic, strong) NSString *localizedDescription;
 
-- (BOOL)checkValue:(id)value;
+- (BOOL)checkValue:(nullable id)value;
 
-+ (instancetype)condition;
-+ (instancetype)conditionWithDescription:(NSString *)description;
++ (nonnull instancetype)condition;
++ (nonnull instancetype)conditionWithDescription:(nonnull NSString *)description;
 
-- (instancetype)initWithDescription:(NSString *)description;
+- (nonnull instancetype)initWithDescription:(nonnull NSString *)description;
 
 @end

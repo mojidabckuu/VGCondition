@@ -25,6 +25,20 @@
     return self;
 }
 
+- (instancetype)initWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSFormatter *)formatter {
+    return [self initWithMin:min max:max strict:strict];
+}
+
+- (instancetype)initWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSFormatter *)formatter description:(NSString *)description {
+    self = [super initWithDescription:description];
+    if(self) {
+        self.isStrict = strict;
+        self.min = min;
+        self.max = max;
+    }
+    return self;
+}
+
 #pragma mark - Accessors
 
 - (NSError *)error {

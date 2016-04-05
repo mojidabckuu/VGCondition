@@ -12,12 +12,12 @@
 
 @interface VGConditonRange : VGComplexCondition <VGRangeConditionProtocol>
 
-+ (instancetype)conditionWithMin:(id)min max:(id)max strict:(BOOL)strict;
-+ (instancetype)conditionWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSFormatter *)formatter;
-+ (instancetype)conditionWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSFormatter *)formatter description:(NSString *)description;
++ (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict;
++ (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict formatter:(nonnull NSFormatter *)formatter;
++ (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict formatter:(nonnull NSFormatter *)formatter description:(nonnull NSString *)description;
 
-- (instancetype)initWithMin:(id)min max:(id)max strict:(BOOL)strict;
-- (instancetype)initWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSFormatter *)formatter;
-- (instancetype)initWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSFormatter *)formatter description:(NSString *)description;
+- (nonnull instancetype)initWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict;
+- (nonnull instancetype)initWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict formatter:(nonnull NSFormatter *)formatter;
+- (nonnull instancetype)initWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict formatter:(nonnull NSFormatter *)formatter description:(nonnull NSString *)description;
 
 @end

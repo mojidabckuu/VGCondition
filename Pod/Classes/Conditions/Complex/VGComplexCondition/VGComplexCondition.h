@@ -10,8 +10,8 @@
 
 @interface VGComplexCondition : VGCondition
 
-+ (void)registerConditionClass:(Class)conditionClass objectClass:(Class)objectClass;
++ (void)registerConditionClass:(_Nonnull Class)conditionClass objectClass:(_Nonnull Class)objectClass;
 
-- (id<VGConditionProtocol>)conditionByValue:(id)value;
+- (nonnull id<VGConditionProtocol>)conditionByValue:(nonnull id)value;
 
 @end
