@@ -52,7 +52,7 @@
 
 - (BOOL)checkValue:(id)value {
     id<VGEqualConditionProtocol> condition = (id<VGEqualConditionProtocol>)[self conditionByValue:value];
-    condition.value = value;
+    condition.value = self.value;
     return [condition checkValue:value];
 }
 
