@@ -1,1285 +1,3743 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		05AD4C9C24AFF9D91E198048D9C2C0F7 /* VGObjectPresentCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B8889C93CB9191F1916BDF079254AA /* VGObjectPresentCondition.m */; };
-		081FA5DA7ADC09A282C179279E29A9A1 /* VGEqualConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D82C5F7BCE492759F4E8B7BC75EF7718 /* VGEqualConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A2D069227147B5A1F4EC05BD0575760 /* VGNumberCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 765C195DEC524FADEC184832EEA77CDA /* VGNumberCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AB22ACC599CA124FE39CC8A2494178A /* VGStringCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5BB3D92AA89376D56BD652D5BE7571 /* VGStringCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BBC21CC87D98C2205D686ADBE46052B /* VGRangeConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CD32D5F14692A2C0222A2724F03F3968 /* VGRangeConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10673E4AA946B739E799448EEF939C74 /* VGCondition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC897184AF37642BA4497D28CB9CD7A /* VGCondition-dummy.m */; };
-		1AFACDA28B5082F473DD6FDE541D7D20 /* VGConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38D2E2DBF7479B280004177D4BFB57 /* VGConditionPresent.m */; };
-		1B97560BD1AC19673F56BD6BF45F9AEA /* VGConditionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D677167607A2D3D7B3972319E353BEEB /* VGConditionTime.m */; };
-		22980AD264FB549F6391667206E74714 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		2682B9DD6D676C74D587B4919F79BCE9 /* VGDateRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3654C02BF79CCE4E46756EFB2DD5C8 /* VGDateRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BFDC713851C0886B73202ED9AC225BF /* VGDateEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D74A676A9EC4B5EC0DA49E01E078B1 /* VGDateEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FD9DE9A845EA7EC36D216D21DFE161C /* VGDatePresentCondtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DEC61883BC6F900EE38A56105021C81 /* VGDatePresentCondtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30509EE857081C2C2F075DD4145B774D /* VGPasswordStrengthCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E909D35EDD77C9C2EACC43870785C5F /* VGPasswordStrengthCondition.m */; };
-		329FFF1F921E63A8CF783AF3A0DA848C /* VGValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC3CA3AD733A8753C40C67223753AD7 /* VGValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34611E13C380A1D304025DAD2E107999 /* VGConditionEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4AB667982B6F63D76198BB6320D967 /* VGConditionEqual.m */; };
-		3C0BE9396147E961C4B8D99F3CAA0D0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		400F29C13429FD2B880000BC0E4E7177 /* VGNumberEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0A2FA0CC3A256664874C347DEE3736 /* VGNumberEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46797FF4D0079D2C5E7893A377B5A0B0 /* Pods-VGCondition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B356C58BEE2560DFD73DB30BF24AEC /* Pods-VGCondition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A0764751AC64FCDB2C4869933D59249 /* VGConditionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FE731A7B5991F337274A1A9139A054A1 /* VGConditionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A8FA566ECDE590A9BDA650152C30981 /* VGNumberConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD35887F34B077AA6DF641DF60ED46A /* VGNumberConditionPresent.m */; };
-		50A0CAC7C8CC868DE9A2A69F957ACC69 /* VGPasswordStrengthCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9EFF5AE43E6FE6CE71A17182ACE932 /* VGPasswordStrengthCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5639401FAEC5C2E4D141A48C0EEBD61F /* VGStringConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B41D72FB864499B44A7AAD061601225 /* VGStringConditionPresent.m */; };
-		568B3F92269DBADE8126CE832778FB24 /* VGDateCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E84CB55C0C06E63A3997712AC44A42 /* VGDateCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65D88E3ACFD775E238DEF45B6459DA4B /* VGAlphabeticCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B7CC2AFEAB072AA60BCC3FFDBA069C /* VGAlphabeticCondition.m */; };
-		660AC7BCF41C3F37BAB9F6C58ED65654 /* VGEmailCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 845E5B83E087DE66F94DD1CDAD10B45A /* VGEmailCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68F5481750C3D16E24B29EAF550B2652 /* VGNumberCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD092E8D1F9F9E1907761D4419B6B44 /* VGNumberCondition.m */; };
-		6B86BA7E72DFE37489359871F30B8B32 /* VGComplexCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = F194C2CC172BEA78BCC09978262390ED /* VGComplexCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CF2D3C6B09D99B515B9F7B4540E6B4C /* VGCondition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C9E6F2CF93EEBCCDC647F4C5105110 /* VGCondition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E489BF8079F28D065C4A9E34840A152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		6EB8106CA779C43622C28DE7BBDBD7A7 /* VGDateRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEF908FA5309D341C509E55F292286F /* VGDateRangeCondition.m */; };
-		7731FC0CDAED31C2937E3522AE5F36B4 /* VGConditonRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A570DC5CE13CCBC6FE308DEC71D55EFE /* VGConditonRange.m */; };
-		7E3CD13CD2BBAFB170E5793DDB8A84FC /* VGStringEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = AF262F084FE380F380CE8C7B45017814 /* VGStringEqualCondition.m */; };
-		8028FE153C18C133013CFDF4583F6A5A /* Pods-VGCondition_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E337A8331937632EAD9D800D8CEC2167 /* Pods-VGCondition_Example-dummy.m */; };
-		8050806B523A5ADA999CFCB2A6A510D0 /* Pods-VGCondition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05888A0830EEB9D8A40811FBE838DCC8 /* Pods-VGCondition_Tests-dummy.m */; };
-		80F5767DD8A9B7702A4635336A215238 /* VGStringCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A19FE242589CDCB5CBCA0A7F0DD0688 /* VGStringCondition.m */; };
-		89646CFC881F840D99834692C0ACD52F /* VGEmailCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E837D89E1C7CCBBBF418AA859BA606 /* VGEmailCondition.m */; };
-		89F59723EA79751132C95D31F242AE21 /* VGDateCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 93532928E4B01CCADA5FDE6E4445DC0B /* VGDateCondition.m */; };
-		8EC79509E31949C6B994C0BE8ECACC2B /* VGComplexCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 62811CF832D6E01097BB3E0D5A71FA1E /* VGComplexCondition.m */; };
-		9425E4F915BD88A1A7178D24E197C86D /* Pods-VGCondition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 200F21A0626E5F2D5DD65DA7BF404E87 /* Pods-VGCondition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		949054251AFE6B5C6FEF803050D685C0 /* VGCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 327FCA47B4C031A595F9767D98823D1B /* VGCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97C0A431D21FF9420BF8C63F30DA45B2 /* VGStringEqualCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 79CBBAFA38D2604C35C56307D356F68A /* VGStringEqualCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A05FB3AA107B6D050569323BD6BEADE /* VGStringRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA7E3613068068BE7BFB893B34CC7F2 /* VGStringRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D686003785BD43C590F58C4F9BF0B05 /* VGConditionEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 0151A9FFBD8C6AA9298411664178BC5B /* VGConditionEqual.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7DBEB1C9CC80DC5FF60F6610DF55B32 /* VGNumberConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE0C6BDB71CACF03EAECB098886407D /* VGNumberConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD21D3A3D967C08D5BE9700BC46A26ED /* VGObjectPresentCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D9323432C5014A1A30D04CB16E1994 /* VGObjectPresentCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1E0FE557DD008EC634AE6CDFAF8742F /* VGStringRegexCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2BC1006F0CDFCC358EE54CCCF3184B /* VGStringRegexCondition.m */; };
-		B7A1AD548AD196CACB4D7B05316A98D4 /* VGStringRegexCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 923FF3FF9339EF85E3964A776E50ED28 /* VGStringRegexCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8CBA78855611B455F145EA7799C2E09 /* VGValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B33615915B689984DABBC0C4F8FDA6 /* VGValidator.m */; };
-		BE4D611D5BA06D0FAB670BE9EA15FA99 /* VGConditonRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DDFECD3569F6088E1F59BADA97ADD8 /* VGConditonRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0C35942DCD3D654F2FF259C1F9192ED /* VGAlphabeticCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = D362955AC6772F6FA35D52B8255D78D0 /* VGAlphabeticCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D089936337763C1A935FF8538776AB70 /* VGStringRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF62D37B8CB918E272DA0A2E0DAF279 /* VGStringRangeCondition.m */; };
-		D5C2291468BE396521829EDA048CE62E /* VGDatePresentCondtion.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7C044246C202102816DE86675A1F85 /* VGDatePresentCondtion.m */; };
-		D694A9C5067B92FB8F72433D87BFEF17 /* VGCondition.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0FFE0B4B686565BE07C09330577DF139 /* VGCondition.bundle */; };
-		DE02E36A3246853077AE785DA76178CC /* VGNumberEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 07213055E0663E8E3182C8EA32AF283E /* VGNumberEqualCondition.m */; };
-		E5174B297C5EA1418D6AF3413BDF041D /* VGConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD8B027A7CA7A7A9D6D321957EE6C69 /* VGConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E54CA49C852244D392A661F4D1597C4B /* VGCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7097932470DA7B506399D1964D27CDDE /* VGCondition.m */; };
-		E8A2DB74652CE4A2742DC42326DF27FA /* VGValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA2722C2F557DB6D58654AF349F33B4 /* VGValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9F087E7A1C4FC1C8B8DD861DEBD4470 /* VGConditionTime.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B79C2B3A118135A69BCBB725D2C7B5 /* VGConditionTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED5C138E817145B725F3DC14D5FB5535 /* VGNumberRangeCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D61621D57763E058BCA936361CA817 /* VGNumberRangeCondition.m */; };
-		F35F4CF6A5334E4A5CBD7C90A1DD686A /* VGStringConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = 359603BDA08239AF597C6B237CBD23BD /* VGStringConditionPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F508412D1BDE217A0034198E /* VGEnumerableCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = F50841291BDE20D60034198E /* VGEnumerableCondition.h */; settings = {ASSET_TAGS = (); }; };
-		F508412E1BDE217A0034198E /* VGEnumerableCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F508412A1BDE20D60034198E /* VGEnumerableCondition.m */; settings = {ASSET_TAGS = (); }; };
-		F508412F1BDE217A0034198E /* VGConditionCount.h in Headers */ = {isa = PBXBuildFile; fileRef = F50841241BDE1E890034198E /* VGConditionCount.h */; settings = {ASSET_TAGS = (); }; };
-		F50841301BDE217A0034198E /* VGConditionCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F50841251BDE1E890034198E /* VGConditionCount.m */; settings = {ASSET_TAGS = (); }; };
-		F50841341BDE22420034198E /* VGEnumerableConditionPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = F50841321BDE22420034198E /* VGEnumerableConditionPresent.h */; settings = {ASSET_TAGS = (); }; };
-		F50841351BDE22420034198E /* VGEnumerableConditionPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = F50841331BDE22420034198E /* VGEnumerableConditionPresent.m */; settings = {ASSET_TAGS = (); }; };
-		F8E1418CA10851EB9D094788F29FF37D /* VGNumberRangeCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = EA638144E7739336499B3DD92550A7F8 /* VGNumberRangeCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9180D8D789C6181B40C8B1E652D949B /* VGDateEqualCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A20D0BFE18C55F72F9BC3F2B58C26A /* VGDateEqualCondition.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3AC0F2C800B09A2BDA02D6C2AB5DA24E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 500B0176114B519F9B346981DF106AE9;
-			remoteInfo = VGCondition;
-		};
-		D1371065E6C7C5A186FE9225A3BBB10C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 500B0176114B519F9B346981DF106AE9;
-			remoteInfo = VGCondition;
-		};
-		F015B58FF59F699923C6B8B461B55139 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8FF96AED4ED87DEC308C5F6DF9FDF26;
-			remoteInfo = "VGCondition-VGCondition";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0151A9FFBD8C6AA9298411664178BC5B /* VGConditionEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionEqual.h; sourceTree = "<group>"; };
-		05888A0830EEB9D8A40811FBE838DCC8 /* Pods-VGCondition_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGCondition_Tests-dummy.m"; sourceTree = "<group>"; };
-		07213055E0663E8E3182C8EA32AF283E /* VGNumberEqualCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberEqualCondition.m; sourceTree = "<group>"; };
-		08C9E6F2CF93EEBCCDC647F4C5105110 /* VGCondition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VGCondition-umbrella.h"; sourceTree = "<group>"; };
-		0B3654C02BF79CCE4E46756EFB2DD5C8 /* VGDateRangeCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDateRangeCondition.h; sourceTree = "<group>"; };
-		0C00A0A29BF4F38BCBCF8317E47AC76B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DC3CA3AD733A8753C40C67223753AD7 /* VGValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGValidator.h; sourceTree = "<group>"; };
-		0FFE0B4B686565BE07C09330577DF139 /* VGCondition.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGCondition.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CC39AFD5CCC83528A5CB025D7753627 /* Pods-VGCondition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Example.release.xcconfig"; sourceTree = "<group>"; };
-		200F21A0626E5F2D5DD65DA7BF404E87 /* Pods-VGCondition_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Example-umbrella.h"; sourceTree = "<group>"; };
-		25B8889C93CB9191F1916BDF079254AA /* VGObjectPresentCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGObjectPresentCondition.m; sourceTree = "<group>"; };
-		2A98C04FD60C01E693B8ABD46C1B350C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DD899AC446AA1B831A3D202DFC87D32 /* Pods-VGCondition_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGCondition_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		327FCA47B4C031A595F9767D98823D1B /* VGCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGCondition.h; sourceTree = "<group>"; };
-		359603BDA08239AF597C6B237CBD23BD /* VGStringConditionPresent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringConditionPresent.h; sourceTree = "<group>"; };
-		36AF88BA4E2322AA9C355C28CD96BDA9 /* Pods-VGCondition_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGCondition_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3EF62D37B8CB918E272DA0A2E0DAF279 /* VGStringRangeCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringRangeCondition.m; sourceTree = "<group>"; };
-		41D61621D57763E058BCA936361CA817 /* VGNumberRangeCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberRangeCondition.m; sourceTree = "<group>"; };
-		46B7CC2AFEAB072AA60BCC3FFDBA069C /* VGAlphabeticCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGAlphabeticCondition.m; sourceTree = "<group>"; };
-		50B356C58BEE2560DFD73DB30BF24AEC /* Pods-VGCondition_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VGCondition_Tests-umbrella.h"; sourceTree = "<group>"; };
-		510A237FF12A61FA9AC19A7F499A34CA /* Pods-VGCondition_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VGCondition_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		56E837D89E1C7CCBBBF418AA859BA606 /* VGEmailCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGEmailCondition.m; sourceTree = "<group>"; };
-		58D74A676A9EC4B5EC0DA49E01E078B1 /* VGDateEqualCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDateEqualCondition.h; sourceTree = "<group>"; };
-		62811CF832D6E01097BB3E0D5A71FA1E /* VGComplexCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGComplexCondition.m; sourceTree = "<group>"; };
-		63BD68CBC9285DAF7A8E58AA79F0BA63 /* Pods-VGCondition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGCondition_Example.modulemap"; sourceTree = "<group>"; };
-		6A9EFF5AE43E6FE6CE71A17182ACE932 /* VGPasswordStrengthCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGPasswordStrengthCondition.h; sourceTree = "<group>"; };
-		705C6E0E9EFFB72A1C2CC2A4A391D36F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7097932470DA7B506399D1964D27CDDE /* VGCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGCondition.m; sourceTree = "<group>"; };
-		75CA3811E5DDBE6EE909EA69F9950ACA /* Pods-VGCondition_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Tests-resources.sh"; sourceTree = "<group>"; };
-		765C195DEC524FADEC184832EEA77CDA /* VGNumberCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberCondition.h; sourceTree = "<group>"; };
-		76CE237E7F71402F5237589326B23D61 /* VGCondition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VGCondition-prefix.pch"; sourceTree = "<group>"; };
-		76E84CB55C0C06E63A3997712AC44A42 /* VGDateCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDateCondition.h; sourceTree = "<group>"; };
-		78C60762CF95C0DB9FB14E4225EC46FB /* VGCondition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VGCondition.xcconfig; sourceTree = "<group>"; };
-		79CBBAFA38D2604C35C56307D356F68A /* VGStringEqualCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringEqualCondition.h; sourceTree = "<group>"; };
-		7B41D72FB864499B44A7AAD061601225 /* VGStringConditionPresent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringConditionPresent.m; sourceTree = "<group>"; };
-		7BA59DECCAFFC1708C3B88DEF5833C75 /* Pods_VGCondition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGCondition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DEC61883BC6F900EE38A56105021C81 /* VGDatePresentCondtion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGDatePresentCondtion.h; sourceTree = "<group>"; };
-		7E909D35EDD77C9C2EACC43870785C5F /* VGPasswordStrengthCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGPasswordStrengthCondition.m; sourceTree = "<group>"; };
-		845E5B83E087DE66F94DD1CDAD10B45A /* VGEmailCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGEmailCondition.h; sourceTree = "<group>"; };
-		87B33615915B689984DABBC0C4F8FDA6 /* VGValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGValidator.m; sourceTree = "<group>"; };
-		88F228EC3F1C7C33A836680B0248AA5E /* Pods_VGCondition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGCondition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A19FE242589CDCB5CBCA0A7F0DD0688 /* VGStringCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringCondition.m; sourceTree = "<group>"; };
-		8BBF78AB54FF4DBB69406677BAD09193 /* Pods-VGCondition_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Example-resources.sh"; sourceTree = "<group>"; };
-		8C3BA08E9435E7806A202709994FCACF /* VGCondition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VGCondition.modulemap; sourceTree = "<group>"; };
-		8F38D2E2DBF7479B280004177D4BFB57 /* VGConditionPresent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditionPresent.m; sourceTree = "<group>"; };
-		8FD35887F34B077AA6DF641DF60ED46A /* VGNumberConditionPresent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberConditionPresent.m; sourceTree = "<group>"; };
-		923FF3FF9339EF85E3964A776E50ED28 /* VGStringRegexCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringRegexCondition.h; sourceTree = "<group>"; };
-		93532928E4B01CCADA5FDE6E4445DC0B /* VGDateCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDateCondition.m; sourceTree = "<group>"; };
-		96DDFECD3569F6088E1F59BADA97ADD8 /* VGConditonRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditonRange.h; sourceTree = "<group>"; };
-		997EB1EC804967B2AD4A2142EB409C5E /* Pods-VGCondition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VGCondition_Tests.modulemap"; sourceTree = "<group>"; };
-		9A5BB3D92AA89376D56BD652D5BE7571 /* VGStringCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringCondition.h; sourceTree = "<group>"; };
-		9A89A64BF23893D93E5F3EF5A1889788 /* Pods-VGCondition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9DA2722C2F557DB6D58654AF349F33B4 /* VGValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGValidation.h; sourceTree = "<group>"; };
-		A2B15E5BE90A25B006A37C92139209EB /* VGCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VGCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3D8CDD519B102779EE762E5753359E3 /* Pods-VGCondition_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VGCondition_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A570DC5CE13CCBC6FE308DEC71D55EFE /* VGConditonRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditonRange.m; sourceTree = "<group>"; };
-		A9A20D0BFE18C55F72F9BC3F2B58C26A /* VGDateEqualCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDateEqualCondition.m; sourceTree = "<group>"; };
-		AA2BC1006F0CDFCC358EE54CCCF3184B /* VGStringRegexCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringRegexCondition.m; sourceTree = "<group>"; };
-		AF262F084FE380F380CE8C7B45017814 /* VGStringEqualCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGStringEqualCondition.m; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE4AB667982B6F63D76198BB6320D967 /* VGConditionEqual.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditionEqual.m; sourceTree = "<group>"; };
-		CAE0C6BDB71CACF03EAECB098886407D /* VGNumberConditionPresent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberConditionPresent.h; sourceTree = "<group>"; };
-		CCC7EC65C428C55808C98076C7B87CCD /* Pods-VGCondition_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		CD32D5F14692A2C0222A2724F03F3968 /* VGRangeConditionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGRangeConditionProtocol.h; sourceTree = "<group>"; };
-		CDD092E8D1F9F9E1907761D4419B6B44 /* VGNumberCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGNumberCondition.m; sourceTree = "<group>"; };
-		CFEF908FA5309D341C509E55F292286F /* VGDateRangeCondition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDateRangeCondition.m; sourceTree = "<group>"; };
-		D1D9323432C5014A1A30D04CB16E1994 /* VGObjectPresentCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGObjectPresentCondition.h; sourceTree = "<group>"; };
-		D362955AC6772F6FA35D52B8255D78D0 /* VGAlphabeticCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGAlphabeticCondition.h; sourceTree = "<group>"; };
-		D677167607A2D3D7B3972319E353BEEB /* VGConditionTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGConditionTime.m; sourceTree = "<group>"; };
-		D7B79C2B3A118135A69BCBB725D2C7B5 /* VGConditionTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionTime.h; sourceTree = "<group>"; };
-		D82C5F7BCE492759F4E8B7BC75EF7718 /* VGEqualConditionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGEqualConditionProtocol.h; sourceTree = "<group>"; };
-		DF99FB4A5AB9BDC55E580D836A8B500E /* Pods-VGCondition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E337A8331937632EAD9D800D8CEC2167 /* Pods-VGCondition_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VGCondition_Example-dummy.m"; sourceTree = "<group>"; };
-		E8ACC9915ECFA2EA4EED45602A2DAE62 /* Pods-VGCondition_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VGCondition_Example-frameworks.sh"; sourceTree = "<group>"; };
-		EA638144E7739336499B3DD92550A7F8 /* VGNumberRangeCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberRangeCondition.h; sourceTree = "<group>"; };
-		EAD8B027A7CA7A7A9D6D321957EE6C69 /* VGConditionPresent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionPresent.h; sourceTree = "<group>"; };
-		EEA7E3613068068BE7BFB893B34CC7F2 /* VGStringRangeCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGStringRangeCondition.h; sourceTree = "<group>"; };
-		F194C2CC172BEA78BCC09978262390ED /* VGComplexCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGComplexCondition.h; sourceTree = "<group>"; };
-		F50841241BDE1E890034198E /* VGConditionCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGConditionCount.h; sourceTree = "<group>"; };
-		F50841251BDE1E890034198E /* VGConditionCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGConditionCount.m; sourceTree = "<group>"; };
-		F50841291BDE20D60034198E /* VGEnumerableCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGEnumerableCondition.h; sourceTree = "<group>"; };
-		F508412A1BDE20D60034198E /* VGEnumerableCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGEnumerableCondition.m; sourceTree = "<group>"; };
-		F50841321BDE22420034198E /* VGEnumerableConditionPresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGEnumerableConditionPresent.h; sourceTree = "<group>"; };
-		F50841331BDE22420034198E /* VGEnumerableConditionPresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGEnumerableConditionPresent.m; sourceTree = "<group>"; };
-		F6EE3E28468C3A155ECE3E5350328AA2 /* Pods-VGCondition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VGCondition_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA0A2FA0CC3A256664874C347DEE3736 /* VGNumberEqualCondition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGNumberEqualCondition.h; sourceTree = "<group>"; };
-		FB7C044246C202102816DE86675A1F85 /* VGDatePresentCondtion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VGDatePresentCondtion.m; sourceTree = "<group>"; };
-		FCC897184AF37642BA4497D28CB9CD7A /* VGCondition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VGCondition-dummy.m"; sourceTree = "<group>"; };
-		FE731A7B5991F337274A1A9139A054A1 /* VGConditionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VGConditionProtocol.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		212168CC9DA7C6D059E74A46E4040534 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22980AD264FB549F6391667206E74714 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A0AC3332C51BCDCF002A4229329F05C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8F1043383D335525A35DF13D2D74C51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C0BE9396147E961C4B8D99F3CAA0D0B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD7BD7E076C834BE48A0248AA52F4CDC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E489BF8079F28D065C4A9E34840A152 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0D7324CA5B7FA49BE46D9E52034DBFBE /* NSNumber */ = {
-			isa = PBXGroup;
-			children = (
-				9AC12F7B76282334F09C7321EDC7CB06 /* VGNumberCondition */,
-				1F820769BDE39E1CCFB0B4CA45A39BB4 /* VGNumberConditionPresent */,
-				B63309CB67F7CDFB6094BE61E3B00F33 /* VGNumberEqualCondition */,
-				55EF63FFA5B708A112CC0DC262F66B89 /* VGNumberRangeCondition */,
-			);
-			path = NSNumber;
-			sourceTree = "<group>";
-		};
-		0D7546D93562539F3988C4993F04E6E9 /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				3E4597010BE8D4DBFE7A16B08CCA4483 /* VGConditionTime */,
-				3C9CA5FFE4E64D15F3AE5CFBB8AB25F3 /* VGDateCondition */,
-				573990ED16F4B2792D85B03A9838C414 /* VGDateEqualCondition */,
-				76A9F8A39219E0B9605B248F2370A910 /* VGDatePresentCondtion */,
-				D649526F5C7518F7FF60E76E6D47FE94 /* VGDateRangeCondition */,
-			);
-			path = NSDate;
-			sourceTree = "<group>";
-		};
-		0EF7AF20BF70E47D41C618E21CEACA5A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				222E9CE3B91A279D49F13DC77328FB99 /* Pods-VGCondition_Example */,
-				E90E912E246FCCB961E22B78C8319197 /* Pods-VGCondition_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		1F820769BDE39E1CCFB0B4CA45A39BB4 /* VGNumberConditionPresent */ = {
-			isa = PBXGroup;
-			children = (
-				CAE0C6BDB71CACF03EAECB098886407D /* VGNumberConditionPresent.h */,
-				8FD35887F34B077AA6DF641DF60ED46A /* VGNumberConditionPresent.m */,
-			);
-			path = VGNumberConditionPresent;
-			sourceTree = "<group>";
-		};
-		222E9CE3B91A279D49F13DC77328FB99 /* Pods-VGCondition_Example */ = {
-			isa = PBXGroup;
-			children = (
-				0C00A0A29BF4F38BCBCF8317E47AC76B /* Info.plist */,
-				63BD68CBC9285DAF7A8E58AA79F0BA63 /* Pods-VGCondition_Example.modulemap */,
-				2DD899AC446AA1B831A3D202DFC87D32 /* Pods-VGCondition_Example-acknowledgements.markdown */,
-				36AF88BA4E2322AA9C355C28CD96BDA9 /* Pods-VGCondition_Example-acknowledgements.plist */,
-				E337A8331937632EAD9D800D8CEC2167 /* Pods-VGCondition_Example-dummy.m */,
-				E8ACC9915ECFA2EA4EED45602A2DAE62 /* Pods-VGCondition_Example-frameworks.sh */,
-				8BBF78AB54FF4DBB69406677BAD09193 /* Pods-VGCondition_Example-resources.sh */,
-				200F21A0626E5F2D5DD65DA7BF404E87 /* Pods-VGCondition_Example-umbrella.h */,
-				F6EE3E28468C3A155ECE3E5350328AA2 /* Pods-VGCondition_Example.debug.xcconfig */,
-				1CC39AFD5CCC83528A5CB025D7753627 /* Pods-VGCondition_Example.release.xcconfig */,
-			);
-			name = "Pods-VGCondition_Example";
-			path = "Target Support Files/Pods-VGCondition_Example";
-			sourceTree = "<group>";
-		};
-		3ACD1CA4F6879604AC201D6F0278A143 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D1B5BC3EB8A1D0BE4DDAADFD18621B2B /* VGCondition */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		3C9CA5FFE4E64D15F3AE5CFBB8AB25F3 /* VGDateCondition */ = {
-			isa = PBXGroup;
-			children = (
-				76E84CB55C0C06E63A3997712AC44A42 /* VGDateCondition.h */,
-				93532928E4B01CCADA5FDE6E4445DC0B /* VGDateCondition.m */,
-			);
-			path = VGDateCondition;
-			sourceTree = "<group>";
-		};
-		3E4597010BE8D4DBFE7A16B08CCA4483 /* VGConditionTime */ = {
-			isa = PBXGroup;
-			children = (
-				D7B79C2B3A118135A69BCBB725D2C7B5 /* VGConditionTime.h */,
-				D677167607A2D3D7B3972319E353BEEB /* VGConditionTime.m */,
-			);
-			path = VGConditionTime;
-			sourceTree = "<group>";
-		};
-		45563A1554F066ECE4EDED031A91994D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9DA2722C2F557DB6D58654AF349F33B4 /* VGValidation.h */,
-				66B0392B03A7F50305578F89062C7E3C /* Conditions */,
-				D709D779E9333C9F6098F47BDDB463E3 /* VGValidator */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		4557044C2EBBC6196ECBA205B9227A97 /* VGPasswordStrengthCondition */ = {
-			isa = PBXGroup;
-			children = (
-				6A9EFF5AE43E6FE6CE71A17182ACE932 /* VGPasswordStrengthCondition.h */,
-				7E909D35EDD77C9C2EACC43870785C5F /* VGPasswordStrengthCondition.m */,
-			);
-			path = VGPasswordStrengthCondition;
-			sourceTree = "<group>";
-		};
-		55EF63FFA5B708A112CC0DC262F66B89 /* VGNumberRangeCondition */ = {
-			isa = PBXGroup;
-			children = (
-				EA638144E7739336499B3DD92550A7F8 /* VGNumberRangeCondition.h */,
-				41D61621D57763E058BCA936361CA817 /* VGNumberRangeCondition.m */,
-			);
-			path = VGNumberRangeCondition;
-			sourceTree = "<group>";
-		};
-		573990ED16F4B2792D85B03A9838C414 /* VGDateEqualCondition */ = {
-			isa = PBXGroup;
-			children = (
-				58D74A676A9EC4B5EC0DA49E01E078B1 /* VGDateEqualCondition.h */,
-				A9A20D0BFE18C55F72F9BC3F2B58C26A /* VGDateEqualCondition.m */,
-			);
-			path = VGDateEqualCondition;
-			sourceTree = "<group>";
-		};
-		58525B2CF8C83266F4ADBE07C22F8725 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				45563A1554F066ECE4EDED031A91994D /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		59EB39A8723448DC2632E9AA83D738D8 /* VGStringConditionPresent */ = {
-			isa = PBXGroup;
-			children = (
-				359603BDA08239AF597C6B237CBD23BD /* VGStringConditionPresent.h */,
-				7B41D72FB864499B44A7AAD061601225 /* VGStringConditionPresent.m */,
-			);
-			path = VGStringConditionPresent;
-			sourceTree = "<group>";
-		};
-		65F09A5E2767ACDA1FDE4E09CC8780C9 /* VGObjectPresentCondition */ = {
-			isa = PBXGroup;
-			children = (
-				D1D9323432C5014A1A30D04CB16E1994 /* VGObjectPresentCondition.h */,
-				25B8889C93CB9191F1916BDF079254AA /* VGObjectPresentCondition.m */,
-			);
-			path = VGObjectPresentCondition;
-			sourceTree = "<group>";
-		};
-		66B0392B03A7F50305578F89062C7E3C /* Conditions */ = {
-			isa = PBXGroup;
-			children = (
-				D6F8773F5A7F982A85358E10ADBA2D75 /* Complex */,
-				F7DAF3959FB7A036B50DCEC3EC60E3EB /* Simple */,
-				B60308ACEC5F098B87CDD5DBC4B356CD /* VGCondition */,
-			);
-			path = Conditions;
-			sourceTree = "<group>";
-		};
-		70D454CB02976E63AD2061600857A8A6 /* VGEmailCondition */ = {
-			isa = PBXGroup;
-			children = (
-				845E5B83E087DE66F94DD1CDAD10B45A /* VGEmailCondition.h */,
-				56E837D89E1C7CCBBBF418AA859BA606 /* VGEmailCondition.m */,
-			);
-			path = VGEmailCondition;
-			sourceTree = "<group>";
-		};
-		76A9F8A39219E0B9605B248F2370A910 /* VGDatePresentCondtion */ = {
-			isa = PBXGroup;
-			children = (
-				7DEC61883BC6F900EE38A56105021C81 /* VGDatePresentCondtion.h */,
-				FB7C044246C202102816DE86675A1F85 /* VGDatePresentCondtion.m */,
-			);
-			path = VGDatePresentCondtion;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				3ACD1CA4F6879604AC201D6F0278A143 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FAC1692EE4946D3EB91D8D9C9E1CCF65 /* Products */,
-				0EF7AF20BF70E47D41C618E21CEACA5A /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		863F1955EAEF2030378CE3CA560BCA5B /* VGStringCondition */ = {
-			isa = PBXGroup;
-			children = (
-				9A5BB3D92AA89376D56BD652D5BE7571 /* VGStringCondition.h */,
-				8A19FE242589CDCB5CBCA0A7F0DD0688 /* VGStringCondition.m */,
-			);
-			path = VGStringCondition;
-			sourceTree = "<group>";
-		};
-		8685FF4BFC0E9E90C113220ABA60DDFC /* VGConditionPresent */ = {
-			isa = PBXGroup;
-			children = (
-				EAD8B027A7CA7A7A9D6D321957EE6C69 /* VGConditionPresent.h */,
-				8F38D2E2DBF7479B280004177D4BFB57 /* VGConditionPresent.m */,
-			);
-			path = VGConditionPresent;
-			sourceTree = "<group>";
-		};
-		9AC12F7B76282334F09C7321EDC7CB06 /* VGNumberCondition */ = {
-			isa = PBXGroup;
-			children = (
-				765C195DEC524FADEC184832EEA77CDA /* VGNumberCondition.h */,
-				CDD092E8D1F9F9E1907761D4419B6B44 /* VGNumberCondition.m */,
-			);
-			path = VGNumberCondition;
-			sourceTree = "<group>";
-		};
-		A7F9ED34366E9D2C33D947F6334B3262 /* VGStringRegexCondition */ = {
-			isa = PBXGroup;
-			children = (
-				923FF3FF9339EF85E3964A776E50ED28 /* VGStringRegexCondition.h */,
-				AA2BC1006F0CDFCC358EE54CCCF3184B /* VGStringRegexCondition.m */,
-			);
-			path = VGStringRegexCondition;
-			sourceTree = "<group>";
-		};
-		ABBC8AAEEA0FAFF8749FB0A1C48FA6C6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				705C6E0E9EFFB72A1C2CC2A4A391D36F /* Info.plist */,
-				8C3BA08E9435E7806A202709994FCACF /* VGCondition.modulemap */,
-				78C60762CF95C0DB9FB14E4225EC46FB /* VGCondition.xcconfig */,
-				FCC897184AF37642BA4497D28CB9CD7A /* VGCondition-dummy.m */,
-				76CE237E7F71402F5237589326B23D61 /* VGCondition-prefix.pch */,
-				08C9E6F2CF93EEBCCDC647F4C5105110 /* VGCondition-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/VGCondition";
-			sourceTree = "<group>";
-		};
-		B2F33BCFBFC5A16B8DD578E045FE3EDD /* VGConditionEqual */ = {
-			isa = PBXGroup;
-			children = (
-				0151A9FFBD8C6AA9298411664178BC5B /* VGConditionEqual.h */,
-				BE4AB667982B6F63D76198BB6320D967 /* VGConditionEqual.m */,
-				D82C5F7BCE492759F4E8B7BC75EF7718 /* VGEqualConditionProtocol.h */,
-			);
-			path = VGConditionEqual;
-			sourceTree = "<group>";
-		};
-		B60308ACEC5F098B87CDD5DBC4B356CD /* VGCondition */ = {
-			isa = PBXGroup;
-			children = (
-				327FCA47B4C031A595F9767D98823D1B /* VGCondition.h */,
-				7097932470DA7B506399D1964D27CDDE /* VGCondition.m */,
-				FE731A7B5991F337274A1A9139A054A1 /* VGConditionProtocol.h */,
-			);
-			path = VGCondition;
-			sourceTree = "<group>";
-		};
-		B63309CB67F7CDFB6094BE61E3B00F33 /* VGNumberEqualCondition */ = {
-			isa = PBXGroup;
-			children = (
-				FA0A2FA0CC3A256664874C347DEE3736 /* VGNumberEqualCondition.h */,
-				07213055E0663E8E3182C8EA32AF283E /* VGNumberEqualCondition.m */,
-			);
-			path = VGNumberEqualCondition;
-			sourceTree = "<group>";
-		};
-		B6C83390868CE09B2D508C6292D81ABE /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				65F09A5E2767ACDA1FDE4E09CC8780C9 /* VGObjectPresentCondition */,
-			);
-			path = NSObject;
-			sourceTree = "<group>";
-		};
-		B7A6C767B5C47A6C3C13CAF2EBACF5D6 /* VGStringEqualCondition */ = {
-			isa = PBXGroup;
-			children = (
-				79CBBAFA38D2604C35C56307D356F68A /* VGStringEqualCondition.h */,
-				AF262F084FE380F380CE8C7B45017814 /* VGStringEqualCondition.m */,
-			);
-			path = VGStringEqualCondition;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD88388AA745E7C8714AA410BAC027DE /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				FC10DADD8D2A53BAC3D893A6A02EF912 /* VGAlphabeticCondition */,
-				70D454CB02976E63AD2061600857A8A6 /* VGEmailCondition */,
-				4557044C2EBBC6196ECBA205B9227A97 /* VGPasswordStrengthCondition */,
-				863F1955EAEF2030378CE3CA560BCA5B /* VGStringCondition */,
-				59EB39A8723448DC2632E9AA83D738D8 /* VGStringConditionPresent */,
-				B7A6C767B5C47A6C3C13CAF2EBACF5D6 /* VGStringEqualCondition */,
-				D6428A2C97A6E0D9B2BFA73CBECBB58E /* VGStringRangeCondition */,
-				A7F9ED34366E9D2C33D947F6334B3262 /* VGStringRegexCondition */,
-			);
-			path = NSString;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BFE40A2DB68E60F806A54CEC66C45285 /* VGConditonRange */ = {
-			isa = PBXGroup;
-			children = (
-				96DDFECD3569F6088E1F59BADA97ADD8 /* VGConditonRange.h */,
-				A570DC5CE13CCBC6FE308DEC71D55EFE /* VGConditonRange.m */,
-				CD32D5F14692A2C0222A2724F03F3968 /* VGRangeConditionProtocol.h */,
-			);
-			path = VGConditonRange;
-			sourceTree = "<group>";
-		};
-		D1B5BC3EB8A1D0BE4DDAADFD18621B2B /* VGCondition */ = {
-			isa = PBXGroup;
-			children = (
-				58525B2CF8C83266F4ADBE07C22F8725 /* Pod */,
-				ABBC8AAEEA0FAFF8749FB0A1C48FA6C6 /* Support Files */,
-			);
-			name = VGCondition;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D6428A2C97A6E0D9B2BFA73CBECBB58E /* VGStringRangeCondition */ = {
-			isa = PBXGroup;
-			children = (
-				EEA7E3613068068BE7BFB893B34CC7F2 /* VGStringRangeCondition.h */,
-				3EF62D37B8CB918E272DA0A2E0DAF279 /* VGStringRangeCondition.m */,
-			);
-			path = VGStringRangeCondition;
-			sourceTree = "<group>";
-		};
-		D649526F5C7518F7FF60E76E6D47FE94 /* VGDateRangeCondition */ = {
-			isa = PBXGroup;
-			children = (
-				0B3654C02BF79CCE4E46756EFB2DD5C8 /* VGDateRangeCondition.h */,
-				CFEF908FA5309D341C509E55F292286F /* VGDateRangeCondition.m */,
-			);
-			path = VGDateRangeCondition;
-			sourceTree = "<group>";
-		};
-		D6F8773F5A7F982A85358E10ADBA2D75 /* Complex */ = {
-			isa = PBXGroup;
-			children = (
-				E0E29C5953AA641CE046E1052FBE4E31 /* VGComplexCondition */,
-				B2F33BCFBFC5A16B8DD578E045FE3EDD /* VGConditionEqual */,
-				8685FF4BFC0E9E90C113220ABA60DDFC /* VGConditionPresent */,
-				BFE40A2DB68E60F806A54CEC66C45285 /* VGConditonRange */,
-			);
-			path = Complex;
-			sourceTree = "<group>";
-		};
-		D709D779E9333C9F6098F47BDDB463E3 /* VGValidator */ = {
-			isa = PBXGroup;
-			children = (
-				0DC3CA3AD733A8753C40C67223753AD7 /* VGValidator.h */,
-				87B33615915B689984DABBC0C4F8FDA6 /* VGValidator.m */,
-			);
-			path = VGValidator;
-			sourceTree = "<group>";
-		};
-		E0E29C5953AA641CE046E1052FBE4E31 /* VGComplexCondition */ = {
-			isa = PBXGroup;
-			children = (
-				F194C2CC172BEA78BCC09978262390ED /* VGComplexCondition.h */,
-				62811CF832D6E01097BB3E0D5A71FA1E /* VGComplexCondition.m */,
-			);
-			path = VGComplexCondition;
-			sourceTree = "<group>";
-		};
-		E90E912E246FCCB961E22B78C8319197 /* Pods-VGCondition_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				2A98C04FD60C01E693B8ABD46C1B350C /* Info.plist */,
-				997EB1EC804967B2AD4A2142EB409C5E /* Pods-VGCondition_Tests.modulemap */,
-				510A237FF12A61FA9AC19A7F499A34CA /* Pods-VGCondition_Tests-acknowledgements.markdown */,
-				A3D8CDD519B102779EE762E5753359E3 /* Pods-VGCondition_Tests-acknowledgements.plist */,
-				05888A0830EEB9D8A40811FBE838DCC8 /* Pods-VGCondition_Tests-dummy.m */,
-				CCC7EC65C428C55808C98076C7B87CCD /* Pods-VGCondition_Tests-frameworks.sh */,
-				75CA3811E5DDBE6EE909EA69F9950ACA /* Pods-VGCondition_Tests-resources.sh */,
-				50B356C58BEE2560DFD73DB30BF24AEC /* Pods-VGCondition_Tests-umbrella.h */,
-				9A89A64BF23893D93E5F3EF5A1889788 /* Pods-VGCondition_Tests.debug.xcconfig */,
-				DF99FB4A5AB9BDC55E580D836A8B500E /* Pods-VGCondition_Tests.release.xcconfig */,
-			);
-			name = "Pods-VGCondition_Tests";
-			path = "Target Support Files/Pods-VGCondition_Tests";
-			sourceTree = "<group>";
-		};
-		F50841221BDE1E630034198E /* Enumerable */ = {
-			isa = PBXGroup;
-			children = (
-				F50841311BDE22390034198E /* VGEnumerableConditionPresent */,
-				F50841281BDE20CE0034198E /* VGEnumerableCondition */,
-				F50841231BDE1E7E0034198E /* VGConditionCount */,
-			);
-			path = Enumerable;
-			sourceTree = "<group>";
-		};
-		F50841231BDE1E7E0034198E /* VGConditionCount */ = {
-			isa = PBXGroup;
-			children = (
-				F50841241BDE1E890034198E /* VGConditionCount.h */,
-				F50841251BDE1E890034198E /* VGConditionCount.m */,
-			);
-			path = VGConditionCount;
-			sourceTree = "<group>";
-		};
-		F50841281BDE20CE0034198E /* VGEnumerableCondition */ = {
-			isa = PBXGroup;
-			children = (
-				F50841291BDE20D60034198E /* VGEnumerableCondition.h */,
-				F508412A1BDE20D60034198E /* VGEnumerableCondition.m */,
-			);
-			path = VGEnumerableCondition;
-			sourceTree = "<group>";
-		};
-		F50841311BDE22390034198E /* VGEnumerableConditionPresent */ = {
-			isa = PBXGroup;
-			children = (
-				F50841321BDE22420034198E /* VGEnumerableConditionPresent.h */,
-				F50841331BDE22420034198E /* VGEnumerableConditionPresent.m */,
-			);
-			path = VGEnumerableConditionPresent;
-			sourceTree = "<group>";
-		};
-		F7DAF3959FB7A036B50DCEC3EC60E3EB /* Simple */ = {
-			isa = PBXGroup;
-			children = (
-				F50841221BDE1E630034198E /* Enumerable */,
-				0D7546D93562539F3988C4993F04E6E9 /* NSDate */,
-				0D7324CA5B7FA49BE46D9E52034DBFBE /* NSNumber */,
-				B6C83390868CE09B2D508C6292D81ABE /* NSObject */,
-				BD88388AA745E7C8714AA410BAC027DE /* NSString */,
-			);
-			path = Simple;
-			sourceTree = "<group>";
-		};
-		FAC1692EE4946D3EB91D8D9C9E1CCF65 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				88F228EC3F1C7C33A836680B0248AA5E /* Pods_VGCondition_Example.framework */,
-				7BA59DECCAFFC1708C3B88DEF5833C75 /* Pods_VGCondition_Tests.framework */,
-				0FFE0B4B686565BE07C09330577DF139 /* VGCondition.bundle */,
-				A2B15E5BE90A25B006A37C92139209EB /* VGCondition.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FC10DADD8D2A53BAC3D893A6A02EF912 /* VGAlphabeticCondition */ = {
-			isa = PBXGroup;
-			children = (
-				D362955AC6772F6FA35D52B8255D78D0 /* VGAlphabeticCondition.h */,
-				46B7CC2AFEAB072AA60BCC3FFDBA069C /* VGAlphabeticCondition.m */,
-			);
-			path = VGAlphabeticCondition;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		734B7DCB8053470D816598971B13F037 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0C35942DCD3D654F2FF259C1F9192ED /* VGAlphabeticCondition.h in Headers */,
-				6B86BA7E72DFE37489359871F30B8B32 /* VGComplexCondition.h in Headers */,
-				6CF2D3C6B09D99B515B9F7B4540E6B4C /* VGCondition-umbrella.h in Headers */,
-				949054251AFE6B5C6FEF803050D685C0 /* VGCondition.h in Headers */,
-				9D686003785BD43C590F58C4F9BF0B05 /* VGConditionEqual.h in Headers */,
-				E5174B297C5EA1418D6AF3413BDF041D /* VGConditionPresent.h in Headers */,
-				4A0764751AC64FCDB2C4869933D59249 /* VGConditionProtocol.h in Headers */,
-				E9F087E7A1C4FC1C8B8DD861DEBD4470 /* VGConditionTime.h in Headers */,
-				BE4D611D5BA06D0FAB670BE9EA15FA99 /* VGConditonRange.h in Headers */,
-				568B3F92269DBADE8126CE832778FB24 /* VGDateCondition.h in Headers */,
-				2BFDC713851C0886B73202ED9AC225BF /* VGDateEqualCondition.h in Headers */,
-				2FD9DE9A845EA7EC36D216D21DFE161C /* VGDatePresentCondtion.h in Headers */,
-				2682B9DD6D676C74D587B4919F79BCE9 /* VGDateRangeCondition.h in Headers */,
-				660AC7BCF41C3F37BAB9F6C58ED65654 /* VGEmailCondition.h in Headers */,
-				081FA5DA7ADC09A282C179279E29A9A1 /* VGEqualConditionProtocol.h in Headers */,
-				0A2D069227147B5A1F4EC05BD0575760 /* VGNumberCondition.h in Headers */,
-				A7DBEB1C9CC80DC5FF60F6610DF55B32 /* VGNumberConditionPresent.h in Headers */,
-				400F29C13429FD2B880000BC0E4E7177 /* VGNumberEqualCondition.h in Headers */,
-				F508412F1BDE217A0034198E /* VGConditionCount.h in Headers */,
-				F8E1418CA10851EB9D094788F29FF37D /* VGNumberRangeCondition.h in Headers */,
-				AD21D3A3D967C08D5BE9700BC46A26ED /* VGObjectPresentCondition.h in Headers */,
-				50A0CAC7C8CC868DE9A2A69F957ACC69 /* VGPasswordStrengthCondition.h in Headers */,
-				0BBC21CC87D98C2205D686ADBE46052B /* VGRangeConditionProtocol.h in Headers */,
-				0AB22ACC599CA124FE39CC8A2494178A /* VGStringCondition.h in Headers */,
-				F508412D1BDE217A0034198E /* VGEnumerableCondition.h in Headers */,
-				F35F4CF6A5334E4A5CBD7C90A1DD686A /* VGStringConditionPresent.h in Headers */,
-				97C0A431D21FF9420BF8C63F30DA45B2 /* VGStringEqualCondition.h in Headers */,
-				9A05FB3AA107B6D050569323BD6BEADE /* VGStringRangeCondition.h in Headers */,
-				B7A1AD548AD196CACB4D7B05316A98D4 /* VGStringRegexCondition.h in Headers */,
-				E8A2DB74652CE4A2742DC42326DF27FA /* VGValidation.h in Headers */,
-				329FFF1F921E63A8CF783AF3A0DA848C /* VGValidator.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D4751DC978C62DE6BEC6D12611235A8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9425E4F915BD88A1A7178D24E197C86D /* Pods-VGCondition_Example-umbrella.h in Headers */,
-				F50841341BDE22420034198E /* VGEnumerableConditionPresent.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC4E8282D8B587E5F0A66BFD2AF1B964 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46797FF4D0079D2C5E7893A377B5A0B0 /* Pods-VGCondition_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		500B0176114B519F9B346981DF106AE9 /* VGCondition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E1C91728FC22B2BABD0A2FAAFB16B577 /* Build configuration list for PBXNativeTarget "VGCondition" */;
-			buildPhases = (
-				6CF09F67FE2072CEB8A03CACB350898E /* Sources */,
-				A8F1043383D335525A35DF13D2D74C51 /* Frameworks */,
-				23CF42C8794B4869A4ED50A7B4D52FB0 /* Resources */,
-				734B7DCB8053470D816598971B13F037 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4B1AAEEA4963AD39045D7B1A7C2D54C5 /* PBXTargetDependency */,
-			);
-			name = VGCondition;
-			productName = VGCondition;
-			productReference = A2B15E5BE90A25B006A37C92139209EB /* VGCondition.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7F38FC0D928DAFB5441BD0207F5A7FD9 /* Pods-VGCondition_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB8232B6B0633F7AAE41F5A96E335AEB /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests" */;
-			buildPhases = (
-				8D46E24C623A3B747B41D3A1895BD7C1 /* Sources */,
-				BD7BD7E076C834BE48A0248AA52F4CDC /* Frameworks */,
-				BC4E8282D8B587E5F0A66BFD2AF1B964 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6F628D26A354683D03164D2A8B219BA0 /* PBXTargetDependency */,
-			);
-			name = "Pods-VGCondition_Tests";
-			productName = "Pods-VGCondition_Tests";
-			productReference = 7BA59DECCAFFC1708C3B88DEF5833C75 /* Pods_VGCondition_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8E330DBF2FCA23C1CB4C8092AFC7CF56 /* Pods-VGCondition_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C735E380327EE63EECA741EDE8535FB2 /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example" */;
-			buildPhases = (
-				47D1F1FF3A7C6DA4DA251B6085471CE3 /* Sources */,
-				212168CC9DA7C6D059E74A46E4040534 /* Frameworks */,
-				7D4751DC978C62DE6BEC6D12611235A8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D470FEEC0118608627682D4A1D16758C /* PBXTargetDependency */,
-			);
-			name = "Pods-VGCondition_Example";
-			productName = "Pods-VGCondition_Example";
-			productReference = 88F228EC3F1C7C33A836680B0248AA5E /* Pods_VGCondition_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E8FF96AED4ED87DEC308C5F6DF9FDF26 /* VGCondition-VGCondition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE93694E6232E9CEB8839C19CE51E77F /* Build configuration list for PBXNativeTarget "VGCondition-VGCondition" */;
-			buildPhases = (
-				34597F0041E432E074036051BD0B94FF /* Sources */,
-				8A0AC3332C51BCDCF002A4229329F05C /* Frameworks */,
-				A0296B1BC0FFE17C0263416088E047FA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "VGCondition-VGCondition";
-			productName = "VGCondition-VGCondition";
-			productReference = 0FFE0B4B686565BE07C09330577DF139 /* VGCondition.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FAC1692EE4946D3EB91D8D9C9E1CCF65 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				8E330DBF2FCA23C1CB4C8092AFC7CF56 /* Pods-VGCondition_Example */,
-				7F38FC0D928DAFB5441BD0207F5A7FD9 /* Pods-VGCondition_Tests */,
-				500B0176114B519F9B346981DF106AE9 /* VGCondition */,
-				E8FF96AED4ED87DEC308C5F6DF9FDF26 /* VGCondition-VGCondition */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		23CF42C8794B4869A4ED50A7B4D52FB0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D694A9C5067B92FB8F72433D87BFEF17 /* VGCondition.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0296B1BC0FFE17C0263416088E047FA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		34597F0041E432E074036051BD0B94FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47D1F1FF3A7C6DA4DA251B6085471CE3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F50841351BDE22420034198E /* VGEnumerableConditionPresent.m in Sources */,
-				8028FE153C18C133013CFDF4583F6A5A /* Pods-VGCondition_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CF09F67FE2072CEB8A03CACB350898E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F508412E1BDE217A0034198E /* VGEnumerableCondition.m in Sources */,
-				65D88E3ACFD775E238DEF45B6459DA4B /* VGAlphabeticCondition.m in Sources */,
-				8EC79509E31949C6B994C0BE8ECACC2B /* VGComplexCondition.m in Sources */,
-				10673E4AA946B739E799448EEF939C74 /* VGCondition-dummy.m in Sources */,
-				E54CA49C852244D392A661F4D1597C4B /* VGCondition.m in Sources */,
-				34611E13C380A1D304025DAD2E107999 /* VGConditionEqual.m in Sources */,
-				1AFACDA28B5082F473DD6FDE541D7D20 /* VGConditionPresent.m in Sources */,
-				1B97560BD1AC19673F56BD6BF45F9AEA /* VGConditionTime.m in Sources */,
-				F50841301BDE217A0034198E /* VGConditionCount.m in Sources */,
-				7731FC0CDAED31C2937E3522AE5F36B4 /* VGConditonRange.m in Sources */,
-				89F59723EA79751132C95D31F242AE21 /* VGDateCondition.m in Sources */,
-				F9180D8D789C6181B40C8B1E652D949B /* VGDateEqualCondition.m in Sources */,
-				D5C2291468BE396521829EDA048CE62E /* VGDatePresentCondtion.m in Sources */,
-				6EB8106CA779C43622C28DE7BBDBD7A7 /* VGDateRangeCondition.m in Sources */,
-				89646CFC881F840D99834692C0ACD52F /* VGEmailCondition.m in Sources */,
-				68F5481750C3D16E24B29EAF550B2652 /* VGNumberCondition.m in Sources */,
-				4A8FA566ECDE590A9BDA650152C30981 /* VGNumberConditionPresent.m in Sources */,
-				DE02E36A3246853077AE785DA76178CC /* VGNumberEqualCondition.m in Sources */,
-				ED5C138E817145B725F3DC14D5FB5535 /* VGNumberRangeCondition.m in Sources */,
-				05AD4C9C24AFF9D91E198048D9C2C0F7 /* VGObjectPresentCondition.m in Sources */,
-				30509EE857081C2C2F075DD4145B774D /* VGPasswordStrengthCondition.m in Sources */,
-				80F5767DD8A9B7702A4635336A215238 /* VGStringCondition.m in Sources */,
-				5639401FAEC5C2E4D141A48C0EEBD61F /* VGStringConditionPresent.m in Sources */,
-				7E3CD13CD2BBAFB170E5793DDB8A84FC /* VGStringEqualCondition.m in Sources */,
-				D089936337763C1A935FF8538776AB70 /* VGStringRangeCondition.m in Sources */,
-				B1E0FE557DD008EC634AE6CDFAF8742F /* VGStringRegexCondition.m in Sources */,
-				B8CBA78855611B455F145EA7799C2E09 /* VGValidator.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D46E24C623A3B747B41D3A1895BD7C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8050806B523A5ADA999CFCB2A6A510D0 /* Pods-VGCondition_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4B1AAEEA4963AD39045D7B1A7C2D54C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "VGCondition-VGCondition";
-			target = E8FF96AED4ED87DEC308C5F6DF9FDF26 /* VGCondition-VGCondition */;
-			targetProxy = F015B58FF59F699923C6B8B461B55139 /* PBXContainerItemProxy */;
-		};
-		6F628D26A354683D03164D2A8B219BA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VGCondition;
-			target = 500B0176114B519F9B346981DF106AE9 /* VGCondition */;
-			targetProxy = D1371065E6C7C5A186FE9225A3BBB10C /* PBXContainerItemProxy */;
-		};
-		D470FEEC0118608627682D4A1D16758C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VGCondition;
-			target = 500B0176114B519F9B346981DF106AE9 /* VGCondition */;
-			targetProxy = 3AC0F2C800B09A2BDA02D6C2AB5DA24E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		2E45241349F2D1E09FD3381DD996B083 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6EE3E28468C3A155ECE3E5350328AA2 /* Pods-VGCondition_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Example/Pods-VGCondition_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_VGCondition_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3042EA18EC8C59508FBAFD66F4D3A09C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A89A64BF23893D93E5F3EF5A1889788 /* Pods-VGCondition_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Tests/Pods-VGCondition_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_VGCondition_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		63433F5940F91F65D10C949870D2AE86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C60762CF95C0DB9FB14E4225EC46FB /* VGCondition.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = VGCondition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		788A51F6CC0B04BD7FBEDB63E9D57514 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C60762CF95C0DB9FB14E4225EC46FB /* VGCondition.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = VGCondition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		7AEAB69C9D093AA4463B8729AB287477 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C60762CF95C0DB9FB14E4225EC46FB /* VGCondition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/VGCondition/VGCondition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VGCondition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/VGCondition/VGCondition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = VGCondition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8A0F18C004F7D67105BFDAE95D0F9DA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C60762CF95C0DB9FB14E4225EC46FB /* VGCondition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/VGCondition/VGCondition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VGCondition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/VGCondition/VGCondition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = VGCondition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9D835B9CC49DEAFA2761C9250DCE1EF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CC39AFD5CCC83528A5CB025D7753627 /* Pods-VGCondition_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Example/Pods-VGCondition_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_VGCondition_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DBB4069AA807FAC3604DA00557B1C2AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF99FB4A5AB9BDC55E580D836A8B500E /* Pods-VGCondition_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VGCondition_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VGCondition_Tests/Pods-VGCondition_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_VGCondition_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C735E380327EE63EECA741EDE8535FB2 /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2E45241349F2D1E09FD3381DD996B083 /* Debug */,
-				9D835B9CC49DEAFA2761C9250DCE1EF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE93694E6232E9CEB8839C19CE51E77F /* Build configuration list for PBXNativeTarget "VGCondition-VGCondition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				788A51F6CC0B04BD7FBEDB63E9D57514 /* Debug */,
-				63433F5940F91F65D10C949870D2AE86 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB8232B6B0633F7AAE41F5A96E335AEB /* Build configuration list for PBXNativeTarget "Pods-VGCondition_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3042EA18EC8C59508FBAFD66F4D3A09C /* Debug */,
-				DBB4069AA807FAC3604DA00557B1C2AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E1C91728FC22B2BABD0A2FAAFB16B577 /* Build configuration list for PBXNativeTarget "VGCondition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AEAB69C9D093AA4463B8729AB287477 /* Debug */,
-				8A0F18C004F7D67105BFDAE95D0F9DA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0062F57443C9793A7BE040BCE369062A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F1C69242A734D366579BD3E39B7BC03</string>
+				<string>1F1D59E483C97BCC2C9F208EDE5FBA43</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGNumberRangeCondition</string>
+			<key>path</key>
+			<string>VGNumberRangeCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>009F0885C98F5C3A6E723B040A93A930</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2A525A97A18C9193F795033922DF8DA3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>00F19FEB6131A0BBC0B7DCE5D33162B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>218FE1F86597EACF6EDC4DD8B299033F</string>
+				<string>DD165E3D396EF510850F0AD15B9F1C23</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGEnumerableConditionPresent</string>
+			<key>path</key>
+			<string>VGEnumerableConditionPresent</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0189136333316C8AF6395F4A99A86537</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6A57D47F064288376DEDCAE4A6699734</string>
+				<string>1920285D1DD6278E8F3E86E529F6F7F5</string>
+				<string>A1ADA95309A056635AECD9B4623CF873</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGConditionEqual</string>
+			<key>path</key>
+			<string>VGConditionEqual</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>03CA91998D6773EC5D02B3DB87B8353E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>05361366A7B9FFFC0AC1568034C0CFB2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGStringCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05888A0830EEB9D8A40811FBE838DCC8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>064EC3B63EC0A2ADE68112060558718E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGStringEqualCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08C9E6F2CF93EEBCCDC647F4C5105110</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGCondition-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>099F43717AD69383F585EB5D40075C25</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGStringConditionPresent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0A70A9422EFE2894773FEC49909D98B2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E95ACFB76DAA859BEBF5AF91F85E5DC5</string>
+				<string>D04A4C5AEEC97C1CC9A0E3760F7F9711</string>
+				<string>00F19FEB6131A0BBC0B7DCE5D33162B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Enumerable</string>
+			<key>path</key>
+			<string>Enumerable</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0B57334D6C23DADAA4F7D802A5760EB2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0C00A0A29BF4F38BCBCF8317E47AC76B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0DC3CA3AD733A8753C40C67223753AD7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGValidator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0EF7AF20BF70E47D41C618E21CEACA5A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>222E9CE3B91A279D49F13DC77328FB99</string>
+				<string>E90E912E246FCCB961E22B78C8319197</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F20E37AF9342A1C53EB65E25FD999A6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGPasswordStrengthCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0FA15BBBB0A627157A4ABFB7D7706DE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F20E37AF9342A1C53EB65E25FD999A6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0FFE0B4B686565BE07C09330577DF139</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>VGCondition.bundle</string>
+			<key>path</key>
+			<string>VGCondition.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>104B8C99EE5D645CDDD1DD5659688DFA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGObjectPresentCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1394D56AE5F09404FF60D642E5761B3B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F81D8553557410F8CDF06B4985674B88</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NSObject</string>
+			<key>path</key>
+			<string>NSObject</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>140B1418BCC35F3A2055A69E59CC1836</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGConditionPresent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1626EFBA897DE5F3DD822CFE81E48177</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGConditionCount.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1920285D1DD6278E8F3E86E529F6F7F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGConditionEqual.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1CC39AFD5CCC83528A5CB025D7753627</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E3E809EA174AEB73D7CA965F5FE1102</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGDateEqualCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F1D59E483C97BCC2C9F208EDE5FBA43</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGNumberRangeCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>200F21A0626E5F2D5DD65DA7BF404E87</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>212168CC9DA7C6D059E74A46E4040534</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>22980AD264FB549F6391667206E74714</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>218FE1F86597EACF6EDC4DD8B299033F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGEnumerableConditionPresent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>222E9CE3B91A279D49F13DC77328FB99</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0C00A0A29BF4F38BCBCF8317E47AC76B</string>
+				<string>63BD68CBC9285DAF7A8E58AA79F0BA63</string>
+				<string>2DD899AC446AA1B831A3D202DFC87D32</string>
+				<string>36AF88BA4E2322AA9C355C28CD96BDA9</string>
+				<string>E337A8331937632EAD9D800D8CEC2167</string>
+				<string>E8ACC9915ECFA2EA4EED45602A2DAE62</string>
+				<string>8BBF78AB54FF4DBB69406677BAD09193</string>
+				<string>200F21A0626E5F2D5DD65DA7BF404E87</string>
+				<string>F6EE3E28468C3A155ECE3E5350328AA2</string>
+				<string>1CC39AFD5CCC83528A5CB025D7753627</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-VGCondition_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-VGCondition_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22980AD264FB549F6391667206E74714</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>22D2BDE6FF4440E3AEF1CB94D0B9B39F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGRangeConditionProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23CF42C8794B4869A4ED50A7B4D52FB0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D694A9C5067B92FB8F72433D87BFEF17</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>27AC98ABB86E08F068FAD7B918E75461</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGAlphabeticCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27F7FA1039B0B8F9C9BC7849BF1D7B9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGAlphabeticCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2A525A97A18C9193F795033922DF8DA3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGDateCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2A98C04FD60C01E693B8ABD46C1B350C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2CCD7D9F1DF0381D7285413AAA625245</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4CB99334D13FC5AB2B92CDBC630E3815</string>
+				<string>4A85B7A692B9B44E8B9B51CCE8B692D4</string>
+				<string>22D2BDE6FF4440E3AEF1CB94D0B9B39F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGConditonRange</string>
+			<key>path</key>
+			<string>VGConditonRange</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0B57334D6C23DADAA4F7D802A5760EB2</string>
+				<string>03CA91998D6773EC5D02B3DB87B8353E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2DD899AC446AA1B831A3D202DFC87D32</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2E10DAEFEB9A0042928130CC23391D52</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGConditionCount.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2E45241349F2D1E09FD3381DD996B083</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F6EE3E28468C3A155ECE3E5350328AA2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Example/Pods-VGCondition_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_VGCondition_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2F1C69242A734D366579BD3E39B7BC03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGNumberRangeCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F736B2D5C83FDF67D118668AB7918A4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EC9C6F843CD7CB744AD5FB04959C906E</string>
+				<string>91DB446AA69CEF2E4857E77303A3BF46</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGStringRegexCondition</string>
+			<key>path</key>
+			<string>VGStringRegexCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3042EA18EC8C59508FBAFD66F4D3A09C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9A89A64BF23893D93E5F3EF5A1889788</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Tests/Pods-VGCondition_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_VGCondition_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3246F3F7D638E28AC7F7DBF7A8A21626</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B6C369AF6E88F04664F27E6AF27D2206</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>327E5975C3B5E0089BD4C9B71E4419CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B22180FE4F7F1FDED9524E6BDD2A50F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>34597F0041E432E074036051BD0B94FF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3518DBB2961FF71A9F9BED211B8A44CE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>61300449D4E011E246350FD60D92DFFC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>352F6D8FEA83C75AEB0F39FB75F60D61</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGStringCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>36AF88BA4E2322AA9C355C28CD96BDA9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3AC0F2C800B09A2BDA02D6C2AB5DA24E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>500B0176114B519F9B346981DF106AE9</string>
+			<key>remoteInfo</key>
+			<string>VGCondition</string>
+		</dict>
+		<key>3ACD1CA4F6879604AC201D6F0278A143</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D1B5BC3EB8A1D0BE4DDAADFD18621B2B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C0BE9396147E961C4B8D99F3CAA0D0B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3E30B1107AB42B09DFF564595EBE2842</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA9F82438A28DD63095F7C8C84A441D4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>4002B6F22AA368563FC4D56B8DA21CEE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E525590044A7BBF0DB186B0412F7A656</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>435E2DD4D295DAC235256C0F9D742D98</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A673CFDCBADAAE910D0EC93DB63965F2</string>
+				<string>1E3E809EA174AEB73D7CA965F5FE1102</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGDateEqualCondition</string>
+			<key>path</key>
+			<string>VGDateEqualCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45563A1554F066ECE4EDED031A91994D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9DA2722C2F557DB6D58654AF349F33B4</string>
+				<string>B81E27CD0F98823B1E4D781932F5E7C7</string>
+				<string>D709D779E9333C9F6098F47BDDB463E3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45A24AB32C9B5932D9F134FB87575E50</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0F20E37AF9342A1C53EB65E25FD999A6</string>
+				<string>DA203200C8EBAB88AA98BFC7F32C263B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGPasswordStrengthCondition</string>
+			<key>path</key>
+			<string>VGPasswordStrengthCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>46797FF4D0079D2C5E7893A377B5A0B0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>50B356C58BEE2560DFD73DB30BF24AEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>47D1F1FF3A7C6DA4DA251B6085471CE3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8028FE153C18C133013CFDF4583F6A5A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4A569D8BAC8E21B5335512877A6E4475</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6740B2831DFE3E6693C0E07F2DCB5D08</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4A85B7A692B9B44E8B9B51CCE8B692D4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGConditonRange.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4B1AAEEA4963AD39045D7B1A7C2D54C5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>VGCondition-VGCondition</string>
+			<key>target</key>
+			<string>E8FF96AED4ED87DEC308C5F6DF9FDF26</string>
+			<key>targetProxy</key>
+			<string>F015B58FF59F699923C6B8B461B55139</string>
+		</dict>
+		<key>4CB99334D13FC5AB2B92CDBC630E3815</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGConditonRange.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D57A18C74EE228F39FF598566EC6E39</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27F7FA1039B0B8F9C9BC7849BF1D7B9B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4E43C0525DD2C62391FDD4433A3893F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGConditionTime.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4EC85D20F8E530C954144938A75E1480</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CB99334D13FC5AB2B92CDBC630E3815</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4EEABFDA28DC98D9FC201774DF148083</key>
+		<dict>
+			<key>fileRef</key>
+			<string>05361366A7B9FFFC0AC1568034C0CFB2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>500B0176114B519F9B346981DF106AE9</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E1C91728FC22B2BABD0A2FAAFB16B577</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F4ABDFDAF256ACEAFD55E63483D4DCE1</string>
+				<string>A8F1043383D335525A35DF13D2D74C51</string>
+				<string>23CF42C8794B4869A4ED50A7B4D52FB0</string>
+				<string>E23201B2D00FCDC0331C3F932B6D0154</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>4B1AAEEA4963AD39045D7B1A7C2D54C5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>VGCondition</string>
+			<key>productName</key>
+			<string>VGCondition</string>
+			<key>productReference</key>
+			<string>A2B15E5BE90A25B006A37C92139209EB</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>500EA821DF042801DA9F88EFC86AA285</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0A70A9422EFE2894773FEC49909D98B2</string>
+				<string>DC154BB1424C1F6ABBFAD8919D5EC7AA</string>
+				<string>E053177911AF2D020DDF6747B4FEFD96</string>
+				<string>1394D56AE5F09404FF60D642E5761B3B</string>
+				<string>7768478587D3BCE056FE877D268F9124</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Simple</string>
+			<key>path</key>
+			<string>Simple</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50B356C58BEE2560DFD73DB30BF24AEC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>510A237FF12A61FA9AC19A7F499A34CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5111B0E138A84EE196BCA2707AFC7CCE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1626EFBA897DE5F3DD822CFE81E48177</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>52F27B9259ED7ABEDC8A3B0759CCCF03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGEmailCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>581E7EC20477FEEF6E1178DC9377838B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGNumberConditionPresent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58525B2CF8C83266F4ADBE07C22F8725</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>45563A1554F066ECE4EDED031A91994D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5A27625861D943A056C48EBB5D8890CB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>27AC98ABB86E08F068FAD7B918E75461</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5A41ECEC6F99524E778553E2DC3848CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGNumberEqualCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5CC6998A80F63F927882B5158A3294F2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F79B47CBBBCC69B0E69C4F95EC3F990D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5E581FA17608762F3FF1FF53856B3C3D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>352F6D8FEA83C75AEB0F39FB75F60D61</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5E5A0DC056CC09C3D95572617475678F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A43EDDD4649007480FC978864D390367</string>
+				<string>6C26B571714EFC989098270BCA024892</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGDatePresentCondtion</string>
+			<key>path</key>
+			<string>VGDatePresentCondtion</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6079ED766C6C4018D95FCEF4B3E8FE90</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A673CFDCBADAAE910D0EC93DB63965F2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>61300449D4E011E246350FD60D92DFFC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGStringRangeCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>61A3974EE6157B9E678D25E17DC20A9E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3C5ACB99CE2BD4383A0F0A5FA823E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6275F9E691BC049CA22B34FE44AF3642</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGEnumerableCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63433F5940F91F65D10C949870D2AE86</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>78C60762CF95C0DB9FB14E4225EC46FB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>VGCondition</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>63BD68CBC9285DAF7A8E58AA79F0BA63</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65536D1CDB1653DF3A657409BA17B0F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>099F43717AD69383F585EB5D40075C25</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6587C7211186334B7696CFFF5312192F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>581E7EC20477FEEF6E1178DC9377838B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6620BECDBA9E1A19D046702AEFCBA99E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3C5ACB99CE2BD4383A0F0A5FA823E1</string>
+				<string>52F27B9259ED7ABEDC8A3B0759CCCF03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGEmailCondition</string>
+			<key>path</key>
+			<string>VGEmailCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66F0F9D3EDD42A12A691BF314CE91E13</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1920285D1DD6278E8F3E86E529F6F7F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6740B2831DFE3E6693C0E07F2DCB5D08</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGConditionProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68C452D99B21A6DB759809F6DF0E44E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>80343CD01857C44AF53D8185FBDB5A0E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6A19FE6E9D67CC81E2201ECED28F81E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>27AC98ABB86E08F068FAD7B918E75461</string>
+				<string>27F7FA1039B0B8F9C9BC7849BF1D7B9B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGAlphabeticCondition</string>
+			<key>path</key>
+			<string>VGAlphabeticCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6A1BCB55BE47F71876BD01A5453BC966</key>
+		<dict>
+			<key>fileRef</key>
+			<string>91DB446AA69CEF2E4857E77303A3BF46</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6A57D47F064288376DEDCAE4A6699734</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGConditionEqual.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6AB2C3871CDEC224169F9EF6A46E383A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A1ADA95309A056635AECD9B4623CF873</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6C26B571714EFC989098270BCA024892</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGDatePresentCondtion.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E489BF8079F28D065C4A9E34840A152</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6F628D26A354683D03164D2A8B219BA0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>VGCondition</string>
+			<key>target</key>
+			<string>500B0176114B519F9B346981DF106AE9</string>
+			<key>targetProxy</key>
+			<string>D1371065E6C7C5A186FE9225A3BBB10C</string>
+		</dict>
+		<key>705C6E0E9EFFB72A1C2CC2A4A391D36F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73B8CA7D6DB690E5B02A156B6FEB6169</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CD89DAE091732091061F36531EC74958</string>
+				<string>5A41ECEC6F99524E778553E2DC3848CF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGNumberEqualCondition</string>
+			<key>path</key>
+			<string>VGNumberEqualCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749D4034C54A8331BB691FF4749027B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>104B8C99EE5D645CDDD1DD5659688DFA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75CA3811E5DDBE6EE909EA69F9950ACA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76858C5D83733DAC5BF39F395AD4DD8E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGNumberCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76CE237E7F71402F5237589326B23D61</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGCondition-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7763D5503B6CA331AB5ECDCC6B72F26D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6C26B571714EFC989098270BCA024892</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7768478587D3BCE056FE877D268F9124</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6A19FE6E9D67CC81E2201ECED28F81E8</string>
+				<string>6620BECDBA9E1A19D046702AEFCBA99E</string>
+				<string>45A24AB32C9B5932D9F134FB87575E50</string>
+				<string>93FD582B0D562C193F8953D9270213B9</string>
+				<string>B359EB42610F8073A91196615B5A53C1</string>
+				<string>AB732FC0BEC8A6E90B8C4EEF54AF2DB8</string>
+				<string>8D8B9F3BE3F2C18E0F5D0BAB033DC050</string>
+				<string>2F736B2D5C83FDF67D118668AB7918A4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NSString</string>
+			<key>path</key>
+			<string>NSString</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>788A51F6CC0B04BD7FBEDB63E9D57514</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>78C60762CF95C0DB9FB14E4225EC46FB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>VGCondition</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>78C60762CF95C0DB9FB14E4225EC46FB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>VGCondition.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7AEAB69C9D093AA4463B8729AB287477</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>78C60762CF95C0DB9FB14E4225EC46FB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/VGCondition/VGCondition-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/VGCondition/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/VGCondition/VGCondition.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>VGCondition</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7BA59DECCAFFC1708C3B88DEF5833C75</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_VGCondition_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_VGCondition_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7D4751DC978C62DE6BEC6D12611235A8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9425E4F915BD88A1A7178D24E197C86D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>3ACD1CA4F6879604AC201D6F0278A143</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>FAC1692EE4946D3EB91D8D9C9E1CCF65</string>
+				<string>0EF7AF20BF70E47D41C618E21CEACA5A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E3E97291EB7D1B0C44BEE922A84D1E3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3D8915FE3FEE120DFD5A9F2707EFE54</string>
+				<string>E0CF15CA39045923F4DA631DD103B91E</string>
+				<string>6740B2831DFE3E6693C0E07F2DCB5D08</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGCondition</string>
+			<key>path</key>
+			<string>VGCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F0F1D10B4958BC4F78E4E80DF20CDB1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGConditionPresent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F38FC0D928DAFB5441BD0207F5A7FD9</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DB8232B6B0633F7AAE41F5A96E335AEB</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8D46E24C623A3B747B41D3A1895BD7C1</string>
+				<string>BD7BD7E076C834BE48A0248AA52F4CDC</string>
+				<string>BC4E8282D8B587E5F0A66BFD2AF1B964</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>6F628D26A354683D03164D2A8B219BA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-VGCondition_Tests</string>
+			<key>productName</key>
+			<string>Pods-VGCondition_Tests</string>
+			<key>productReference</key>
+			<string>7BA59DECCAFFC1708C3B88DEF5833C75</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>8028FE153C18C133013CFDF4583F6A5A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E337A8331937632EAD9D800D8CEC2167</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>80343CD01857C44AF53D8185FBDB5A0E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGDateRangeCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>80406E9BF07350ECCB90F281C0BD21DE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4A85B7A692B9B44E8B9B51CCE8B692D4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8050806B523A5ADA999CFCB2A6A510D0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>05888A0830EEB9D8A40811FBE838DCC8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>81F6790A7E11F2EC11F6E4A3B09E4784</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76858C5D83733DAC5BF39F395AD4DD8E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>830CF84350CCE36AF025443D27106005</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGStringRangeCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8327D3CE6C5CD5D06CF5D91DE3AE2088</key>
+		<dict>
+			<key>fileRef</key>
+			<string>87B33615915B689984DABBC0C4F8FDA6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8480B3F73AF7CBFCF6DF904AC0FE3047</key>
+		<dict>
+			<key>fileRef</key>
+			<string>52F27B9259ED7ABEDC8A3B0759CCCF03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>85CABF2D0FF95254DDF7325295AAD092</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5329B0E786DF8BE2CDDB349ACBEE5A8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>86DAE7F50134989F020DF6AB513D94F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6275F9E691BC049CA22B34FE44AF3642</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>87B33615915B689984DABBC0C4F8FDA6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGValidator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A615845B7A60DC03D03265B34B7D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F1C69242A734D366579BD3E39B7BC03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>88F228EC3F1C7C33A836680B0248AA5E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_VGCondition_Example.framework</string>
+			<key>path</key>
+			<string>Pods_VGCondition_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>89D8D63028CF905353E63C6D16EF8330</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F1498381DAC736F2C056D12F3A3A4FBB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8A0AC3332C51BCDCF002A4229329F05C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8A0F18C004F7D67105BFDAE95D0F9DA0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>78C60762CF95C0DB9FB14E4225EC46FB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/VGCondition/VGCondition-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/VGCondition/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/VGCondition/VGCondition.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>VGCondition</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8BBF78AB54FF4DBB69406677BAD09193</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C3BA08E9435E7806A202709994FCACF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>VGCondition.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D0AAE106E70F4E6184A524C09D00A77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F79B47CBBBCC69B0E69C4F95EC3F990D</string>
+				<string>80343CD01857C44AF53D8185FBDB5A0E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGDateRangeCondition</string>
+			<key>path</key>
+			<string>VGDateRangeCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D46E24C623A3B747B41D3A1895BD7C1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8050806B523A5ADA999CFCB2A6A510D0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8D8B9F3BE3F2C18E0F5D0BAB033DC050</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>830CF84350CCE36AF025443D27106005</string>
+				<string>61300449D4E011E246350FD60D92DFFC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGStringRangeCondition</string>
+			<key>path</key>
+			<string>VGStringRangeCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8DF076059BCD93633B12E1EC0282FEFB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>830CF84350CCE36AF025443D27106005</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8E330DBF2FCA23C1CB4C8092AFC7CF56</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C735E380327EE63EECA741EDE8535FB2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>47D1F1FF3A7C6DA4DA251B6085471CE3</string>
+				<string>212168CC9DA7C6D059E74A46E4040534</string>
+				<string>7D4751DC978C62DE6BEC6D12611235A8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D470FEEC0118608627682D4A1D16758C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-VGCondition_Example</string>
+			<key>productName</key>
+			<string>Pods-VGCondition_Example</string>
+			<key>productReference</key>
+			<string>88F228EC3F1C7C33A836680B0248AA5E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>8E43B32B7CF7DA6F20E2DB0FB7347276</key>
+		<dict>
+			<key>fileRef</key>
+			<string>140B1418BCC35F3A2055A69E59CC1836</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>910658838F74B7399CCE9DF1326B1E2E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1E3E809EA174AEB73D7CA965F5FE1102</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>91DB446AA69CEF2E4857E77303A3BF46</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGStringRegexCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93FD582B0D562C193F8953D9270213B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>05361366A7B9FFFC0AC1568034C0CFB2</string>
+				<string>352F6D8FEA83C75AEB0F39FB75F60D61</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGStringCondition</string>
+			<key>path</key>
+			<string>VGStringCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9425E4F915BD88A1A7178D24E197C86D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>200F21A0626E5F2D5DD65DA7BF404E87</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>94DEEB13698927754D1EB5CE0266830D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F1498381DAC736F2C056D12F3A3A4FBB</string>
+				<string>581E7EC20477FEEF6E1178DC9377838B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGNumberConditionPresent</string>
+			<key>path</key>
+			<string>VGNumberConditionPresent</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>997EB1EC804967B2AD4A2142EB409C5E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9A89A64BF23893D93E5F3EF5A1889788</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D835B9CC49DEAFA2761C9250DCE1EF9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1CC39AFD5CCC83528A5CB025D7753627</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Example/Pods-VGCondition_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_VGCondition_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9DA2722C2F557DB6D58654AF349F33B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGValidation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A0296B1BC0FFE17C0263416088E047FA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A1ADA95309A056635AECD9B4623CF873</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGEqualConditionProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A2B15E5BE90A25B006A37C92139209EB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>VGCondition.framework</string>
+			<key>path</key>
+			<string>VGCondition.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A3D8CDD519B102779EE762E5753359E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A43EDDD4649007480FC978864D390367</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGDatePresentCondtion.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A5ACEF3E1F43D85E872FE80A57F3CD50</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD165E3D396EF510850F0AD15B9F1C23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A673CFDCBADAAE910D0EC93DB63965F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGDateEqualCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6D2806925482236970250EAB30F3282</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E65BEA02A95602C6FB8D97AA1F2E84FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A8717D1DB0708897BDDD5DB3AA293043</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F0F1D10B4958BC4F78E4E80DF20CDB1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A8F1043383D335525A35DF13D2D74C51</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3C0BE9396147E961C4B8D99F3CAA0D0B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A9052F2954025B0DA32239DA62425BEE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E525590044A7BBF0DB186B0412F7A656</string>
+				<string>76858C5D83733DAC5BF39F395AD4DD8E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGNumberCondition</string>
+			<key>path</key>
+			<string>VGNumberCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB732FC0BEC8A6E90B8C4EEF54AF2DB8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>064EC3B63EC0A2ADE68112060558718E</string>
+				<string>D820550E7276E287F1125A1C4D009EC3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGStringEqualCondition</string>
+			<key>path</key>
+			<string>VGStringEqualCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ABBC8AAEEA0FAFF8749FB0A1C48FA6C6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>705C6E0E9EFFB72A1C2CC2A4A391D36F</string>
+				<string>8C3BA08E9435E7806A202709994FCACF</string>
+				<string>78C60762CF95C0DB9FB14E4225EC46FB</string>
+				<string>FCC897184AF37642BA4497D28CB9CD7A</string>
+				<string>76CE237E7F71402F5237589326B23D61</string>
+				<string>08C9E6F2CF93EEBCCDC647F4C5105110</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/VGCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE6729BABD758AC07D7C903B600F0AA8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9DA2722C2F557DB6D58654AF349F33B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B0F426F78C20B2F1FCC093DC4202CF42</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FCC897184AF37642BA4497D28CB9CD7A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B22180FE4F7F1FDED9524E6BDD2A50F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGComplexCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B359EB42610F8073A91196615B5A53C1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5329B0E786DF8BE2CDDB349ACBEE5A8</string>
+				<string>099F43717AD69383F585EB5D40075C25</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGStringConditionPresent</string>
+			<key>path</key>
+			<string>VGStringConditionPresent</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B36E02024C866397D882A23DF5E90B5C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4E43C0525DD2C62391FDD4433A3893F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B5DA2D5C44B9AA5D2A523188DDA4A622</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F1D59E483C97BCC2C9F208EDE5FBA43</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B6C369AF6E88F04664F27E6AF27D2206</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGObjectPresentCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B81E27CD0F98823B1E4D781932F5E7C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D559297FCD1DE85F1B8D076A76B8DBAB</string>
+				<string>500EA821DF042801DA9F88EFC86AA285</string>
+				<string>7E3E97291EB7D1B0C44BEE922A84D1E3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Conditions</string>
+			<key>path</key>
+			<string>Conditions</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B85BE75C86A2B2CABACF59AD7B5536F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D71DCBD6AF7CB94BF78F785F9DCB247F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BB827EF077077B6527A39FCABE601467</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGEnumerableCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC4E8282D8B587E5F0A66BFD2AF1B964</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>46797FF4D0079D2C5E7893A377B5A0B0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BD2621D5DC668FC1C7FD8A559F78ED1A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3D8915FE3FEE120DFD5A9F2707EFE54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BD7BD7E076C834BE48A0248AA52F4CDC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6E489BF8079F28D065C4A9E34840A152</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BD98956210507BAB21BE18948F53E97B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6A57D47F064288376DEDCAE4A6699734</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BDFE748EE97C2C045862F099D5C04B07</key>
+		<dict>
+			<key>fileRef</key>
+			<string>08C9E6F2CF93EEBCCDC647F4C5105110</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C03C74B8B6F2DDA8693DAE7D6BBD7D23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>22D2BDE6FF4440E3AEF1CB94D0B9B39F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C099BE3CD3E4557D562509521C0DCE69</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0DC3CA3AD733A8753C40C67223753AD7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C3D8915FE3FEE120DFD5A9F2707EFE54</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6EE8C07B8ACB50FC5669B8B51988E7C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA9F82438A28DD63095F7C8C84A441D4</string>
+				<string>B22180FE4F7F1FDED9524E6BDD2A50F8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGComplexCondition</string>
+			<key>path</key>
+			<string>VGComplexCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C735E380327EE63EECA741EDE8535FB2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2E45241349F2D1E09FD3381DD996B083</string>
+				<string>9D835B9CC49DEAFA2761C9250DCE1EF9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C8789E4DD127EDA108A1E971942BDECA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7F0F1D10B4958BC4F78E4E80DF20CDB1</string>
+				<string>140B1418BCC35F3A2055A69E59CC1836</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGConditionPresent</string>
+			<key>path</key>
+			<string>VGConditionPresent</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C98F2FFC55D918CAA2B2AD834BEB3F4C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC9C6F843CD7CB744AD5FB04959C906E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CCC7EC65C428C55808C98076C7B87CCD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD89DAE091732091061F36531EC74958</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGNumberEqualCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE93694E6232E9CEB8839C19CE51E77F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>788A51F6CC0B04BD7FBEDB63E9D57514</string>
+				<string>63433F5940F91F65D10C949870D2AE86</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D04A4C5AEEC97C1CC9A0E3760F7F9711</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6275F9E691BC049CA22B34FE44AF3642</string>
+				<string>BB827EF077077B6527A39FCABE601467</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGEnumerableCondition</string>
+			<key>path</key>
+			<string>VGEnumerableCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1371065E6C7C5A186FE9225A3BBB10C</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>500B0176114B519F9B346981DF106AE9</string>
+			<key>remoteInfo</key>
+			<string>VGCondition</string>
+		</dict>
+		<key>D1B5BC3EB8A1D0BE4DDAADFD18621B2B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>58525B2CF8C83266F4ADBE07C22F8725</string>
+				<string>ABBC8AAEEA0FAFF8749FB0A1C48FA6C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGCondition</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>FAC1692EE4946D3EB91D8D9C9E1CCF65</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>8E330DBF2FCA23C1CB4C8092AFC7CF56</string>
+				<string>7F38FC0D928DAFB5441BD0207F5A7FD9</string>
+				<string>500B0176114B519F9B346981DF106AE9</string>
+				<string>E8FF96AED4ED87DEC308C5F6DF9FDF26</string>
+			</array>
+		</dict>
+		<key>D470FEEC0118608627682D4A1D16758C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>VGCondition</string>
+			<key>target</key>
+			<string>500B0176114B519F9B346981DF106AE9</string>
+			<key>targetProxy</key>
+			<string>3AC0F2C800B09A2BDA02D6C2AB5DA24E</string>
+		</dict>
+		<key>D5329B0E786DF8BE2CDDB349ACBEE5A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGStringConditionPresent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D559297FCD1DE85F1B8D076A76B8DBAB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C6EE8C07B8ACB50FC5669B8B51988E7C</string>
+				<string>0189136333316C8AF6395F4A99A86537</string>
+				<string>C8789E4DD127EDA108A1E971942BDECA</string>
+				<string>2CCD7D9F1DF0381D7285413AAA625245</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Complex</string>
+			<key>path</key>
+			<string>Complex</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D694A9C5067B92FB8F72433D87BFEF17</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0FFE0B4B686565BE07C09330577DF139</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D709D779E9333C9F6098F47BDDB463E3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0DC3CA3AD733A8753C40C67223753AD7</string>
+				<string>87B33615915B689984DABBC0C4F8FDA6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGValidator</string>
+			<key>path</key>
+			<string>VGValidator</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D71DCBD6AF7CB94BF78F785F9DCB247F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGConditionTime.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D7D51D293A919CC4402FB858B9048433</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CD89DAE091732091061F36531EC74958</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D820550E7276E287F1125A1C4D009EC3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGStringEqualCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D83848E1F16D4F14E22B74FFD76CE87E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0CF15CA39045923F4DA631DD103B91E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA203200C8EBAB88AA98BFC7F32C263B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGPasswordStrengthCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAC1EC3627D291929CE22117B9F1D10E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E65BEA02A95602C6FB8D97AA1F2E84FF</string>
+				<string>2A525A97A18C9193F795033922DF8DA3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGDateCondition</string>
+			<key>path</key>
+			<string>VGDateCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB8232B6B0633F7AAE41F5A96E335AEB</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3042EA18EC8C59508FBAFD66F4D3A09C</string>
+				<string>DBB4069AA807FAC3604DA00557B1C2AC</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DBB4069AA807FAC3604DA00557B1C2AC</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DF99FB4A5AB9BDC55E580D836A8B500E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-VGCondition_Tests/Pods-VGCondition_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_VGCondition_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DC154BB1424C1F6ABBFAD8919D5EC7AA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FD6AF93B7E665DA395AE5A030C2A0FB0</string>
+				<string>DAC1EC3627D291929CE22117B9F1D10E</string>
+				<string>435E2DD4D295DAC235256C0F9D742D98</string>
+				<string>5E5A0DC056CC09C3D95572617475678F</string>
+				<string>8D0AAE106E70F4E6184A524C09D00A77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NSDate</string>
+			<key>path</key>
+			<string>NSDate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DD165E3D396EF510850F0AD15B9F1C23</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGEnumerableConditionPresent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3C5ACB99CE2BD4383A0F0A5FA823E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGEmailCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF99FB4A5AB9BDC55E580D836A8B500E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E053177911AF2D020DDF6747B4FEFD96</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A9052F2954025B0DA32239DA62425BEE</string>
+				<string>94DEEB13698927754D1EB5CE0266830D</string>
+				<string>73B8CA7D6DB690E5B02A156B6FEB6169</string>
+				<string>0062F57443C9793A7BE040BCE369062A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NSNumber</string>
+			<key>path</key>
+			<string>NSNumber</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0CF15CA39045923F4DA631DD103B91E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGCondition.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E1C91728FC22B2BABD0A2FAAFB16B577</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7AEAB69C9D093AA4463B8729AB287477</string>
+				<string>8A0F18C004F7D67105BFDAE95D0F9DA0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E23201B2D00FCDC0331C3F932B6D0154</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5A27625861D943A056C48EBB5D8890CB</string>
+				<string>3E30B1107AB42B09DFF564595EBE2842</string>
+				<string>BDFE748EE97C2C045862F099D5C04B07</string>
+				<string>BD2621D5DC668FC1C7FD8A559F78ED1A</string>
+				<string>F7458F617858E05C18BD5E3E595B93D9</string>
+				<string>BD98956210507BAB21BE18948F53E97B</string>
+				<string>A8717D1DB0708897BDDD5DB3AA293043</string>
+				<string>4A569D8BAC8E21B5335512877A6E4475</string>
+				<string>B85BE75C86A2B2CABACF59AD7B5536F7</string>
+				<string>4EC85D20F8E530C954144938A75E1480</string>
+				<string>A6D2806925482236970250EAB30F3282</string>
+				<string>6079ED766C6C4018D95FCEF4B3E8FE90</string>
+				<string>F865C98E640556C0A29569FBEF7B4EF8</string>
+				<string>5CC6998A80F63F927882B5158A3294F2</string>
+				<string>61A3974EE6157B9E678D25E17DC20A9E</string>
+				<string>86DAE7F50134989F020DF6AB513D94F6</string>
+				<string>FD3D0AC285ECACC3EDAF38418AEDDB1A</string>
+				<string>6AB2C3871CDEC224169F9EF6A46E383A</string>
+				<string>4002B6F22AA368563FC4D56B8DA21CEE</string>
+				<string>89D8D63028CF905353E63C6D16EF8330</string>
+				<string>D7D51D293A919CC4402FB858B9048433</string>
+				<string>882A615845B7A60DC03D03265B34B7D2</string>
+				<string>3246F3F7D638E28AC7F7DBF7A8A21626</string>
+				<string>0FA15BBBB0A627157A4ABFB7D7706DE5</string>
+				<string>C03C74B8B6F2DDA8693DAE7D6BBD7D23</string>
+				<string>4EEABFDA28DC98D9FC201774DF148083</string>
+				<string>85CABF2D0FF95254DDF7325295AAD092</string>
+				<string>FA2AAB62E9ADEC3BAFAD812673C181B2</string>
+				<string>8DF076059BCD93633B12E1EC0282FEFB</string>
+				<string>C98F2FFC55D918CAA2B2AD834BEB3F4C</string>
+				<string>AE6729BABD758AC07D7C903B600F0AA8</string>
+				<string>C099BE3CD3E4557D562509521C0DCE69</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E337A8331937632EAD9D800D8CEC2167</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E525590044A7BBF0DB186B0412F7A656</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGNumberCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E65BEA02A95602C6FB8D97AA1F2E84FF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGDateCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E73BAEF1E51D11D1CF3241FCEC5FF14C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D820550E7276E287F1125A1C4D009EC3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E8ACC9915ECFA2EA4EED45602A2DAE62</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8FF96AED4ED87DEC308C5F6DF9FDF26</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CE93694E6232E9CEB8839C19CE51E77F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>34597F0041E432E074036051BD0B94FF</string>
+				<string>8A0AC3332C51BCDCF002A4229329F05C</string>
+				<string>A0296B1BC0FFE17C0263416088E047FA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>VGCondition-VGCondition</string>
+			<key>productName</key>
+			<string>VGCondition-VGCondition</string>
+			<key>productReference</key>
+			<string>0FFE0B4B686565BE07C09330577DF139</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>E90E912E246FCCB961E22B78C8319197</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2A98C04FD60C01E693B8ABD46C1B350C</string>
+				<string>997EB1EC804967B2AD4A2142EB409C5E</string>
+				<string>510A237FF12A61FA9AC19A7F499A34CA</string>
+				<string>A3D8CDD519B102779EE762E5753359E3</string>
+				<string>05888A0830EEB9D8A40811FBE838DCC8</string>
+				<string>CCC7EC65C428C55808C98076C7B87CCD</string>
+				<string>75CA3811E5DDBE6EE909EA69F9950ACA</string>
+				<string>50B356C58BEE2560DFD73DB30BF24AEC</string>
+				<string>9A89A64BF23893D93E5F3EF5A1889788</string>
+				<string>DF99FB4A5AB9BDC55E580D836A8B500E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-VGCondition_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-VGCondition_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E95ACFB76DAA859BEBF5AF91F85E5DC5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2E10DAEFEB9A0042928130CC23391D52</string>
+				<string>1626EFBA897DE5F3DD822CFE81E48177</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGConditionCount</string>
+			<key>path</key>
+			<string>VGConditionCount</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC9C6F843CD7CB744AD5FB04959C906E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGStringRegexCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F015B58FF59F699923C6B8B461B55139</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E8FF96AED4ED87DEC308C5F6DF9FDF26</string>
+			<key>remoteInfo</key>
+			<string>VGCondition-VGCondition</string>
+		</dict>
+		<key>F1498381DAC736F2C056D12F3A3A4FBB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGNumberConditionPresent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3E4A0FFB275B5C04251505F3DF1209D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA203200C8EBAB88AA98BFC7F32C263B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F4ABDFDAF256ACEAFD55E63483D4DCE1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4D57A18C74EE228F39FF598566EC6E39</string>
+				<string>327E5975C3B5E0089BD4C9B71E4419CD</string>
+				<string>B0F426F78C20B2F1FCC093DC4202CF42</string>
+				<string>D83848E1F16D4F14E22B74FFD76CE87E</string>
+				<string>5111B0E138A84EE196BCA2707AFC7CCE</string>
+				<string>66F0F9D3EDD42A12A691BF314CE91E13</string>
+				<string>8E43B32B7CF7DA6F20E2DB0FB7347276</string>
+				<string>B36E02024C866397D882A23DF5E90B5C</string>
+				<string>80406E9BF07350ECCB90F281C0BD21DE</string>
+				<string>009F0885C98F5C3A6E723B040A93A930</string>
+				<string>910658838F74B7399CCE9DF1326B1E2E</string>
+				<string>7763D5503B6CA331AB5ECDCC6B72F26D</string>
+				<string>68C452D99B21A6DB759809F6DF0E44E6</string>
+				<string>8480B3F73AF7CBFCF6DF904AC0FE3047</string>
+				<string>FAC25FA4C7D1EB63CDD7816E6F5D4541</string>
+				<string>A5ACEF3E1F43D85E872FE80A57F3CD50</string>
+				<string>81F6790A7E11F2EC11F6E4A3B09E4784</string>
+				<string>6587C7211186334B7696CFFF5312192F</string>
+				<string>FA820D5C587AB88CB7E84C35B6114C38</string>
+				<string>B5DA2D5C44B9AA5D2A523188DDA4A622</string>
+				<string>749D4034C54A8331BB691FF4749027B7</string>
+				<string>F3E4A0FFB275B5C04251505F3DF1209D</string>
+				<string>5E581FA17608762F3FF1FF53856B3C3D</string>
+				<string>65536D1CDB1653DF3A657409BA17B0F6</string>
+				<string>E73BAEF1E51D11D1CF3241FCEC5FF14C</string>
+				<string>3518DBB2961FF71A9F9BED211B8A44CE</string>
+				<string>6A1BCB55BE47F71876BD01A5453BC966</string>
+				<string>8327D3CE6C5CD5D06CF5D91DE3AE2088</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F6EE3E28468C3A155ECE3E5350328AA2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-VGCondition_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7458F617858E05C18BD5E3E595B93D9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2E10DAEFEB9A0042928130CC23391D52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F79B47CBBBCC69B0E69C4F95EC3F990D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGDateRangeCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F81D8553557410F8CDF06B4985674B88</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B6C369AF6E88F04664F27E6AF27D2206</string>
+				<string>104B8C99EE5D645CDDD1DD5659688DFA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGObjectPresentCondition</string>
+			<key>path</key>
+			<string>VGObjectPresentCondition</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F865C98E640556C0A29569FBEF7B4EF8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A43EDDD4649007480FC978864D390367</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FA2AAB62E9ADEC3BAFAD812673C181B2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>064EC3B63EC0A2ADE68112060558718E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FA820D5C587AB88CB7E84C35B6114C38</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5A41ECEC6F99524E778553E2DC3848CF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA9F82438A28DD63095F7C8C84A441D4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>VGComplexCondition.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAC1692EE4946D3EB91D8D9C9E1CCF65</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88F228EC3F1C7C33A836680B0248AA5E</string>
+				<string>7BA59DECCAFFC1708C3B88DEF5833C75</string>
+				<string>0FFE0B4B686565BE07C09330577DF139</string>
+				<string>A2B15E5BE90A25B006A37C92139209EB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAC25FA4C7D1EB63CDD7816E6F5D4541</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BB827EF077077B6527A39FCABE601467</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FCC897184AF37642BA4497D28CB9CD7A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>VGCondition-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD3D0AC285ECACC3EDAF38418AEDDB1A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>218FE1F86597EACF6EDC4DD8B299033F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FD6AF93B7E665DA395AE5A030C2A0FB0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D71DCBD6AF7CB94BF78F785F9DCB247F</string>
+				<string>4E43C0525DD2C62391FDD4433A3893F8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VGConditionTime</string>
+			<key>path</key>
+			<string>VGConditionTime</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>
