@@ -12,7 +12,7 @@
 
 @property (nonatomic, assign) NSInteger count;
 
-+ (instancetype)conditionWithCount:(NSInteger)count;
-+ (instancetype)conditionWithCount:(NSInteger)count description:(NSString *)description;
++ (nonnull instancetype)conditionWithCount:(NSInteger)count;
++ (nonnull instancetype)conditionWithCount:(NSInteger)count description:(nonnull NSString *)description;
 
 @end
