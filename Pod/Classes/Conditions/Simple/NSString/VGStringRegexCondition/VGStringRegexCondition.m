@@ -27,6 +27,9 @@
 #pragma mark - Validation
 
 - (BOOL)checkValue:(NSString *)value {
+    if(!value) {
+        return YES;
+    }
     if([super checkValue:value]) {
         NSError *error = nil;
         NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:self.regex options:0 error:&error];
