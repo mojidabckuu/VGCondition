@@ -42,18 +42,21 @@
 #pragma mark - Accessors
 
 - (NSError *)error {
-    if(self.min && self.max) {
-        NSString *format = NSLocalizedString(@"Enter minimum %@, maximum %@ characters", nil);
+    if (self.localizedDescription) {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey : self.localizedDescription};
+        return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
+    }else if(self.min && self.max) {
+        NSString *format = NSLocalizedString(@"Value should be between %@ and %@", nil);
         NSString *description = [NSString stringWithFormat:format, self.min, self.max];
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey : description};
         return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
     } else if (self.min) {
-        NSString *format = NSLocalizedString(@"Enter minimum %@ characters", nil);
+        NSString *format = NSLocalizedString(@"Value should be %@ minimum", nil);
         NSString *description = [NSString stringWithFormat:format, self.min];
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey : description};
         return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
     } else if (self.max) {
-        NSString *format = NSLocalizedString(@"Enter maximum %@ characters", nil);
+        NSString *format = NSLocalizedString(@"Value should be %@ maximum", nil);
         NSString *description = [NSString stringWithFormat:format, self.max];
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey : description};
         return [NSError errorWithDomain:@"com.vladgorbenko.VGCondition" code:0 userInfo:userInfo];
@@ -68,16 +71,16 @@
         BOOL result = YES;
         if(self.min) {
             if(self.isStrict) {
-                result &= value.length > self.min.integerValue;
+                result &= [self.min isKindOfClass:[NSNumber class]] ? value.integerValue > [self.min integerValue] : [value compare:self.min] == NSOrderedDescending;
             } else {
-                result &= value.length >= self.min.integerValue;
+                result &= [self.min isKindOfClass:[NSNumber class]] ? value.integerValue >= [self.min integerValue] : [value compare:self.min] != NSOrderedAscending;
             }
         }
         if(self.max) {
             if(self.isStrict) {
-                result &= value.length < self.max.integerValue;
+                result &= [self.max isKindOfClass:[NSNumber class]] ? value.integerValue < [self.max integerValue] : [value compare:self.max] == NSOrderedAscending;
             } else {
-                result &= value.length <= self.max.integerValue;
+                result &= [self.max isKindOfClass:[NSNumber class]] ? value.integerValue <= [self.max integerValue] : [value compare:self.max] != NSOrderedDescending;
             }
         }
         return result;

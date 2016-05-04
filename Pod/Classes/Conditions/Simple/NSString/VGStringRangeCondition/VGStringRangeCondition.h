@@ -12,7 +12,7 @@
 
 @interface VGStringRangeCondition : VGStringCondition <VGRangeConditionProtocol>
 
-@property (nonatomic, strong) NSNumber *min;
-@property (nonatomic, strong) NSNumber *max;
+@property (nonatomic, strong) id min;
+@property (nonatomic, strong) id max;
 
 @end
