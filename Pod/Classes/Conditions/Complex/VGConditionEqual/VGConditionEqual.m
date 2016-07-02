@@ -44,6 +44,8 @@
 
 + (void)load {
     [self registerConditionClass:[VGStringEqualCondition class] objectClass:[NSString class]];
+    [self registerConditionClass:[VGStringEqualCondition class] objectClass:[NSMutableString class]];
+    [self registerConditionClass:[VGStringEqualCondition class] objectClass:NSClassFromString(@"NSTaggedPointerString")];
     [self registerConditionClass:[VGNumberEqualCondition class] objectClass:[NSNumber class]];
     [self registerConditionClass:[VGDateEqualCondition class] objectClass:[NSDate class]];
 }
