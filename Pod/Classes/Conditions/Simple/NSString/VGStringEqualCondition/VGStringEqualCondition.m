@@ -26,7 +26,7 @@
 
 - (BOOL)checkValue:(NSString *)value {
     if ([super checkValue:value]) {
-        return [value isEqualToString:value];
+        return [self.value isEqualToString:value];
     }
     return NO;
 }
