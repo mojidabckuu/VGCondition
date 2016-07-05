@@ -71,21 +71,22 @@
         BOOL result = YES;
         if(self.min) {
             if(self.isStrict) {
-                result &= [self.min isKindOfClass:[NSNumber class]] ? value.integerValue > [self.min integerValue] : [value compare:self.min] == NSOrderedDescending;
+                result &= [self.min isKindOfClass:[NSString class]] ? value.integerValue > [self.min integerValue] : value.length > [self.min integerValue];
             } else {
-                result &= [self.min isKindOfClass:[NSNumber class]] ? value.integerValue >= [self.min integerValue] : [value compare:self.min] != NSOrderedAscending;
+                result &= [self.min isKindOfClass:[NSString class]] ? value.integerValue >= [self.min integerValue] : value.length >= [self.min integerValue];
             }
         }
         if(self.max) {
             if(self.isStrict) {
-                result &= [self.max isKindOfClass:[NSNumber class]] ? value.integerValue < [self.max integerValue] : [value compare:self.max] == NSOrderedAscending;
+                result &= [self.max isKindOfClass:[NSString class]] ? value.integerValue < [self.max integerValue] : value.length < [self.max integerValue];
             } else {
-                result &= [self.max isKindOfClass:[NSNumber class]] ? value.integerValue <= [self.max integerValue] : [value compare:self.max] != NSOrderedDescending;
+                result &= [self.max isKindOfClass:[NSString class]] ? value.integerValue <= [self.max integerValue] : value.length <= [self.max integerValue];
             }
         }
         return result;
     }
     return NO;
+
 }
 
 @end
