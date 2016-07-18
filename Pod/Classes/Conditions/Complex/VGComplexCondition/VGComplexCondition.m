@@ -14,8 +14,10 @@
 
 + (void)registerConditionClass:(Class)conditionClass objectClass:(Class)objectClass {
     NSString *conditionClassString = NSStringFromClass(conditionClass);
-    NSString *objectClassString = NSStringFromClass(objectClass);
-    [self setConditonClass:conditionClassString toObjectClass:objectClassString];
+    if(objectClass) {
+        NSString *objectClassString = NSStringFromClass(objectClass);
+        [self setConditonClass:conditionClassString toObjectClass:objectClassString];
+    }
 }
 
 #pragma mark - Accessors
