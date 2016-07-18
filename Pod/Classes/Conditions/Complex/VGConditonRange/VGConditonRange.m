@@ -35,6 +35,10 @@
     return [[self alloc] initWithMin:min max:max strict:strict formatter:formatter];
 }
 
++ (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max description:(nonnull NSString *)description {
+    return [[self alloc] initWithMin:min max:max strict:false formatter:nil description:description];
+}
+
 + (instancetype)conditionWithMin:(id)min max:(id)max strict:(BOOL)strict formatter:(NSFormatter *)formatter description:(NSString *)description {
     return [[self alloc] initWithMin:min max:max strict:strict formatter:formatter description:description];
 }

@@ -13,6 +13,7 @@
 @interface VGConditonRange : VGComplexCondition <VGRangeConditionProtocol>
 
 + (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict;
++ (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max description:(nonnull NSString *)description;
 + (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict formatter:(nonnull NSFormatter *)formatter;
 + (nonnull instancetype)conditionWithMin:(nullable id)min max:(nullable id)max strict:(BOOL)strict formatter:(nonnull NSFormatter *)formatter description:(nonnull NSString *)description;
 
